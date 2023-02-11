@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const Home = () => {
-	const [users, setusers] = useState(null);
+	const [users, setUsers] = useState(null);
 	useEffect(() => {
 		const fetchUsers = async () => {
 			const response = await fetch('http://localhost:3000/api/users');

@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 
 // GET all users
 const getAllUsers = async (req, res) => {
-	const user = await User.find({}).sort({ createdAt: -1 });
+	const users = await User.find({}).sort({ createdAt: -1 });
 
-	res.status(200).json(user);
+	res.status(200).json(users);
 };
 
 // GET a single user
