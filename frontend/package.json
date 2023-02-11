@@ -21,8 +21,8 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"package": "electron-builder build --win -c.extraMetadata.main=build/electron.js --publish never",
-		"publish": "electron-builder build --win --publish always"
+		"package": "electron-builder build --mac --win -c.extraMetadata.main=build/electron.js --publish never",
+		"publish": "electron-builder build --mac --win --publish always"
 	},
 	"eslintConfig": {
 		"extends": [

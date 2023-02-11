@@ -1,18 +1,22 @@
 import { useEffect, useState } from 'react';
 
 const Home = () => {
+	const [users, setusers] = useState(null);
 	useEffect(() => {
 		const fetchUsers = async () => {
 			const response = await fetch('http://localhost:3000/api/users');
 			const json = await response.json();
 
-			
+			if (response.ok) {
+				setUsers(json);
+			}
 		};
 		fetchUsers();
 	}, []);
+
 	return (
 		<div className="home">
-			<h2>Home</h2>
+			<div className="users">{users && users.map((user) => <p key={user._id}>{user.name} </p>)}</div>
 		</div>
 	);
 };
