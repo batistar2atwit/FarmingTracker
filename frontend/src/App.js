@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 //Pages and components
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
+import Home from './pages/AscGemsTab.js';
 
 //JSX
 function App() {
@@ -12,6 +12,7 @@ function App() {
 				<Navbar />
 				<div className="pages">
 					<Routes>
+						<Route path="/" element={<Home />}></Route>
 						<Route path="/" element={<Home />}></Route>
 					</Routes>
 				</div>
