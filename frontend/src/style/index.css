@@ -22,18 +22,14 @@ header .container {
 	padding: 10px 20px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 header a {
 	color: #333;
 	text-decoration: none;
 }
+
 .pages {
 	max-width: 1400px;
 	padding: 20px;
 	margin: 0;
-}
-
-.table {
-	border: 1px solid #333;
 }

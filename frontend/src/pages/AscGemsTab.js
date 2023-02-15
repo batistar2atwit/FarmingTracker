@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Table } from '../components/Table';
+import AscGemTable from '../components/AscGemsTab/Table';
 
 const Home = () => {
    const [users, setUsers] = useState(null);
@@ -24,7 +24,7 @@ const Home = () => {
             ))}
          </div>
 
-         <Table />
+         <AscGemTable />
       </div>
    );
 };
