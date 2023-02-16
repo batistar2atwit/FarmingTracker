@@ -8,6 +8,7 @@ function createWindow() {
 	const win = new BrowserWindow({
 		width: 1280,
 		height: 720,
+		icon: __dirname + './../public/appLogo3-512x512.png',
 		webPreferences: {
 			nodeIntegration: true,
 		},
