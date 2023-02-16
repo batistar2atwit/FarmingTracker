@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from "react-dom/client";
 import App from './App';
-import './style/ascGemsTable.css';
+import './components/AscGemsTab/ascGemsTable.css';
 import "./style/index.scss";
 
 import { BrowserRouter as Router } from "react-router-dom";
