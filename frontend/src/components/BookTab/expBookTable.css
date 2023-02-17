@@ -3,12 +3,17 @@ th {
 	text-align: center;
 }
 
+td {
+	padding-right: 1.5rem;
+	padding-bottom: 10px;
+	text-align: right;
+}
 table {
 	border: 1px solid black;
 	border-collapse: collapse;
 }
 
-.overall-table {
+.book-table {
 	display: flex;
 	text-align: center;
 	align-items: center;
@@ -17,18 +22,12 @@ table {
 	padding-top: 30px;
 }
 
-.gems-table {
-	display: flex;
-	flex-wrap: wrap;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	column-gap: 20px;
-	row-gap: 20px;
+.lv-num-input {
+	width: 45px;
+	height: 30px;
 }
 
-.num-input {
-	width: 110px;
-	height: 20px;
+.exp-num-input {
+	width: 55px;
+	height: 30px;
 }
