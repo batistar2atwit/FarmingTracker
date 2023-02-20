@@ -5,11 +5,12 @@ th {
 
 td {
 	padding-right: 1.5rem;
-	padding-bottom: 10px;
+	/* padding-bottom: 10px; */
 	text-align: right;
 }
-table {
-	border: 1px solid black;
+table,
+.total-line {
+	border: 2px solid black;
 	border-collapse: collapse;
 }
 
@@ -22,12 +23,14 @@ table {
 	padding-top: 30px;
 }
 
-.lv-num-input {
+.lv-num-input,
+.lv-num-output {
 	width: 45px;
 	height: 30px;
 }
 
-.exp-num-input {
+.exp-num-input,
+.exp-num-output {
 	width: 55px;
 	height: 30px;
 }
