@@ -7,7 +7,9 @@ table {
 	border: 1px solid black;
 	border-collapse: collapse;
 }
-
+h3 {
+	font-size: 30px;
+}
 .overall-table {
 	display: flex;
 	text-align: center;
@@ -26,9 +28,10 @@ table {
 	flex-direction: row;
 	column-gap: 20px;
 	row-gap: 20px;
+	padding-bottom: 30px;
 }
 
 .num-input {
-	width: 110px;
-	height: 20px;
+	width: 180px;
+	height: 40px;
 }

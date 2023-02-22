@@ -1,11 +1,11 @@
 import React from "react";
-import EXPBookTable from "../components/BookTab/EXPBookTable";
-const EXPBookTab = () => {
+import ExpBookTable from "../components/BookTab/ExpBookTable";
+const ExpBookTab = () => {
     return (
         <div>
-            <EXPBookTable />
+            <ExpBookTable />
         </div>
     )
 };
 
-export default EXPBookTab;
+export default ExpBookTab;

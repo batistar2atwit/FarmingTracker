@@ -1,8 +1,8 @@
 import GenericEXPBookTable from "./GenericEXPBookTable";
 
-const EXPBookTable = () => {
+const ExpBookTable = () => {
    return <div>
       <GenericEXPBookTable />;
    </div>
 }
-export default EXPBookTable;
+export default ExpBookTable;

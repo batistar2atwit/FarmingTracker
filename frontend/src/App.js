@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 //Pages and components
 import Layout from "./components/Navbar/Layout";
 import AscGemTab from "./pages/AscGemTab";
-import EXPBookTab from "./pages/EXPBookTab";
+import ExpBookTab from "./pages/ExpBookTab";
 import MainPage from "./pages/MainPage";
 import PageFour from "./pages/PageFour";
 import PageSignIn from "./pages/PageSignIn";
@@ -20,7 +20,7 @@ function App() {
 					<Route path="/page-one" element={<AscGemTab />}>
 
 					</Route>
-					<Route path="/page-two" element={<EXPBookTab />}>
+					<Route path="/page-two" element={<ExpBookTab />}>
 
 					</Route>
 					<Route path="/page-three" element={<PageThree />}>

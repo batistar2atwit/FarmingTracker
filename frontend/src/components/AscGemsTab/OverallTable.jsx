@@ -30,23 +30,23 @@ const OverallGemsTable = () => {
          <tbody>
             <tr>
                <td>Level 1:</td>
-               <td><input type="number" className="num-input" placeholder="0" readOnly /></td>
-               <td><input type="number" className="num-input" placeholder="0" readOnly /></td>
+               <td><input type="number" className="num-input" placeholder="0" min="0" readOnly /></td>
+               <td><input type="number" className="num-input" placeholder="0" min="0" readOnly /></td>
             </tr>
             <tr>
                <td>Level 2:</td>
-               <td><input type="number" className="num-input" placeholder="0" readOnly /></td>
-               <td><input type="number" className="num-input" placeholder="0" readOnly /></td>
+               <td><input type="number" className="num-input" placeholder="0" min="0" readOnly /></td>
+               <td><input type="number" className="num-input" placeholder="0" min="0" readOnly /></td>
             </tr>
             <tr>
                <td>Level 3:</td>
-               <td><input type="number" className="num-input" placeholder="0" readOnly /></td>
-               <td><input type="number" className="num-input" placeholder="0" readOnly /></td>
+               <td><input type="number" className="num-input" placeholder="0" min="0" readOnly /></td>
+               <td><input type="number" className="num-input" placeholder="0" min="0" readOnly /></td>
             </tr>
             <tr>
                <td>Level 4:</td>
-               <td><input type="number" className="num-input" placeholder="0" readOnly /></td>
-               <td ><input type="number" className="num-input" placeholder="0" readOnly /></td>
+               <td><input type="number" className="num-input" placeholder="0" min="0" readOnly /></td>
+               <td ><input type="number" className="num-input" placeholder="0" min="0" readOnly /></td>
             </tr>
          </tbody>
       </table>
