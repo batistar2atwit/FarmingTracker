@@ -14,15 +14,6 @@ const GenericEXPBookTable = () => {
       return parseInt(addCharacter) + parseInt(substractCharacter);
    }
 
-   // const Farming cost
-   const bookNormalFarm = 20;
-   const bookCondensedFarm = 40;
-
-   const moraNormalFarm = 60000;
-   const moraCondensedFarm = 120000;
-
-
-
    // Items/Books required for leveling up
    // EXP Needed per ascension
    const expNeeded02 = 120175;
@@ -124,8 +115,23 @@ const GenericEXPBookTable = () => {
    //Total mora cost
    const totalMoraCost = (parseInt(levelUp02) * moraCost02) + (parseInt(levelUp24) * moraCost24) + (parseInt(levelUp45) * moraCost45) + (parseInt(levelUp56) * moraCost56) + (parseInt(levelUp67) * moraCost67) + (parseInt(levelUp78) * moraCost78) + (parseInt(levelUp89) * moraCost89);
 
+   // EXP Book: Calculate total runs needed to fully complete the EXP farm
+   const estBookFarm2 = 6.5 * 5000;
+   const estBookFarm3 = 4.5 * 20000;
+   const avgBookExperience = estBookFarm2 + estBookFarm3;
+   const avgExpFarmed = totalExpBook1 * 1000 + totalExpBook2 * 5000 + totalExpBook3 * 20000
+   const totalExpAvg = Math.round((avgExpFarmed / avgBookExperience) * 100) / 100;
+
+   // MORA: Calculate total runs needed to fully complete the EXP farm
+   const estMoraFarm = 60000;
+   const totalMoraAvg = Math.round((totalMoraCost / estMoraFarm) * 100) / 100;
+
+   // Farming cost
+   const normalFarmCost = 20;
+
    return <div className="block-table">
-      <div className="book-table">
+      <h2>These tables will only consider farming data between World Level 6 to 8 where the calculation for the Ley Lines drops is set to avg=max/min</h2>
+      <div className="farming-table">
          <table>
             <thead>
                <tr>
@@ -225,7 +231,7 @@ const GenericEXPBookTable = () => {
                <tr className="total-line">
                   <td>Total:</td>
                   <td>{totalCharCollection}</td>
-                  <td className="td">
+                  <td>
                      Lv 1: {totalExpBook1} <br />
                      Lv 2: {totalExpBook2} <br />
                      Lv 3: {totalExpBook3}
@@ -244,11 +250,9 @@ const GenericEXPBookTable = () => {
          </table>
       </div>
 
-      <h1>Total Runs</h1>
       <div className="farming-req-block">
-
-         <div className="book-farming-req">
-            <h2>ExpBooks</h2>
+         <div className="book-farming-req-table">
+            <h2>Total Runs</h2>
             <table>
                <thead>
                   <tr>
@@ -259,28 +263,44 @@ const GenericEXPBookTable = () => {
                </thead>
                <tbody>
                   <tr>
-                     <th>Runs</th>
-                     <td>5</td>
-                     <td>6</td>
+                     <th>ExpBook</th>
+                     <td>{totalExpAvg}</td>
+                     <td>{totalExpAvg / 2}</td>
+                  </tr>
+                  <tr>
+                     <th>Mora</th>
+                     <td>{totalMoraAvg}</td>
+                     <td>{totalMoraAvg / 2}</td>
+                  </tr>
+                  <tr className="runs-total-line">
+                     <th>Total</th>
+                     <td>{(totalExpAvg) + (totalMoraAvg)}</td>
+                     <td>{(totalExpAvg / 2) + (totalMoraAvg / 2)}</td>
                   </tr>
                </tbody>
             </table>
          </div>
-         <div className="mora-farming-req">
-            <h2>Mora</h2>
+         <div className="mora-farming-req-table">
+            <h2>Total Resin</h2>
             <table>
                <thead>
                   <tr>
                      <th></th>
-                     <th>Normal</th>
-                     <th>Condensed</th>
+                     <th>Resin Amount</th>
                   </tr>
                </thead>
                <tbody>
                   <tr>
-                     <th>Runs</th>
-                     <td>5</td>
-                     <td>6</td>
+                     <th>ExpBook</th>
+                     <td>{totalExpAvg * normalFarmCost}</td>
+                  </tr>
+                  <tr>
+                     <th>Mora</th>
+                     <td>{totalMoraAvg * normalFarmCost}</td>
+                  </tr>
+                  <tr className="runs-total-line">
+                     <th>Total</th>
+                     <td>{(totalExpAvg * normalFarmCost) + (totalMoraAvg * normalFarmCost)}</td>
                   </tr>
                </tbody>
             </table>

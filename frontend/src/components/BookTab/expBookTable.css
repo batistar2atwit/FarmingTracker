@@ -16,23 +16,28 @@ table,
 	border: 2px solid black;
 	border-collapse: collapse;
 }
-
-.book-table {
+.runs-total-line {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+.farming-table {
 	display: flex;
 	justify-content: center;
 	padding-bottom: 40px;
 	padding-top: 40px;
 }
-.block-table h1 {
-	text-align: center;
+.block-table h2:not(.farming-req-block h2) {
+	display: flex;
+	justify-content: center;
 }
+
 .farming-req-block {
 	display: flex;
 	justify-content: center;
 }
 
-.book-farming-req,
-.mora-farming-req {
+.book-farming-req-table,
+.mora-farming-req-table {
 	padding: 20px 50px 20px 50px;
 }
 
