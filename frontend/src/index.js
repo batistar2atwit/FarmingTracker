@@ -1,16 +1,13 @@
 import React from 'react';
-import ReactDOM from "react-dom/client";
+import ReactDOM from 'react-dom/client';
 import App from './App';
-import './components/AscGemsTab/ascGemsTable.css';
-import './components/BookTab/expBookTable.css';
-import "./style/index.scss";
+import './style/index.scss';
 
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from 'react-router-dom';
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
-    <App />
-  </Router>,
+	<Router>
+		<App />
+	</Router>
 );
-

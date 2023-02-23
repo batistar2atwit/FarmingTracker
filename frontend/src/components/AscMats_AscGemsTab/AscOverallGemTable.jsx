@@ -6,18 +6,6 @@
 // HTML table.
 
 const OverallGemsTable = () => {
-   // const [level4, setLevel4] = useState(0);
-   // const [level3, setLevel3] = useState(0);
-   // const [level2, setLevel2] = useState(0);
-   // const [level1, setLevel1] = useState(0);
-
-   // const PerCharacter = (prevChar, currChar) => {
-   //    return parseInt(prevChar) + parseInt(currChar);
-   // }
-   // const Overall = (prevLevel, currLevel) => {
-   //    return parseInt(prevLevel) * 3 + parseInt(currLevel);
-   // }
-
    return <div className="output-table">
       <table>
          <thead>
