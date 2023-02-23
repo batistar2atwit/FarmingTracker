@@ -56,7 +56,7 @@ const Header = () => {
 						</li>
 						<li>
 							<Link to="/page-two" onClick={menuToggleHandler}>
-								World Boss
+								World Boss Mats
 							</Link>
 						</li>
 						<li>

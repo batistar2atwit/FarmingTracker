@@ -23,7 +23,7 @@ function App() {
 					<Route path="/page-three" element={<CharMatsExpBookTab />}></Route>
 					<Route path="/page-four" element={<CharMatsTalentBooksTab />}></Route>
 					<Route path="/page-five" element={<CharMatsWeeklyBossTab />}></Route>
-					<Route path="/page-five" element={<WishCalculatorTab />}></Route>
+					<Route path="/page-six" element={<WishCalculatorTab />}></Route>
 					<Route path="/page-signIn" element={<PageSignIn />}></Route>
 				</Routes>
 			</Layout>
