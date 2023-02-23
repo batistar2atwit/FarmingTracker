@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const GenericEXPBookTable = () => {
+const GenericEXPBook = () => {
 	const [levelUp02, setLevelUp02] = useState(0);
 	const [levelUp24, setLevelUp24] = useState(0);
 	const [levelUp45, setLevelUp45] = useState(0);
@@ -360,4 +360,4 @@ const GenericEXPBookTable = () => {
 	);
 };
 
-export default GenericEXPBookTable;
+export default GenericEXPBook;

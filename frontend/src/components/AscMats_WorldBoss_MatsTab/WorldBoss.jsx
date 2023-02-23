@@ -1,10 +1,10 @@
 import GenericWorldBoss from './GenericWorldBoss';
 
-const WeeklyBoss = () => {
+const WorldBoss = () => {
 	return (
 		<div>
 			<GenericWorldBoss />;
 		</div>
 	);
 };
-export default WeeklyBoss;
+export default WorldBoss;

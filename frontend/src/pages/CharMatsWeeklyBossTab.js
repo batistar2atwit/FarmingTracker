@@ -1,7 +1,7 @@
 import React from 'react';
 import WeeklyBoss from '../components/CharMats_WeeklyBossTab/WeeklyBoss';
-import '../components/CharMats_WeeklyBossTab/WeeklyBoss.css';
-const WeeklyBossTab = () => {
+import '../components/CharMats_WeeklyBossTab/weeklyBoss.css';
+const CharMatsWeeklyBossTab = () => {
 	return (
 		<div>
 			<WeeklyBoss />
@@ -9,4 +9,4 @@ const WeeklyBossTab = () => {
 	);
 };
 
-export default WeeklyBossTab;
+export default CharMatsWeeklyBossTab;

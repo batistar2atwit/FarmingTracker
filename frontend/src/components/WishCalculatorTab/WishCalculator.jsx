@@ -1,10 +1,10 @@
 import GenericWishCalculator from './GenericWishCalculator';
 
-const WeeklyBoss = () => {
+const WishCalculator = () => {
 	return (
 		<div>
 			<GenericWishCalculator />;
 		</div>
 	);
 };
-export default WeeklyBoss;
+export default WishCalculator;
