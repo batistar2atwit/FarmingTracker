@@ -8,7 +8,7 @@
 const AscOverallGems = () => {
 	return (
 		<div className="output-table">
-			<table>
+			<table className="comp-overall-asc-gem-table">
 				<thead>
 					<tr>
 						<th>Level</th>
@@ -20,37 +20,37 @@ const AscOverallGems = () => {
 					<tr>
 						<td>Level 1:</td>
 						<td>
-							<input type="number" className="num-input" placeholder="0" min="0" readOnly />
+							<input type="number" className="asc-num-input" placeholder="0" min="0" readOnly />
 						</td>
 						<td>
-							<input type="number" className="num-input" placeholder="0" min="0" readOnly />
+							<input type="number" className="asc-num-input" placeholder="0" min="0" readOnly />
 						</td>
 					</tr>
 					<tr>
 						<td>Level 2:</td>
 						<td>
-							<input type="number" className="num-input" placeholder="0" min="0" readOnly />
+							<input type="number" className="asc-num-input" placeholder="0" min="0" readOnly />
 						</td>
 						<td>
-							<input type="number" className="num-input" placeholder="0" min="0" readOnly />
+							<input type="number" className="asc-num-input" placeholder="0" min="0" readOnly />
 						</td>
 					</tr>
 					<tr>
 						<td>Level 3:</td>
 						<td>
-							<input type="number" className="num-input" placeholder="0" min="0" readOnly />
+							<input type="number" className="asc-num-input" placeholder="0" min="0" readOnly />
 						</td>
 						<td>
-							<input type="number" className="num-input" placeholder="0" min="0" readOnly />
+							<input type="number" className="asc-num-input" placeholder="0" min="0" readOnly />
 						</td>
 					</tr>
 					<tr>
 						<td>Level 4:</td>
 						<td>
-							<input type="number" className="num-input" placeholder="0" min="0" readOnly />
+							<input type="number" className="asc-num-input" placeholder="0" min="0" readOnly />
 						</td>
 						<td>
-							<input type="number" className="num-input" placeholder="0" min="0" readOnly />
+							<input type="number" className="asc-num-input" placeholder="0" min="0" readOnly />
 						</td>
 					</tr>
 				</tbody>

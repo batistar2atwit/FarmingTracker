@@ -1,16 +1,24 @@
-td,
-th {
+:is(.comp-overall-asc-gem-table, .comp-asc-gem-table) :is(td, th) {
 	text-align: center;
 }
 
-table {
+.asc-overall-table,
+.asc-gems-table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.comp-overall-asc-gem-table,
+.comp-asc-gem-table {
 	border: 1px solid black;
 	border-collapse: collapse;
 }
-h3 {
+
+.asc-overall-table div h3 {
 	font-size: 30px;
 }
-.overall-table {
+.asc-overall-table {
 	display: flex;
 	text-align: center;
 	align-items: center;
@@ -19,7 +27,7 @@ h3 {
 	padding-top: 30px;
 }
 
-.gems-table {
+.asc-gems-table {
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
@@ -31,7 +39,8 @@ h3 {
 	padding-bottom: 30px;
 }
 
-.num-input {
-	width: 180px;
-	height: 40px;
+.asc-num-input {
+	width: 170px;
+	height: 30px;
+	font-size: 17px;
 }

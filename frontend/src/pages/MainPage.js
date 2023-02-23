@@ -1,7 +1,11 @@
-import React from "react";
-
+import React from 'react';
+import CountdownTimer from '../components/CountdownTimer';
 const MainPage = () => {
-    return <h1>Home</h1>;
+	return (
+		<div>
+			<CountdownTimer />;
+		</div>
+	);
 };
 
 export default MainPage;

@@ -171,10 +171,10 @@ const GenericEXPBook = () => {
 	const normalFarmCost = 20;
 
 	return (
-		<div className="block-table">
+		<div className="exp-block-table">
 			<h2>These tables will only consider farming data between World Level 6 to 8 where the calculation for the Ley Lines drops is set to avg=max/min</h2>
 			<div className="farming-table">
-				<table>
+				<table className="exp-book-table">
 					<thead>
 						<tr>
 							<th>Level Range</th>
@@ -185,11 +185,11 @@ const GenericEXPBook = () => {
 							<th>Mora Cost</th>
 						</tr>
 					</thead>
-					<tbody>
+					<tbody className="tbody-exp-book">
 						<tr>
 							<td>01-20</td>
 							<td>
-								<input type="number" className="lv-num-input" value={levelUp02} onChange={(e) => setLevelUp02(e.target.value)} placeholder="0" min="0" />
+								<input type="number" className="exp-lv-num-input" value={levelUp02} onChange={(e) => setLevelUp02(e.target.value)} placeholder="0" min="0" />
 							</td>
 							<td>
 								Lv 3: <input type="number" className="exp-num-input" value={parseInt(levelUp02) * expInput02_3} placeholder="0" min="0" readOnly />
@@ -203,7 +203,7 @@ const GenericEXPBook = () => {
 						<tr>
 							<td>20-40</td>
 							<td>
-								<input type="number" className="lv-num-input" value={levelUp24} onChange={(e) => setLevelUp24(e.target.value)} placeholder="0" min="0" />
+								<input type="number" className="exp-lv-num-input" value={levelUp24} onChange={(e) => setLevelUp24(e.target.value)} placeholder="0" min="0" />
 							</td>
 							<td>
 								Lv 3: <input type="number" className="exp-num-input" value={parseInt(levelUp24) * expInput24_3} placeholder="0" min="0" readOnly />
@@ -217,7 +217,7 @@ const GenericEXPBook = () => {
 						<tr>
 							<td>40-50</td>
 							<td>
-								<input type="number" className="lv-num-input" value={levelUp45} onChange={(e) => setLevelUp45(e.target.value)} placeholder="0" min="0" />
+								<input type="number" className="exp-lv-num-input" value={levelUp45} onChange={(e) => setLevelUp45(e.target.value)} placeholder="0" min="0" />
 							</td>
 							<td>
 								Lv 3: <input type="number" className="exp-num-input" value={parseInt(levelUp45) * expInput45_3} placeholder="0" min="0" readOnly />
@@ -231,7 +231,7 @@ const GenericEXPBook = () => {
 						<tr>
 							<td>50-60</td>
 							<td>
-								<input type="number" className="lv-num-input" value={levelUp56} onChange={(e) => setLevelUp56(e.target.value)} placeholder="0" min="0" />
+								<input type="number" className="exp-lv-num-input" value={levelUp56} onChange={(e) => setLevelUp56(e.target.value)} placeholder="0" min="0" />
 							</td>
 							<td>
 								Lv 3: <input type="number" className="exp-num-input" value={parseInt(levelUp56) * expInput56_3} placeholder="0" min="0" readOnly />
@@ -245,7 +245,7 @@ const GenericEXPBook = () => {
 						<tr>
 							<td>60-70</td>
 							<td>
-								<input type="number" className="lv-num-input" value={levelUp67} onChange={(e) => setLevelUp67(e.target.value)} placeholder="0" min="0" />
+								<input type="number" className="exp-lv-num-input" value={levelUp67} onChange={(e) => setLevelUp67(e.target.value)} placeholder="0" min="0" />
 							</td>
 							<td>
 								Lv 3: <input type="number" className="exp-num-input" value={parseInt(levelUp67) * expInput67_3} placeholder="0" min="0" readOnly />
@@ -259,7 +259,7 @@ const GenericEXPBook = () => {
 						<tr>
 							<td>70-80</td>
 							<td>
-								<input type="number" className="lv-num-input" value={levelUp78} onChange={(e) => setLevelUp78(e.target.value)} placeholder="0" min="0" />
+								<input type="number" className="exp-lv-num-input" value={levelUp78} onChange={(e) => setLevelUp78(e.target.value)} placeholder="0" min="0" />
 							</td>
 							<td>
 								Lv 3: <input type="number" className="exp-num-input" value={parseInt(levelUp78) * expInput78_3} placeholder="0" min="0" readOnly />
@@ -273,7 +273,7 @@ const GenericEXPBook = () => {
 						<tr>
 							<td>80-90</td>
 							<td>
-								<input type="number" className="lv-num-input" value={levelUp89} onChange={(e) => setLevelUp89(e.target.value)} placeholder="0" min="0" />
+								<input type="number" className="exp-lv-num-input" value={levelUp89} onChange={(e) => setLevelUp89(e.target.value)} placeholder="0" min="0" />
 							</td>
 							<td>
 								Lv 3: <input type="number" className="exp-num-input" value={parseInt(levelUp89) * expInput89_3} placeholder="0" min="0" readOnly />
@@ -284,7 +284,7 @@ const GenericEXPBook = () => {
 							<td>{expWasted89 * parseInt(levelUp89)}</td>
 							<td>{moraCost89 * parseInt(levelUp89)}</td>
 						</tr>
-						<tr className="total-line">
+						<tr className="exp-total-line">
 							<td>Total:</td>
 							<td>{totalCharCollection}</td>
 							<td>
@@ -300,10 +300,10 @@ const GenericEXPBook = () => {
 				</table>
 			</div>
 
-			<div className="farming-req-block">
-				<div className="book-farming-req-table">
+			<div className="exp-req-block-table">
+				<div className="book-farming-req-block">
 					<h2>Total Runs</h2>
-					<table>
+					<table className="book-farming-req-table">
 						<thead>
 							<tr>
 								<th></th>
@@ -330,9 +330,9 @@ const GenericEXPBook = () => {
 						</tbody>
 					</table>
 				</div>
-				<div className="mora-farming-req-table">
+				<div className="mora-farming-req-block">
 					<h2>Total Resin</h2>
-					<table>
+					<table className="mora-farming-req-table">
 						<thead>
 							<tr>
 								<th></th>

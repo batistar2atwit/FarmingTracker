@@ -1,5 +1,4 @@
-td,
-th {
+.exp-book-table :is(td, th) {
 	text-align: center;
 	padding-right: 1rem;
 	padding-left: 1rem;
@@ -7,12 +6,14 @@ th {
 	font-size: 25px;
 }
 
-td {
+.exp-book-table td {
 	/* padding-bottom: 10px; */
 	text-align: right;
 }
-table,
-.total-line {
+.exp-book-table,
+.exp-total-line,
+.book-farming-req-table,
+.mora-farming-req-table {
 	border: 2px solid black;
 	border-collapse: collapse;
 }
@@ -26,35 +27,38 @@ table,
 	padding-bottom: 40px;
 	padding-top: 40px;
 }
-.block-table h2:not(.farming-req-block h2) {
+.exp-block-table h2 {
+	display: flex;
+}
+
+.exp-req-block-table {
 	display: flex;
 	justify-content: center;
 }
 
-.farming-req-block {
-	display: flex;
-	justify-content: center;
-}
-
-.book-farming-req-table,
-.mora-farming-req-table {
+.book-farming-req-block,
+.mora-farming-req-block {
 	padding: 20px 50px 20px 50px;
 }
 
-input[type='number'] {
+:is(.book-farming-req-table, .mora-farming-req-table) :is(td, th) {
+	padding: 5px 10px 5px 10px;
+	font-size: 25px;
+}
+.exp-book-table input[type='number'] {
 	text-align: right;
 	appearance: textfield;
 	font-size: 20px;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.exp-book-table input::-webkit-outer-spin-button,
+.exp-book-table input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
 
-.lv-num-input,
-.lv-num-output,
+.exp-lv-num-input,
+.exp-lv-num-output,
 .exp-num-input,
 .exp-num-output {
 	width: 60px;
@@ -66,11 +70,11 @@ input::-webkit-inner-spin-button {
 	height: 40px;
 }
 
-tbody tr:nth-child(n + 8) td {
+.tbody-exp-book tr:nth-child(n + 8) td {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	font-weight: bold;
 }
-.total-line td:nth-child(n + 2):nth-child(-n + 3) {
+.exp-total-line td:nth-child(n + 2):nth-child(-n + 3) {
 	text-align: center;
 }

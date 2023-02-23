@@ -7,14 +7,14 @@ const AscGems = () => {
 	//Render GemTable component
 	return (
 		<div className="block-table">
-			<div className="overall-table">
+			<div className="asc-overall-table">
 				<div>
 					<h3>Total Crystals</h3>
 					<AscOverallGems />
 				</div>
 			</div>
 
-			<div className="gems-table">
+			<div className="asc-gems-table">
 				<div id="pyro-table">
 					<h3>Pyro Crystals</h3>
 					<GenericAscGems />

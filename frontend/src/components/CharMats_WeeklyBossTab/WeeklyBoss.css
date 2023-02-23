@@ -1,18 +1,49 @@
-td,
-th {
+.weekly-boss-table :is(td, th) {
 	text-align: center;
-	padding-right: 1rem;
-	padding-left: 1rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
 	padding-bottom: 0.5rem;
-	font-size: 25px;
 }
 
-td {
+.weekly-boss-table td {
 	/* padding-bottom: 10px; */
+	text-align: right;
+}
+.weekly-boss-table td:nth-child(n + 5) {
 	text-align: left;
 }
 
-table {
+.weekly-boss-table tr:nth-child(4n) {
+	border: 2px solid black;
+}
+.weekly-boss-table {
 	border: 2px solid black;
 	border-collapse: collapse;
+}
+.weeklyBossTable {
+	display: flex;
+	justify-content: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	font-size: 25px;
+}
+
+.weekly-boss-num-input {
+	width: 80px;
+	height: 50px;
+}
+
+.weekly-boss-table input[type='number'] {
+	appearance: textfield;
+	font-size: 20px;
+}
+
+.button-block {
+	display: flex;
+}
+.button-left-margin {
+	margin-left: 10px;
+}
+.button-font {
+	padding: 1px 10px 1px 10px;
 }
