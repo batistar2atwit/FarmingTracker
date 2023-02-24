@@ -61,17 +61,28 @@ const Header = () => {
 						</li>
 						<li>
 							<Link to="/page-three" onClick={menuToggleHandler}>
-								EXP Book
+								Local Specialty
 							</Link>
 						</li>
 						<li>
 							<Link to="/page-four" onClick={menuToggleHandler}>
-								Talent Book
+								EXP Book
 							</Link>
 						</li>
 						<li>
 							<Link to="/page-five" onClick={menuToggleHandler}>
+								Talent Book
+							</Link>
+						</li>
+						<li>
+							<Link to="/page-six" onClick={menuToggleHandler}>
 								Weekly Boss
+							</Link>
+						</li>
+
+						<li>
+							<Link to="/page-seven" onClick={menuToggleHandler}>
+								Wish Calculator
 							</Link>
 						</li>
 						<li>

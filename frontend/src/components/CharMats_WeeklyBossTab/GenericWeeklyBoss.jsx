@@ -532,7 +532,7 @@ const GenericWeeklyBoss = () => {
 					</tr>
 					<tr className="weekly-total-row">
 						<td>TOTAL</td>
-						<td>{totalTalentLvUpPerChar * 8 * totalTalentLvUpPerChar - LvUpMatTotalHave(dragonLordCrown, bloodjadeBranch, gildedScale)}</td>
+						<td>{totalTalentLvUpPerChar * 9 - LvUpMatTotalHave(dragonLordCrown, bloodjadeBranch, gildedScale)}</td>
 						<td>{LvUpMatTotalHave(dragonLordCrown, bloodjadeBranch, gildedScale) - LvUpMatTotalUsed(counterAzhdaha1, counterAzhdaha2, counterAzhdaha3)}</td>
 						<td>{LvUpMatTotalUsed(counterAzhdaha1, counterAzhdaha2, counterAzhdaha3)}</td>
 						<td></td>

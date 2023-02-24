@@ -376,520 +376,544 @@ const GenericWorldBoss = () => {
 	};
 
 	return (
-		<div className="world-boss-block">
-			<table className="world-boss-table">
-				<thead className="world-boss-header">
-					<tr>
-						<th>Talent LevelUp Material</th>
-						<th>Need</th>
-						<th>Have</th>
-						<th>Used</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Hurricane Seed</td>
-						<td>{3 * totalWorldLvUpMatPerChar - hurricaneSeed}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={hurricaneSeed - counterHurricaneSeed} onChange={(e) => setHurricaneSeed(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterHurricaneSeed}>
-										-
-									</button>
+		<div>
+			<h1 className="world-boss-mat-h1">World Boss - Drop Materials</h1>
+			<div className="world-boss-block">
+				<table className="world-boss-table">
+					<thead className="world-boss-header">
+						<tr>
+							<th>Talent LevelUp Material</th>
+							<th>Need</th>
+							<th>Have</th>
+							<th>Used</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Hurricane Seed</td>
+							<td>{3 * totalWorldLvUpMatPerChar - hurricaneSeed}</td>
+							<td>
+								<input type="number" className="world-boss-num-input" value={hurricaneSeed - counterHurricaneSeed} onChange={(e) => setHurricaneSeed(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterHurricaneSeed}>
+											-
+										</button>
 
-									<span className="world-arrow-mid-number">{parseInt(counterHurricaneSeed)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterHurricaneSeed}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Jean, Sucrose, Venti</td>
-					</tr>
-					<tr>
-						<td>Lightning Prism</td>
-						<td>{5 * totalWorldLvUpMatPerChar - lightningPrism}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={lightningPrism - counterLightningPrism} onChange={(e) => setLightningPrism(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterLightningPrism}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterLightningPrism)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterLightningPrism}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Beidou, Fischl, Keqing, Lisa, Razor</td>
-					</tr>
-					<tr>
-						<td>Basalt Pillar</td>
-						<td>{4 * totalWorldLvUpMatPerChar - basaltPillar}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={basaltPillar - counterBasaltPillar} onChange={(e) => setBasaltPillar(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterBasaltPillar}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterBasaltPillar)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterBasaltPillar}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Albedo, Ningguang, Noelle, Zhongli</td>
-					</tr>
-					<tr>
-						<td>Hoarfrost Core</td>
-						<td>{6 * totalWorldLvUpMatPerChar - hoarfrostCore}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={hoarfrostCore - counterHoarfrostCore} onChange={(e) => setHoarfrostCore(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterHoarfrostCore}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterHoarfrostCore)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterHoarfrostCore}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Chongyun, Diona, Ganyu, Kaeya, Qiqi, Rosaria</td>
-					</tr>
-					<tr>
-						<td>Everflame Seed</td>
-						<td>{6 * totalWorldLvUpMatPerChar - everflameSeed} </td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={everflameSeed - counterEverflameSeed} onChange={(e) => setEverflameSeed(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterEverflameSeed}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterEverflameSeed)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterEverflameSeed}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Amber, Bennet, Diluc, Klee, Xiangling, Xinyan</td>
-					</tr>
-					<tr>
-						<td>Cleansing Heart</td>
-						<td>{4 * totalWorldLvUpMatPerChar - cleansingHeart}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={cleansingHeart - counterCleansingHeart} onChange={(e) => setCleansingHeart(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterCleansingHeart}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterCleansingHeart)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterCleansingHeart}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Barbara, Mona, Tartaglia, Xingqiu</td>
-					</tr>
-					<tr>
-						<td>Juvenile Jade</td>
-						<td>{3 * totalWorldLvUpMatPerChar - juvenileJade}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={juvenileJade - counterJuvenileJade} onChange={(e) => setJuvenileJade(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterJuvenileJade}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterJuvenileJade)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterJuvenileJade}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Hu Tao, Xiao, Yanfei</td>
-					</tr>
-					<tr>
-						<td>Crystalline Bloom</td>
-						<td>{2 * totalWorldLvUpMatPerChar - crystallineBloom}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={crystallineBloom - counterCrystallineBloom} onChange={(e) => setCrystallineBloom(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterCrystallineBloom}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterCrystallineBloom)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterCrystallineBloom}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Aloy, Eula</td>
-					</tr>
-					<tr>
-						<td>Marionette Core</td>
-						<td>{2 * totalWorldLvUpMatPerChar - marionetteCore}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={marionetteCore - counterMarionetteCore} onChange={(e) => setMarionetteCore(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterMarionetteCore}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterMarionetteCore)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterMarionetteCore}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Kazuha, Sayu</td>
-					</tr>
-					<tr>
-						<td>Perpetual Heart</td>
-						<td>{2 * totalWorldLvUpMatPerChar - perpetualHeart}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={perpetualHeart - counterPerpetualHeart} onChange={(e) => setPerpetualHeart(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterPerpetualHeart}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterPerpetualHeart)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterPerpetualHeart}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Gorou, Ayaka</td>
-					</tr>
-					<tr>
-						<td>Smoldering Pearl</td>
-						<td>{2 * totalWorldLvUpMatPerChar - smolderingPearl}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={smolderingPearl - counterSmolderingPearl} onChange={(e) => setSmolderingPearl(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterSmolderingPearl}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterSmolderingPearl)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterSmolderingPearl}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Thoma, Yoimia</td>
-					</tr>
-					<tr>
-						<td>Dew of Repudiation</td>
-						<td>{2 * totalWorldLvUpMatPerChar - dewOfRepudiation}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={dewOfRepudiation - counterDewOfRepudiation} onChange={(e) => setDewOfRepudiation(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterDewOfRepudiation}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterDewOfRepudiation)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterDewOfRepudiation}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Ayato, Kokomi</td>
-					</tr>
-					<tr>
-						<td>Storm Beads</td>
-						<td>{2 * totalWorldLvUpMatPerChar - stormBeads}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={stormBeads - counterStormBeads} onChange={(e) => setStormBeads(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterStormBeads}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterStormBeads)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterStormBeads}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Kujou Sara, Raiden</td>
-					</tr>
-					<tr>
-						<td>Riftborn Regalia</td>
-						<td>{2 * totalWorldLvUpMatPerChar - riftbornRegalia}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={riftbornRegalia - counterRiftbornRegalia} onChange={(e) => setRiftbornRegalia(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterRiftbornRegalia}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterRiftbornRegalia)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterRiftbornRegalia}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Itto, Yun Jin</td>
-					</tr>
-					<tr>
-						<td>Dragonheir's False Fin</td>
-						<td>{2 * totalWorldLvUpMatPerChar - dragonheirsFalseFin}</td>
-						<td>
-							<input
-								type="number"
-								className="world-boss-num-input"
-								value={dragonheirsFalseFin - counterDragonheirsFalseFin}
-								onChange={(e) => setDragonheirsFalseFin(e.target.value)}
-								placeholder="0"
-								min="0"
-							/>
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterDragonheirsFalseFin}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterDragonheirsFalseFin)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterDragonheirsFalseFin}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Shenhe, Yae Miko</td>
-					</tr>
-					<tr>
-						<td>Runic Fang</td>
-						<td>{3 * totalWorldLvUpMatPerChar - runicFang}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={runicFang - counterRunicFang} onChange={(e) => setRunicFang(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterRunicFang}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterRunicFang)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterRunicFang}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Shinobu, Heizou, Yelan</td>
-					</tr>
-					<tr>
-						<td>Majestic Hooked Beak</td>
-						<td>{2 * totalWorldLvUpMatPerChar - majesticHookedBeak}</td>
-						<td>
-							<input
-								type="number"
-								className="world-boss-num-input"
-								value={majesticHookedBeak - counterMajesticHookedBeak}
-								onChange={(e) => setMajesticHookedBeak(e.target.value)}
-								placeholder="0"
-								min="0"
-							/>
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterMajesticHookedBeak}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterMajesticHookedBeak)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterMajesticHookedBeak}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td> Collei, Tighnari, Nilou</td>
-					</tr>
-					<tr>
-						<td>Thunderclap Fruitcore</td>
-						<td>{2 * totalWorldLvUpMatPerChar - thunderclapFruitcore}</td>
-						<td>
-							<input
-								type="number"
-								className="world-boss-num-input"
-								value={thunderclapFruitcore - counterThunderclapFruitcore}
-								onChange={(e) => setThunderclapFruitcore(e.target.value)}
-								placeholder="0"
-								min="0"
-							/>
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterThunderclapFruitcore}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterThunderclapFruitcore)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterThunderclapFruitcore}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Heizou, Tighnari, Yae Miko</td>
-					</tr>
+										<span className="world-arrow-mid-number">{parseInt(counterHurricaneSeed)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterHurricaneSeed}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Jean, Sucrose, Venti</td>
+						</tr>
+						<tr>
+							<td>Lightning Prism</td>
+							<td>{5 * totalWorldLvUpMatPerChar - lightningPrism}</td>
+							<td>
+								<input type="number" className="world-boss-num-input" value={lightningPrism - counterLightningPrism} onChange={(e) => setLightningPrism(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterLightningPrism}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterLightningPrism)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterLightningPrism}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Beidou, Fischl, Keqing, Lisa, Razor</td>
+						</tr>
+						<tr>
+							<td>Basalt Pillar</td>
+							<td>{4 * totalWorldLvUpMatPerChar - basaltPillar}</td>
+							<td>
+								<input type="number" className="world-boss-num-input" value={basaltPillar - counterBasaltPillar} onChange={(e) => setBasaltPillar(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterBasaltPillar}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterBasaltPillar)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterBasaltPillar}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Albedo, Ningguang, Noelle, Zhongli</td>
+						</tr>
+						<tr>
+							<td>Hoarfrost Core</td>
+							<td>{6 * totalWorldLvUpMatPerChar - hoarfrostCore}</td>
+							<td>
+								<input type="number" className="world-boss-num-input" value={hoarfrostCore - counterHoarfrostCore} onChange={(e) => setHoarfrostCore(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterHoarfrostCore}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterHoarfrostCore)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterHoarfrostCore}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Chongyun, Diona, Ganyu, Kaeya, Qiqi, Rosaria</td>
+						</tr>
+						<tr>
+							<td>Everflame Seed</td>
+							<td>{6 * totalWorldLvUpMatPerChar - everflameSeed} </td>
+							<td>
+								<input type="number" className="world-boss-num-input" value={everflameSeed - counterEverflameSeed} onChange={(e) => setEverflameSeed(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterEverflameSeed}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterEverflameSeed)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterEverflameSeed}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Amber, Bennet, Diluc, Klee, Xiangling, Xinyan</td>
+						</tr>
+						<tr>
+							<td>Cleansing Heart</td>
+							<td>{4 * totalWorldLvUpMatPerChar - cleansingHeart}</td>
+							<td>
+								<input type="number" className="world-boss-num-input" value={cleansingHeart - counterCleansingHeart} onChange={(e) => setCleansingHeart(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterCleansingHeart}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterCleansingHeart)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterCleansingHeart}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Barbara, Mona, Tartaglia, Xingqiu</td>
+						</tr>
+						<tr>
+							<td>Juvenile Jade</td>
+							<td>{3 * totalWorldLvUpMatPerChar - juvenileJade}</td>
+							<td>
+								<input type="number" className="world-boss-num-input" value={juvenileJade - counterJuvenileJade} onChange={(e) => setJuvenileJade(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterJuvenileJade}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterJuvenileJade)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterJuvenileJade}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Hu Tao, Xiao, Yanfei</td>
+						</tr>
+						<tr>
+							<td>Crystalline Bloom</td>
+							<td>{2 * totalWorldLvUpMatPerChar - crystallineBloom}</td>
+							<td>
+								<input
+									type="number"
+									className="world-boss-num-input"
+									value={crystallineBloom - counterCrystallineBloom}
+									onChange={(e) => setCrystallineBloom(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterCrystallineBloom}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterCrystallineBloom)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterCrystallineBloom}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Aloy, Eula</td>
+						</tr>
+						<tr>
+							<td>Marionette Core</td>
+							<td>{2 * totalWorldLvUpMatPerChar - marionetteCore}</td>
+							<td>
+								<input type="number" className="world-boss-num-input" value={marionetteCore - counterMarionetteCore} onChange={(e) => setMarionetteCore(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterMarionetteCore}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterMarionetteCore)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterMarionetteCore}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Kazuha, Sayu</td>
+						</tr>
+						<tr>
+							<td>Perpetual Heart</td>
+							<td>{2 * totalWorldLvUpMatPerChar - perpetualHeart}</td>
+							<td>
+								<input type="number" className="world-boss-num-input" value={perpetualHeart - counterPerpetualHeart} onChange={(e) => setPerpetualHeart(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterPerpetualHeart}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterPerpetualHeart)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterPerpetualHeart}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Gorou, Ayaka</td>
+						</tr>
+						<tr>
+							<td>Smoldering Pearl</td>
+							<td>{2 * totalWorldLvUpMatPerChar - smolderingPearl}</td>
+							<td>
+								<input type="number" className="world-boss-num-input" value={smolderingPearl - counterSmolderingPearl} onChange={(e) => setSmolderingPearl(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterSmolderingPearl}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterSmolderingPearl)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterSmolderingPearl}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Thoma, Yoimia</td>
+						</tr>
+						<tr>
+							<td>Dew of Repudiation</td>
+							<td>{2 * totalWorldLvUpMatPerChar - dewOfRepudiation}</td>
+							<td>
+								<input
+									type="number"
+									className="world-boss-num-input"
+									value={dewOfRepudiation - counterDewOfRepudiation}
+									onChange={(e) => setDewOfRepudiation(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterDewOfRepudiation}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterDewOfRepudiation)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterDewOfRepudiation}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Ayato, Kokomi</td>
+						</tr>
+						<tr>
+							<td>Storm Beads</td>
+							<td>{2 * totalWorldLvUpMatPerChar - stormBeads}</td>
+							<td>
+								<input type="number" className="world-boss-num-input" value={stormBeads - counterStormBeads} onChange={(e) => setStormBeads(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterStormBeads}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterStormBeads)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterStormBeads}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Kujou Sara, Raiden</td>
+						</tr>
+						<tr>
+							<td>Riftborn Regalia</td>
+							<td>{2 * totalWorldLvUpMatPerChar - riftbornRegalia}</td>
+							<td>
+								<input type="number" className="world-boss-num-input" value={riftbornRegalia - counterRiftbornRegalia} onChange={(e) => setRiftbornRegalia(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterRiftbornRegalia}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterRiftbornRegalia)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterRiftbornRegalia}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Itto, Yun Jin</td>
+						</tr>
+						<tr>
+							<td>Dragonheir's False Fin</td>
+							<td>{2 * totalWorldLvUpMatPerChar - dragonheirsFalseFin}</td>
+							<td>
+								<input
+									type="number"
+									className="world-boss-num-input"
+									value={dragonheirsFalseFin - counterDragonheirsFalseFin}
+									onChange={(e) => setDragonheirsFalseFin(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterDragonheirsFalseFin}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterDragonheirsFalseFin)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterDragonheirsFalseFin}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Shenhe, Yae Miko</td>
+						</tr>
+						<tr>
+							<td>Runic Fang</td>
+							<td>{3 * totalWorldLvUpMatPerChar - runicFang}</td>
+							<td>
+								<input type="number" className="world-boss-num-input" value={runicFang - counterRunicFang} onChange={(e) => setRunicFang(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterRunicFang}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterRunicFang)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterRunicFang}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Shinobu, Heizou, Yelan</td>
+						</tr>
+						<tr>
+							<td>Majestic Hooked Beak</td>
+							<td>{2 * totalWorldLvUpMatPerChar - majesticHookedBeak}</td>
+							<td>
+								<input
+									type="number"
+									className="world-boss-num-input"
+									value={majesticHookedBeak - counterMajesticHookedBeak}
+									onChange={(e) => setMajesticHookedBeak(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterMajesticHookedBeak}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterMajesticHookedBeak)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterMajesticHookedBeak}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td> Collei, Tighnari</td>
+						</tr>
+						<tr>
+							<td>Thunderclap Fruitcore</td>
+							<td>{2 * totalWorldLvUpMatPerChar - thunderclapFruitcore}</td>
+							<td>
+								<input
+									type="number"
+									className="world-boss-num-input"
+									value={thunderclapFruitcore - counterThunderclapFruitcore}
+									onChange={(e) => setThunderclapFruitcore(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterThunderclapFruitcore}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterThunderclapFruitcore)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterThunderclapFruitcore}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Cyno, Dori</td>
+						</tr>
 
-					<tr>
-						<td>Perpetual Caliber</td>
-						<td>{3 * totalWorldLvUpMatPerChar - perpetualCaliber}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={perpetualCaliber - counterPerpetualCaliber} onChange={(e) => setPerpetualCaliber(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterPerpetualCaliber}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterPerpetualCaliber)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterPerpetualCaliber}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Traveler(Dendro), Cyno, Ayato</td>
-					</tr>
-					<tr>
-						<td>Light Guiding Tetrahedron</td>
-						<td>{3 * totalWorldLvUpMatPerChar - lightGuidingTetrahedron}</td>
-						<td>
-							<input
-								type="number"
-								className="world-boss-num-input"
-								value={lightGuidingTetrahedron - counterLightGuidingTetrahedron}
-								onChange={(e) => setLightGuidingTetrahedron(e.target.value)}
-								placeholder="0"
-								min="0"
-							/>
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterLightGuidingTetrahedron}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterLightGuidingTetrahedron)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterLightGuidingTetrahedron}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Candace, Collei, Shinobu, Nilou</td>
-					</tr>
-					<tr>
-						<td>Quelled Creeper</td>
-						<td>{2 * totalWorldLvUpMatPerChar - quelledCreeper}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={quelledCreeper - counterQuelledCreeper} onChange={(e) => setQuelledCreeper(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterQuelledCreeper}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterQuelledCreeper)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterQuelledCreeper}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Heizou, Tighnari, Yae Miko</td>
-					</tr>
+						<tr>
+							<td>Perpetual Caliber</td>
+							<td>{3 * totalWorldLvUpMatPerChar - perpetualCaliber}</td>
+							<td>
+								<input
+									type="number"
+									className="world-boss-num-input"
+									value={perpetualCaliber - counterPerpetualCaliber}
+									onChange={(e) => setPerpetualCaliber(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterPerpetualCaliber}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterPerpetualCaliber)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterPerpetualCaliber}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Layla,Nilou, Wanderer</td>
+						</tr>
+						<tr>
+							<td>Light Guiding Tetrahedron</td>
+							<td>{3 * totalWorldLvUpMatPerChar - lightGuidingTetrahedron}</td>
+							<td>
+								<input
+									type="number"
+									className="world-boss-num-input"
+									value={lightGuidingTetrahedron - counterLightGuidingTetrahedron}
+									onChange={(e) => setLightGuidingTetrahedron(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterLightGuidingTetrahedron}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterLightGuidingTetrahedron)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterLightGuidingTetrahedron}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Candace, Dehya, Faruzan</td>
+						</tr>
+						<tr>
+							<td>Quelled Creeper</td>
+							<td>{2 * totalWorldLvUpMatPerChar - quelledCreeper}</td>
+							<td>
+								<input type="number" className="world-boss-num-input" value={quelledCreeper - counterQuelledCreeper} onChange={(e) => setQuelledCreeper(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterQuelledCreeper}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterQuelledCreeper)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterQuelledCreeper}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Nahida, Yaoyao</td>
+						</tr>
 
-					<tr>
-						<td>Pseudo Stamens</td>
-						<td>{1 * totalWorldLvUpMatPerChar - pseudoStamens}</td>
-						<td>
-							<input type="number" className="world-boss-num-input" value={pseudoStamens - counterPseudoStamens} onChange={(e) => setPseudoStamens(e.target.value)} placeholder="0" min="0" />
-						</td>
-						<td>
-							{
-								<>
-									<button className="world-arrow-down" onClick={decrementCounterPseudoStamens}>
-										-
-									</button>
-									<span className="world-arrow-mid-number">{parseInt(counterPseudoStamens)}</span>
-									<button className="world-arrow-up" onClick={incrementCounterPseudoStamens}>
-										+
-									</button>
-								</>
-							}
-						</td>
-						<td>Heizou, Tighnari, Yae Miko</td>
-					</tr>
-					<tr className="world-total-row">
-						<td>TOTAL</td>
-						<td>{totalWorldLvUpMatPerChar * 63 - LvUpMatTotalHave(...inputsHave)}</td>
-						<td>{LvUpMatTotalHave(...inputsHave) - LvUpMatTotalUsed(...inputsUsed)}</td>
-						<td>{LvUpMatTotalUsed(...inputsUsed)}</td>
-						<td></td>
-					</tr>
-				</tbody>
-			</table>
+						<tr>
+							<td>Pseudo Stamens</td>
+							<td>{1 * totalWorldLvUpMatPerChar - pseudoStamens}</td>
+							<td>
+								<input type="number" className="world-boss-num-input" value={pseudoStamens - counterPseudoStamens} onChange={(e) => setPseudoStamens(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="world-arrow-down" onClick={decrementCounterPseudoStamens}>
+											-
+										</button>
+										<span className="world-arrow-mid-number">{parseInt(counterPseudoStamens)}</span>
+										<button className="world-arrow-up" onClick={incrementCounterPseudoStamens}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Alhaitham</td>
+						</tr>
+						<tr className="world-total-row">
+							<td>TOTAL</td>
+							<td>{totalWorldLvUpMatPerChar * 63 - LvUpMatTotalHave(...inputsHave)}</td>
+							<td>{LvUpMatTotalHave(...inputsHave) - LvUpMatTotalUsed(...inputsUsed)}</td>
+							<td>{LvUpMatTotalUsed(...inputsUsed)}</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	);
 };

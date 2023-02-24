@@ -1,10 +1,12 @@
 :is(.comp-overall-asc-gem-table, .comp-asc-gem-table) :is(td, th) {
 	text-align: center;
 }
-
+.asc-gems-h1 {
+	text-align: center;
+}
 .asc-overall-table,
 .asc-gems-table {
-	border: 1px solid black;
+	border-bottom: 2px solid black;
 	border-collapse: collapse;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -15,9 +17,6 @@
 	border-collapse: collapse;
 }
 
-.asc-overall-table div h3 {
-	font-size: 30px;
-}
 .asc-overall-table {
 	display: flex;
 	text-align: center;

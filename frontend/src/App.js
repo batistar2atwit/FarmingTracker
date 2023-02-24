@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 
 //Pages and components
 import Layout from './components/Navbar/Layout';
+import AscMatLocalSpecialties from './pages/AscMatLocalSpecialties';
 import AscMatsWorldBossAscGemsTab from './pages/AscMatsWorldBossAscGemsTab';
 import AscMatsWorldBossMatsTab from './pages/AscMatsWorldBossMatsTab';
 import CharMatsExpBookTab from './pages/CharMatsExpBookTab';
@@ -20,10 +21,11 @@ function App() {
 					<Route path="/" exact element={<MainPage />}></Route>
 					<Route path="/page-one" element={<AscMatsWorldBossAscGemsTab />}></Route>
 					<Route path="/page-two" element={<AscMatsWorldBossMatsTab />}></Route>
-					<Route path="/page-three" element={<CharMatsExpBookTab />}></Route>
-					<Route path="/page-four" element={<CharMatsTalentBooksTab />}></Route>
-					<Route path="/page-five" element={<CharMatsWeeklyBossTab />}></Route>
-					<Route path="/page-six" element={<WishCalculatorTab />}></Route>
+					<Route path="/page-three" element={<AscMatLocalSpecialties />}></Route>
+					<Route path="/page-four" element={<CharMatsExpBookTab />}></Route>
+					<Route path="/page-five" element={<CharMatsTalentBooksTab />}></Route>
+					<Route path="/page-six" element={<CharMatsWeeklyBossTab />}></Route>
+					<Route path="/page-seven" element={<WishCalculatorTab />}></Route>
 					<Route path="/page-signIn" element={<PageSignIn />}></Route>
 				</Routes>
 			</Layout>

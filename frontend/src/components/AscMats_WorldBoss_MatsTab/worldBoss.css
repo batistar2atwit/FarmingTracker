@@ -4,7 +4,9 @@
 	padding-left: 2rem;
 	padding-bottom: 0.5rem;
 }
-
+.world-boss-mat-h1 {
+	text-align: center;
+}
 .world-boss-table td {
 	/* padding-bottom: 10px; */
 	text-align: right;
@@ -27,8 +29,8 @@
 .world-boss-block {
 	display: flex;
 	justify-content: center;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	font-size: 25px;
 }
 

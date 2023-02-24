@@ -5,7 +5,9 @@
 	padding-bottom: 0.5rem;
 	font-size: 25px;
 }
-
+.talent-books-h1 {
+	text-align: center;
+}
 .exp-book-table td {
 	/* padding-bottom: 10px; */
 	text-align: right;
