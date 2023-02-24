@@ -377,7 +377,7 @@ const GenericWorldBoss = () => {
 
 	return (
 		<div>
-			<h1 className="world-boss-mat-h1">World Boss - Drop Materials</h1>
+			<h1 className="world-boss-mat-h1">World Boss - Acension Materials</h1>
 			<div className="world-boss-block">
 				<table className="world-boss-table">
 					<thead className="world-boss-header">

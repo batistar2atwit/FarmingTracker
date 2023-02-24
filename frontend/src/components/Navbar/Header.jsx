@@ -61,12 +61,12 @@ const Header = () => {
 						</li>
 						<li>
 							<Link to="/page-three" onClick={menuToggleHandler}>
-								Local Specialty
+								EXP Book
 							</Link>
 						</li>
 						<li>
 							<Link to="/page-four" onClick={menuToggleHandler}>
-								EXP Book
+								Weekly Boss
 							</Link>
 						</li>
 						<li>
@@ -76,17 +76,21 @@ const Header = () => {
 						</li>
 						<li>
 							<Link to="/page-six" onClick={menuToggleHandler}>
-								Weekly Boss
+								Talent Level-Up
 							</Link>
 						</li>
-
 						<li>
 							<Link to="/page-seven" onClick={menuToggleHandler}>
-								Wish Calculator
+								Common Ascension Materials
 							</Link>
 						</li>
 						<li>
-							<Link to="/page-six" onClick={menuToggleHandler}>
+							<Link to="/page-eight" onClick={menuToggleHandler}>
+								Local Specialty
+							</Link>
+						</li>
+						<li>
+							<Link to="/page-nine" onClick={menuToggleHandler}>
 								Wish Calculator
 							</Link>
 						</li>

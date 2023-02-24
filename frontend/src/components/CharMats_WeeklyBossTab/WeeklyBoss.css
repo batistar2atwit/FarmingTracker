@@ -4,7 +4,9 @@
 	padding-left: 2rem;
 	padding-bottom: 0.5rem;
 }
-
+.weekly-boss-h1 {
+	text-align: center;
+}
 .weekly-boss-table td {
 	/* padding-bottom: 10px; */
 	text-align: right;
