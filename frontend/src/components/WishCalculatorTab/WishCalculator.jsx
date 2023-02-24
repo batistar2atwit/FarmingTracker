@@ -3,7 +3,7 @@ import GenericWishCalculator from './GenericWishCalculator';
 const WishCalculator = () => {
 	return (
 		<div>
-			<GenericWishCalculator />;
+			<GenericWishCalculator />
 		</div>
 	);
 };

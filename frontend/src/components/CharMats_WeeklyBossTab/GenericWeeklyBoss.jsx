@@ -38,6 +38,7 @@ const GenericWeeklyBoss = () => {
 	const [mirrorOfMushin, setMirrorOfMushin] = useState(0);
 	const [dakasBell, setDakasBell] = useState(0);
 
+	//6 talent mat times 3 skills
 	const totalTalentLvUpPerChar = 6 * 3;
 
 	//Dvalin
@@ -243,7 +244,7 @@ const GenericWeeklyBoss = () => {
 		}
 	};
 	return (
-		<div className="weeklyBossTable">
+		<div className="weekly-boss-block">
 			<table className="weekly-boss-table">
 				<thead className="weekly-boss-header">
 					<tr>
@@ -264,12 +265,12 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterDvalin1}>
+									<button className="weekly-arrow-down" onClick={decrementCounterDvalin1}>
 										-
 									</button>
 
-									<span className="arrow-mid-number">{parseInt(counterDvalin1)}</span>
-									<button className="arrow-up" onClick={incrementCounterDvalin1}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterDvalin1)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterDvalin1}>
 										+
 									</button>
 								</>
@@ -286,11 +287,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterDvalin2}>
+									<button className="weekly-arrow-down" onClick={decrementCounterDvalin2}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterDvalin2)}</span>
-									<button className="arrow-up" onClick={incrementCounterDvalin2}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterDvalin2)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterDvalin2}>
 										+
 									</button>
 								</>
@@ -307,11 +308,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterDvalin3}>
+									<button className="weekly-arrow-down" onClick={decrementCounterDvalin3}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterDvalin3)}</span>
-									<button className="arrow-up" onClick={incrementCounterDvalin3}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterDvalin3)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterDvalin3}>
 										+
 									</button>
 								</>
@@ -321,9 +322,9 @@ const GenericWeeklyBoss = () => {
 					</tr>
 					<tr>
 						<td>TOTAL </td>
-						<td>{3 * totalTalentLvUpPerChar + 4 * totalTalentLvUpPerChar + 5 * totalTalentLvUpPerChar - LvUpMatTotalHave(dvalinPlume, dvalinClaw, dvalinSigh)}</td>
-						<td>{LvUpMatTotalHave(dvalinPlume, dvalinClaw, dvalinSigh) - (counterDvalin1 + counterDvalin2 + counterDvalin3)}</td>
-						<td>{counterDvalin1 + counterDvalin2 + counterDvalin3}</td>
+						<td>{totalTalentLvUpPerChar * 12 - LvUpMatTotalHave(dvalinPlume, dvalinClaw, dvalinSigh)}</td>
+						<td>{LvUpMatTotalHave(dvalinPlume, dvalinClaw, dvalinSigh) - LvUpMatTotalUsed(counterDvalin1, counterDvalin2, counterDvalin3)}</td>
+						<td>{LvUpMatTotalUsed(counterDvalin1, counterDvalin2, counterDvalin3)}</td>
 						<td></td>
 					</tr>
 					<tr>
@@ -335,11 +336,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterAndrius1}>
+									<button className="weekly-arrow-down" onClick={decrementCounterAndrius1}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterAndrius1)}</span>
-									<button className="arrow-up" onClick={incrementCounterAndrius1}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterAndrius1)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterAndrius1}>
 										+
 									</button>
 								</>
@@ -356,11 +357,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterAndrius2}>
+									<button className="weekly-arrow-down" onClick={decrementCounterAndrius2}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterAndrius2)}</span>
-									<button className="arrow-up" onClick={incrementCounterAndrius2}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterAndrius2)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterAndrius2}>
 										+
 									</button>
 								</>
@@ -377,11 +378,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterAndrius3}>
+									<button className="weekly-arrow-down" onClick={decrementCounterAndrius3}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterAndrius3)}</span>
-									<button className="arrow-up" onClick={incrementCounterAndrius3}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterAndrius3)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterAndrius3}>
 										+
 									</button>
 								</>
@@ -391,9 +392,9 @@ const GenericWeeklyBoss = () => {
 					</tr>
 					<tr>
 						<td>TOTAL</td>
-						<td>{3 * totalTalentLvUpPerChar + 4 * totalTalentLvUpPerChar + 4 * totalTalentLvUpPerChar - LvUpMatTotalHave(tailOfBoreas, ringOfBoreas, spiritLocketOfBoreas)}</td>
-						<td>{LvUpMatTotalHave(tailOfBoreas, ringOfBoreas, spiritLocketOfBoreas) - (counterAndrius1 + counterAndrius2 + counterAndrius3)}</td>
-						<td>{counterAndrius1 + counterAndrius2 + counterAndrius3}</td>
+						<td>{totalTalentLvUpPerChar * 11 - LvUpMatTotalHave(tailOfBoreas, ringOfBoreas, spiritLocketOfBoreas)}</td>
+						<td>{LvUpMatTotalHave(tailOfBoreas, ringOfBoreas, spiritLocketOfBoreas) - LvUpMatTotalUsed(counterAndrius1, counterAndrius2, counterAndrius3)}</td>
+						<td>{LvUpMatTotalUsed(counterAndrius1, counterAndrius2, counterAndrius3)}</td>
 						<td></td>
 					</tr>
 					<tr>
@@ -405,11 +406,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterChilde1}>
+									<button className="weekly-arrow-down" onClick={decrementCounterChilde1}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterChilde1)}</span>
-									<button className="arrow-up" onClick={incrementCounterChilde1}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterChilde1)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterChilde1}>
 										+
 									</button>
 								</>
@@ -426,11 +427,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterChilde2}>
+									<button className="weekly-arrow-down" onClick={decrementCounterChilde2}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterChilde2)}</span>
-									<button className="arrow-up" onClick={incrementCounterChilde2}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterChilde2)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterChilde2}>
 										+
 									</button>
 								</>
@@ -447,11 +448,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterChilde3}>
+									<button className="weekly-arrow-down" onClick={decrementCounterChilde3}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterChilde3)}</span>
-									<button className="arrow-up" onClick={incrementCounterChilde3}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterChilde3)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterChilde3}>
 										+
 									</button>
 								</>
@@ -461,9 +462,9 @@ const GenericWeeklyBoss = () => {
 					</tr>
 					<tr>
 						<td>TOTAL</td>
-						<td>{3 * totalTalentLvUpPerChar + 3 * totalTalentLvUpPerChar + 3 * totalTalentLvUpPerChar - LvUpMatTotalHave(tuskOfMonocerosCaeli, shardOfAFoulLegacy, shadowOfTheWarrior)}</td>
-						<td>{LvUpMatTotalHave(tuskOfMonocerosCaeli, shardOfAFoulLegacy, shadowOfTheWarrior) - (counterChilde1 + counterChilde2 + counterChilde3)}</td>
-						<td>{counterChilde1 + counterChilde2 + counterChilde3}</td>
+						<td>{totalTalentLvUpPerChar * 9 - LvUpMatTotalHave(tuskOfMonocerosCaeli, shardOfAFoulLegacy, shadowOfTheWarrior)}</td>
+						<td>{LvUpMatTotalHave(tuskOfMonocerosCaeli, shardOfAFoulLegacy, shadowOfTheWarrior) - LvUpMatTotalUsed(counterChilde1, counterChilde2, counterChilde3)}</td>
+						<td>{LvUpMatTotalUsed(counterChilde1, counterChilde2, counterChilde3)}</td>
 						<td></td>
 					</tr>
 					<tr>
@@ -475,11 +476,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterAzhdaha1}>
+									<button className="weekly-arrow-down" onClick={decrementCounterAzhdaha1}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterAzhdaha1)}</span>
-									<button className="arrow-up" onClick={incrementCounterAzhdaha1}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterAzhdaha1)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterAzhdaha1}>
 										+
 									</button>
 								</>
@@ -496,11 +497,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterAzhdaha2}>
+									<button className="weekly-arrow-down" onClick={decrementCounterAzhdaha2}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterAzhdaha2)}</span>
-									<button className="arrow-up" onClick={incrementCounterAzhdaha2}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterAzhdaha2)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterAzhdaha2}>
 										+
 									</button>
 								</>
@@ -517,11 +518,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterAzhdaha3}>
+									<button className="weekly-arrow-down" onClick={decrementCounterAzhdaha3}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterAzhdaha3)}</span>
-									<button className="arrow-up" onClick={incrementCounterAzhdaha3}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterAzhdaha3)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterAzhdaha3}>
 										+
 									</button>
 								</>
@@ -529,11 +530,11 @@ const GenericWeeklyBoss = () => {
 						</td>
 						<td>Kazuha, Sayu, Yelan</td>
 					</tr>
-					<tr className="Total-row">
+					<tr className="weekly-total-row">
 						<td>TOTAL</td>
-						<td>{3 * totalTalentLvUpPerChar + 2 * totalTalentLvUpPerChar + 3 * totalTalentLvUpPerChar - LvUpMatTotalHave(dragonLordCrown, bloodjadeBranch, gildedScale)}</td>
-						<td>{LvUpMatTotalHave(dragonLordCrown, bloodjadeBranch, gildedScale) - (counterAzhdaha1 + counterAzhdaha2 + counterAzhdaha3)}</td>
-						<td>{counterAzhdaha1 + counterAzhdaha2 + counterAzhdaha3}</td>
+						<td>{totalTalentLvUpPerChar * 8 * totalTalentLvUpPerChar - LvUpMatTotalHave(dragonLordCrown, bloodjadeBranch, gildedScale)}</td>
+						<td>{LvUpMatTotalHave(dragonLordCrown, bloodjadeBranch, gildedScale) - LvUpMatTotalUsed(counterAzhdaha1, counterAzhdaha2, counterAzhdaha3)}</td>
+						<td>{LvUpMatTotalUsed(counterAzhdaha1, counterAzhdaha2, counterAzhdaha3)}</td>
 						<td></td>
 					</tr>
 					<tr>
@@ -545,11 +546,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterSignora1}>
+									<button className="weekly-arrow-down" onClick={decrementCounterSignora1}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterSignora1)}</span>
-									<button className="arrow-up" onClick={incrementCounterSignora1}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterSignora1)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterSignora1}>
 										+
 									</button>
 								</>
@@ -566,11 +567,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterSignora2}>
+									<button className="weekly-arrow-down" onClick={decrementCounterSignora2}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterSignora2)}</span>
-									<button className="arrow-up" onClick={incrementCounterSignora2}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterSignora2)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterSignora2}>
 										+
 									</button>
 								</>
@@ -587,11 +588,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterSignora3}>
+									<button className="weekly-arrow-down" onClick={decrementCounterSignora3}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterSignora3)}</span>
-									<button className="arrow-up" onClick={incrementCounterSignora3}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterSignora3)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterSignora3}>
 										+
 									</button>
 								</>
@@ -599,11 +600,11 @@ const GenericWeeklyBoss = () => {
 						</td>
 						<td>Itto, Kujou Sara, Yun Jin</td>
 					</tr>
-					<tr className="Total-row">
+					<tr className="weekly-total-row">
 						<td>TOTAL</td>
-						<td>{3 * totalTalentLvUpPerChar + 3 * totalTalentLvUpPerChar + 3 * totalTalentLvUpPerChar - LvUpMatTotalHave(moltenMoment, hellfireButterfly, ashenHeart)}</td>
-						<td>{LvUpMatTotalHave(moltenMoment, hellfireButterfly, ashenHeart) - (counterSignora1 + counterSignora2 + counterSignora3)}</td>
-						<td>{counterSignora1 + counterSignora2 + counterSignora3}</td>
+						<td>{totalTalentLvUpPerChar * 9 - LvUpMatTotalHave(moltenMoment, hellfireButterfly, ashenHeart)}</td>
+						<td>{LvUpMatTotalHave(moltenMoment, hellfireButterfly, ashenHeart) - LvUpMatTotalUsed(counterSignora1, counterSignora2, counterSignora3)}</td>
+						<td>{LvUpMatTotalUsed(counterSignora1, counterSignora2, counterSignora3)}</td>
 						<td></td>
 					</tr>
 					<tr>
@@ -622,11 +623,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterShogun1}>
+									<button className="weekly-arrow-down" onClick={decrementCounterShogun1}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterShogun1)}</span>
-									<button className="arrow-up" onClick={incrementCounterShogun1}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterShogun1)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterShogun1}>
 										+
 									</button>
 								</>
@@ -650,11 +651,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterShogun2}>
+									<button className="weekly-arrow-down" onClick={decrementCounterShogun2}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterShogun2)}</span>
-									<button className="arrow-up" onClick={incrementCounterShogun2}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterShogun2)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterShogun2}>
 										+
 									</button>
 								</>
@@ -671,11 +672,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterShogun3}>
+									<button className="weekly-arrow-down" onClick={decrementCounterShogun3}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterShogun3)}</span>
-									<button className="arrow-up" onClick={incrementCounterShogun3}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterShogun3)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterShogun3}>
 										+
 									</button>
 								</>
@@ -683,11 +684,11 @@ const GenericWeeklyBoss = () => {
 						</td>
 						<td>Heizou, Tighnari, Yae Miko</td>
 					</tr>
-					<tr className="Total-row">
+					<tr className="weekly-total-row">
 						<td>TOTAL</td>
-						<td>{3 * totalTalentLvUpPerChar + 4 * totalTalentLvUpPerChar + 3 * totalTalentLvUpPerChar - LvUpMatTotalHave(mudraOfTheMaleficGeneral, tearsOfTheCalamitousGod, theMeaningOfAeons)}</td>
-						<td>{LvUpMatTotalHave(mudraOfTheMaleficGeneral, tearsOfTheCalamitousGod, theMeaningOfAeons) - (counterShogun1 + counterShogun2 + counterShogun3)}</td>
-						<td>{counterShogun1 + counterShogun2 + counterShogun3}</td>
+						<td>{totalTalentLvUpPerChar * 10 - LvUpMatTotalHave(mudraOfTheMaleficGeneral, tearsOfTheCalamitousGod, theMeaningOfAeons)}</td>
+						<td>{LvUpMatTotalHave(mudraOfTheMaleficGeneral, tearsOfTheCalamitousGod, theMeaningOfAeons) - LvUpMatTotalUsed(counterShogun1, counterShogun2, counterShogun3)}</td>
+						<td>{LvUpMatTotalUsed(counterShogun1, counterShogun2, counterShogun3)}</td>
 						<td></td>
 					</tr>
 
@@ -700,11 +701,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterJoururiWorkshop1}>
+									<button className="weekly-arrow-down" onClick={decrementCounterJoururiWorkshop1}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterJoururiWorkshop1)}</span>
-									<button className="arrow-up" onClick={incrementCounterJoururiWorkshop1}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterJoururiWorkshop1)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterJoururiWorkshop1}>
 										+
 									</button>
 								</>
@@ -721,11 +722,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterJoururiWorkshop2}>
+									<button className="weekly-arrow-down" onClick={decrementCounterJoururiWorkshop2}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterJoururiWorkshop2)}</span>
-									<button className="arrow-up" onClick={incrementCounterJoururiWorkshop2}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterJoururiWorkshop2)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterJoururiWorkshop2}>
 										+
 									</button>
 								</>
@@ -742,11 +743,11 @@ const GenericWeeklyBoss = () => {
 						<td>
 							{
 								<>
-									<button className="arrow-down" onClick={decrementCounterJoururiWorkshop3}>
+									<button className="weekly-arrow-down" onClick={decrementCounterJoururiWorkshop3}>
 										-
 									</button>
-									<span className="arrow-mid-number">{parseInt(counterJoururiWorkshop3)}</span>
-									<button className="arrow-up" onClick={incrementCounterJoururiWorkshop3}>
+									<span className="weekly-arrow-mid-number">{parseInt(counterJoururiWorkshop3)}</span>
+									<button className="weekly-arrow-up" onClick={incrementCounterJoururiWorkshop3}>
 										+
 									</button>
 								</>
@@ -754,11 +755,11 @@ const GenericWeeklyBoss = () => {
 						</td>
 						<td>Heizou, Tighnari, Yae Miko</td>
 					</tr>
-					<tr className="Total-row">
+					<tr className="weekly-total-row">
 						<td>TOTAL</td>
-						<td>{3 * totalTalentLvUpPerChar + 4 * totalTalentLvUpPerChar + 3 * totalTalentLvUpPerChar - LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell)}</td>
-						<td>{LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell) - (counterJoururiWorkshop1 + counterJoururiWorkshop2 + counterJoururiWorkshop3)}</td>
-						<td>{counterJoururiWorkshop1 + counterJoururiWorkshop2 + counterJoururiWorkshop3}</td>
+						<td>{totalTalentLvUpPerChar * 10 - LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell)}</td>
+						<td>{LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell) - LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
+						<td>{LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
 						<td></td>
 					</tr>
 				</tbody>

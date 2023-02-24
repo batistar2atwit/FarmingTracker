@@ -1,0 +1,62 @@
+.world-boss-table :is(td, th) {
+	text-align: center;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	padding-bottom: 0.5rem;
+}
+
+.world-boss-table td {
+	/* padding-bottom: 10px; */
+	text-align: right;
+}
+
+.world-boss-table td:nth-child(n + 5) {
+	text-align: left;
+}
+
+.world-boss-table tr:last-child {
+	border: 2px solid black;
+	font-weight: bold;
+}
+
+.world-boss-table {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+.world-boss-block {
+	display: flex;
+	justify-content: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	font-size: 25px;
+}
+
+.world-boss-num-input {
+	width: 80px;
+	height: 50px;
+}
+
+.world-boss-table input[type='number'] {
+	appearance: textfield;
+	font-size: 28px;
+	text-align: right;
+}
+
+.world-arrow-up,
+.world-arrow-down {
+	height: 35px;
+	width: 35px;
+}
+
+.world-arrow-down {
+	margin-right: 10px;
+}
+
+.world-arrow-up {
+	margin-left: 10px;
+}
+
+.world-arrow-mid-number {
+	font-size: 28px;
+}

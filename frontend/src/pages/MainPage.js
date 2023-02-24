@@ -1,9 +1,10 @@
 import React from 'react';
-import CountdownTimer from '../components/CountdownTimer';
+
+import TimeForm from './../components/ResinCountdownTimer/TimeForm';
 const MainPage = () => {
 	return (
 		<div>
-			<CountdownTimer />;
+			<TimeForm />
 		</div>
 	);
 };

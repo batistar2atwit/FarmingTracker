@@ -9,18 +9,22 @@
 	/* padding-bottom: 10px; */
 	text-align: right;
 }
+
 .weekly-boss-table td:nth-child(n + 5) {
 	text-align: left;
 }
 
 .weekly-boss-table tr:nth-child(4n) {
 	border: 2px solid black;
+	font-weight: bold;
 }
+
 .weekly-boss-table {
 	border: 2px solid black;
 	border-collapse: collapse;
 }
-.weeklyBossTable {
+
+.weekly-boss-block {
 	display: flex;
 	justify-content: center;
 	padding-top: 80px;
@@ -35,15 +39,24 @@
 
 .weekly-boss-table input[type='number'] {
 	appearance: textfield;
-	font-size: 20px;
+	font-size: 28px;
+	text-align: right;
 }
 
-.button-block {
-	display: flex;
+.weekly-arrow-up,
+.weekly-arrow-down {
+	height: 35px;
+	width: 35px;
 }
-.button-left-margin {
+
+.weekly-arrow-down {
+	margin-right: 10px;
+}
+
+.weekly-arrow-up {
 	margin-left: 10px;
 }
-.button-font {
-	padding: 1px 10px 1px 10px;
+
+.weekly-arrow-mid-number {
+	font-size: 28px;
 }
