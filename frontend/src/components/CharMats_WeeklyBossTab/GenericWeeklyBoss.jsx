@@ -254,10 +254,13 @@ const GenericWeeklyBoss = () => {
 							<th>Need</th>
 							<th>Have</th>
 							<th>Used</th>
-							<th></th>
+							<th>Characters</th>
 						</tr>
 					</thead>
 					<tbody>
+						<tr>
+							<td colSpan={5}>Stormterror</td>
+						</tr>
 						<tr>
 							<td>Dvalin's Plume</td>
 							<td>{3 * totalTalentLvUpPerChar - dvalinPlume}</td>
@@ -328,6 +331,9 @@ const GenericWeeklyBoss = () => {
 							<td>{LvUpMatTotalHave(dvalinPlume, dvalinClaw, dvalinSigh) - LvUpMatTotalUsed(counterDvalin1, counterDvalin2, counterDvalin3)}</td>
 							<td>{LvUpMatTotalUsed(counterDvalin1, counterDvalin2, counterDvalin3)}</td>
 							<td></td>
+						</tr>
+						<tr>
+							<td colSpan={5}>Andrius</td>
 						</tr>
 						<tr>
 							<td>Tail of Boreas</td>
@@ -407,6 +413,9 @@ const GenericWeeklyBoss = () => {
 							<td></td>
 						</tr>
 						<tr>
+							<td colSpan={5}>Childe</td>
+						</tr>
+						<tr>
 							<td>Tusk of Monoceros Caeli</td>
 							<td>{3 * totalTalentLvUpPerChar - tuskOfMonocerosCaeli}</td>
 							<td>
@@ -484,6 +493,9 @@ const GenericWeeklyBoss = () => {
 							<td></td>
 						</tr>
 						<tr>
+							<td colSpan={5}>Azhdaha</td>
+						</tr>
+						<tr>
 							<td>Dragon Lord's Crown</td>
 							<td>{3 * totalTalentLvUpPerChar - dragonLordCrown}</td>
 							<td>
@@ -554,6 +566,9 @@ const GenericWeeklyBoss = () => {
 							<td></td>
 						</tr>
 						<tr>
+							<td colSpan={5}>La Signora</td>
+						</tr>
+						<tr>
 							<td>Molten Moment</td>
 							<td>{3 * totalTalentLvUpPerChar - moltenMoment}</td>
 							<td>
@@ -622,6 +637,9 @@ const GenericWeeklyBoss = () => {
 							<td>{LvUpMatTotalHave(moltenMoment, hellfireButterfly, ashenHeart) - LvUpMatTotalUsed(counterSignora1, counterSignora2, counterSignora3)}</td>
 							<td>{LvUpMatTotalUsed(counterSignora1, counterSignora2, counterSignora3)}</td>
 							<td></td>
+						</tr>
+						<tr>
+							<td colSpan={5}>Raiden no Inazuma Tono</td>
 						</tr>
 						<tr>
 							<td>Mudra of the Malefic General</td>
@@ -707,7 +725,9 @@ const GenericWeeklyBoss = () => {
 							<td>{LvUpMatTotalUsed(counterShogun1, counterShogun2, counterShogun3)}</td>
 							<td></td>
 						</tr>
-
+						<tr>
+							<td colSpan={5}>Shouki no Kami, the Prodigal</td>
+						</tr>
 						<tr>
 							<td>Puppet Strings</td>
 							<td>{3 * totalTalentLvUpPerChar - puppetStrings}</td>

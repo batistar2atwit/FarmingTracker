@@ -390,6 +390,7 @@ const GenericWorldBoss = () => {
 						</tr>
 					</thead>
 					<tbody>
+
 						<tr>
 							<td>Hurricane Seed</td>
 							<td>{3 * totalWorldLvUpMatPerChar - hurricaneSeed}</td>

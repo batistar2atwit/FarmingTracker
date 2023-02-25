@@ -9,17 +9,31 @@
 	font-size: 25px;
 }
 .talent-books-table td {
-	/* padding-bottom: 10px; */
 	text-align: right;
 }
-
-.talent-books-table td:nth-child(n + 5) {
-	text-align: left;
-}
-
-.talent-books-table tr:last-child {
+.talent-books-table td[colspan='5'] {
 	border: 2px solid black;
 	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: burlywood;
+}
+.talent-books-table tr :is(td[colspan='4'], td[colspan='1']) {
+	border-top: 2px solid black;
+	text-align: center;
+	font-weight: bold;
+}
+.talent-books-table tr :is(td[rowSpan='3']) {
+	text-align: center;
+}
+
+.talent-books-table tr:last-child td {
+	border-top: 2px solid black;
+	font-weight: bold;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .talent-books-table {
@@ -46,20 +60,23 @@
 	text-align: right;
 }
 
-.world-arrow-up,
-.world-arrow-down {
+.talent-books-arrow-up,
+.talent-books-arrow-down {
 	height: 25px;
 	width: 25px;
 }
 
-.world-arrow-down {
+.talent-books-arrow-down {
 	margin-right: 10px;
 }
 
-.world-arrow-up {
+.talent-books-arrow-up {
 	margin-left: 10px;
 }
 
-.world-arrow-mid-number {
+.talent-books-arrow-mid-number {
 	font-size: 15px;
+}
+.talent-books-total-row {
+	font-weight: bold;
 }

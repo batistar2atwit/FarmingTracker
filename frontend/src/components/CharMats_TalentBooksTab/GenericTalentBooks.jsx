@@ -10,9 +10,9 @@ const GenericTalentBooks = () => {
 		return parseInt(talentUsed1) + parseInt(talentUsed2) + parseInt(talentUsed3);
 	};
 
-	const [dvalinPlume, setDvalinPlume] = useState(0);
-	const [dvalinClaw, setDvalinClaw] = useState(0);
-	const [dvalinSigh, setDvalinSigh] = useState(0);
+	const [teachings, setTeachings] = useState(0);
+	const [guide, setGuide] = useState(0);
+	const [philosophies, setPhilosophies] = useState(0);
 
 	const [tailOfBoreas, setTailOfBoreas] = useState(0);
 	const [ringOfBoreas, setRingOfBoreas] = useState(0);
@@ -254,15 +254,22 @@ const GenericTalentBooks = () => {
 							<th>Need</th>
 							<th>Have</th>
 							<th>Used</th>
-							<th></th>
+							<th>Characters</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
+							<td colSpan="5">Mondstadt</td>
+						</tr>
+						<tr>
+							<td colSpan="4">Freedom Books</td>
+							<td colSpan="1">Monday / Thursday</td>
+						</tr>
+						<tr>
 							<td>Dvalin's Plume</td>
-							<td>{3 * totalTalentLvUpPerChar - dvalinPlume}</td>
+							<td>{3 * totalTalentLvUpPerChar - teachings}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={dvalinPlume - counterDvalin1} onChange={(e) => setDvalinPlume(e.target.value)} placeholder="0" min="0" />
+								<input type="number" className="talent-books-num-input" value={teachings - counterDvalin1} onChange={(e) => setTeachings(e.target.value)} placeholder="0" min="0" />
 							</td>
 							<td>
 								{
@@ -278,13 +285,13 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Diluc, Bennet, Jean</td>
+							<td rowSpan={3}>Diluc, Bennet, Jean</td>
 						</tr>
 						<tr>
 							<td>Dvalin's Claw </td>
-							<td>{4 * totalTalentLvUpPerChar - dvalinClaw}</td>
+							<td>{4 * totalTalentLvUpPerChar - guide}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={dvalinClaw - counterDvalin2} onChange={(e) => setDvalinClaw(e.target.value)} placeholder="0" min="0" />
+								<input type="number" className="talent-books-num-input" value={guide - counterDvalin2} onChange={(e) => setGuide(e.target.value)} placeholder="0" min="0" />
 							</td>
 							<td>
 								{
@@ -299,13 +306,12 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Lisa, Noelle, Razor, Xiangling</td>
 						</tr>
 						<tr>
 							<td>Dvalin's Sigh</td>
-							<td>{5 * totalTalentLvUpPerChar - dvalinSigh}</td>
+							<td>{5 * totalTalentLvUpPerChar - philosophies}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={dvalinSigh - counterDvalin3} onChange={(e) => setDvalinSigh(e.target.value)} placeholder="0" min="0" />
+								<input type="number" className="talent-books-num-input" value={philosophies - counterDvalin3} onChange={(e) => setPhilosophies(e.target.value)} placeholder="0" min="0" />
 							</td>
 							<td>
 								{
@@ -320,14 +326,17 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Traveler(Anemo), Traveler(Geo), Amber, Beidou, Chongyun</td>
 						</tr>
-						<tr>
+						<tr className="talent-books-total-row">
 							<td>TOTAL </td>
-							<td>{totalTalentLvUpPerChar * 12 - LvUpMatTotalHave(dvalinPlume, dvalinClaw, dvalinSigh)}</td>
-							<td>{LvUpMatTotalHave(dvalinPlume, dvalinClaw, dvalinSigh) - LvUpMatTotalUsed(counterDvalin1, counterDvalin2, counterDvalin3)}</td>
+							<td>{totalTalentLvUpPerChar * 12 - LvUpMatTotalHave(teachings, guide, philosophies)}</td>
+							<td>{LvUpMatTotalHave(teachings, guide, philosophies) - LvUpMatTotalUsed(counterDvalin1, counterDvalin2, counterDvalin3)}</td>
 							<td>{LvUpMatTotalUsed(counterDvalin1, counterDvalin2, counterDvalin3)}</td>
 							<td></td>
+						</tr>
+						<tr>
+							<td colSpan="4">Resistance Books</td>
+							<td colSpan="1">Tuesday / Friday</td>
 						</tr>
 						<tr>
 							<td>Tail of Boreas</td>
@@ -348,7 +357,7 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Qiqi, Venti, Xingqiu</td>
+							<td rowSpan={3}>Qiqi, Venti, Xingqiu</td>
 						</tr>
 						<tr>
 							<td>Ring of Boreas</td>
@@ -369,7 +378,6 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Barbara, Keqing, Klee, Mona</td>
 						</tr>
 						<tr>
 							<td>Spirit Locket of Boreas</td>
@@ -397,14 +405,17 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Fischl, Kaeya, Ningguang, Sucrose</td>
 						</tr>
-						<tr>
+						<tr className="talent-books-total-row">
 							<td>TOTAL</td>
 							<td>{totalTalentLvUpPerChar * 11 - LvUpMatTotalHave(tailOfBoreas, ringOfBoreas, spiritLocketOfBoreas)}</td>
 							<td>{LvUpMatTotalHave(tailOfBoreas, ringOfBoreas, spiritLocketOfBoreas) - LvUpMatTotalUsed(counterAndrius1, counterAndrius2, counterAndrius3)}</td>
 							<td>{LvUpMatTotalUsed(counterAndrius1, counterAndrius2, counterAndrius3)}</td>
 							<td></td>
+						</tr>
+						<tr>
+							<td colSpan="4">Ballad Books</td>
+							<td colSpan="1">Wednesday / Saturday</td>
 						</tr>
 						<tr>
 							<td>Tusk of Monoceros Caeli</td>
@@ -432,7 +443,7 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Albedo, Xinyan, Zhonngli</td>
+							<td rowSpan={3}>Albedo, Xinyan, Zhonngli</td>
 						</tr>
 						<tr>
 							<td>Shard of a Foul Legacy</td>
@@ -453,7 +464,6 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Diona, Hu Tao, Tartaglia</td>
 						</tr>
 						<tr>
 							<td>Shadow of the Warrior</td>
@@ -474,14 +484,20 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Ganyu, Rosaria, Xiao</td>
 						</tr>
-						<tr>
+						<tr className="talent-books-total-row">
 							<td>TOTAL</td>
 							<td>{totalTalentLvUpPerChar * 9 - LvUpMatTotalHave(tuskOfMonocerosCaeli, shardOfAFoulLegacy, shadowOfTheWarrior)}</td>
 							<td>{LvUpMatTotalHave(tuskOfMonocerosCaeli, shardOfAFoulLegacy, shadowOfTheWarrior) - LvUpMatTotalUsed(counterChilde1, counterChilde2, counterChilde3)}</td>
 							<td>{LvUpMatTotalUsed(counterChilde1, counterChilde2, counterChilde3)}</td>
 							<td></td>
+						</tr>
+						<tr>
+							<td colSpan="5">Liyue</td>
+						</tr>
+						<tr>
+							<td colSpan="4">Prosperity Books</td>
+							<td colSpan="1">Monday / Thursday</td>
 						</tr>
 						<tr>
 							<td>Dragon Lord's Crown</td>
@@ -502,7 +518,7 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Traveler(Electro), Eula, Yoimia</td>
+							<td rowSpan={3}>Traveler(Electro), Eula, Yoimia</td>
 						</tr>
 						<tr>
 							<td>Bloodjade Branch</td>
@@ -523,7 +539,6 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Dori, Ayaka, Yanfei </td>
 						</tr>
 						<tr>
 							<td>Gilded Scale</td>
@@ -544,7 +559,6 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Kazuha, Sayu, Yelan</td>
 						</tr>
 						<tr className="talent-books-total-row">
 							<td>TOTAL</td>
@@ -552,6 +566,11 @@ const GenericTalentBooks = () => {
 							<td>{LvUpMatTotalHave(dragonLordCrown, bloodjadeBranch, gildedScale) - LvUpMatTotalUsed(counterAzhdaha1, counterAzhdaha2, counterAzhdaha3)}</td>
 							<td>{LvUpMatTotalUsed(counterAzhdaha1, counterAzhdaha2, counterAzhdaha3)}</td>
 							<td></td>
+						</tr>
+
+						<tr>
+							<td colSpan="4">Diligence Books</td>
+							<td colSpan="1">Tuesday / Friday</td>
 						</tr>
 						<tr>
 							<td>Molten Moment</td>
@@ -572,7 +591,7 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Aloy, Gorou, Raiden</td>
+							<td rowSpan={3}>Aloy, Gorou, Raiden</td>
 						</tr>
 						<tr>
 							<td>Hellfire Butterfly</td>
@@ -593,7 +612,6 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Kokomi, Shenhe, Thoma</td>
 						</tr>
 						<tr>
 							<td>Ashen Heart</td>
@@ -614,7 +632,6 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Itto, Kujou Sara, Yun Jin</td>
 						</tr>
 						<tr className="talent-books-total-row">
 							<td>TOTAL</td>
@@ -622,6 +639,10 @@ const GenericTalentBooks = () => {
 							<td>{LvUpMatTotalHave(moltenMoment, hellfireButterfly, ashenHeart) - LvUpMatTotalUsed(counterSignora1, counterSignora2, counterSignora3)}</td>
 							<td>{LvUpMatTotalUsed(counterSignora1, counterSignora2, counterSignora3)}</td>
 							<td></td>
+						</tr>
+						<tr>
+							<td colSpan="4">Gold Books</td>
+							<td colSpan="1">Wednesday / Saturday</td>
 						</tr>
 						<tr>
 							<td>Mudra of the Malefic General</td>
@@ -649,7 +670,7 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Traveler(Dendro), Cyno, Ayato</td>
+							<td rowSpan={3}>Traveler(Dendro), Cyno, Ayato</td>
 						</tr>
 						<tr>
 							<td>Tears of the Calamitous God</td>
@@ -677,7 +698,6 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Candace, Collei, Shinobu, Nilou</td>
 						</tr>
 						<tr>
 							<td>The Meaning of Aeons</td>
@@ -698,7 +718,6 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Heizou, Tighnari, Yae Miko</td>
 						</tr>
 						<tr className="talent-books-total-row">
 							<td>TOTAL</td>
@@ -707,7 +726,13 @@ const GenericTalentBooks = () => {
 							<td>{LvUpMatTotalUsed(counterShogun1, counterShogun2, counterShogun3)}</td>
 							<td></td>
 						</tr>
-
+						<tr>
+							<td colSpan="5">Inazuma</td>
+						</tr>
+						<tr>
+							<td colSpan="4">Transience Books</td>
+							<td colSpan="1">Monday / Thursday</td>
+						</tr>
 						<tr>
 							<td>Puppet Strings</td>
 							<td>{3 * totalTalentLvUpPerChar - puppetStrings}</td>
@@ -727,7 +752,7 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Traveler(Dendro), Cyno, Ayato</td>
+							<td rowSpan={3}>Traveler(Dendro), Cyno, Ayato</td>
 						</tr>
 						<tr>
 							<td>Mirror Of Mushin</td>
@@ -748,7 +773,6 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Candace, Collei, Shinobu, Nilou</td>
 						</tr>
 						<tr>
 							<td>Daka's Bell</td>
@@ -769,10 +793,379 @@ const GenericTalentBooks = () => {
 									</>
 								}
 							</td>
-							<td>Heizou, Tighnari, Yae Miko</td>
 						</tr>
 						<tr className="talent-books-total-row">
 							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar * 10 - LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell)}</td>
+							<td>{LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell) - LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
+							<td>{LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colSpan="4">Elegance Books</td>
+							<td colSpan="1">Tuesday / Friday</td>
+						</tr>
+						<tr>
+							<td>Puppet Strings</td>
+							<td>{3 * totalTalentLvUpPerChar - puppetStrings}</td>
+							<td>
+								<input type="number" className="talent-books-num-input" value={puppetStrings - counterJoururiWorkshop1} onChange={(e) => setPuppetStrings(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop1}>
+											-
+										</button>
+										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop1)}</span>
+										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop1}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Traveler(Dendro), Cyno, Ayato</td>
+						</tr>
+						<tr>
+							<td>Mirror Of Mushin</td>
+							<td>{4 * totalTalentLvUpPerChar - mirrorOfMushin}</td>
+							<td>
+								<input type="number" className="talent-books-num-input" value={mirrorOfMushin - counterJoururiWorkshop2} onChange={(e) => setMirrorOfMushin(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop2}>
+											-
+										</button>
+										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop2)}</span>
+										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop2}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Daka's Bell</td>
+							<td>{3 * totalTalentLvUpPerChar - dakasBell}</td>
+							<td>
+								<input type="number" className="talent-books-num-input" value={dakasBell - counterJoururiWorkshop3} onChange={(e) => setDakasBell(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop3}>
+											-
+										</button>
+										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop3)}</span>
+										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop3}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="talent-books-total-row">
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar * 10 - LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell)}</td>
+							<td>{LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell) - LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
+							<td>{LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colSpan="4">Light Books</td>
+							<td colSpan="1">Wednesday / Saturday</td>
+						</tr>
+						<tr>
+							<td>Puppet Strings</td>
+							<td>{3 * totalTalentLvUpPerChar - puppetStrings}</td>
+							<td>
+								<input type="number" className="talent-books-num-input" value={puppetStrings - counterJoururiWorkshop1} onChange={(e) => setPuppetStrings(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop1}>
+											-
+										</button>
+										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop1)}</span>
+										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop1}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Traveler(Dendro), Cyno, Ayato</td>
+						</tr>
+						<tr>
+							<td>Mirror Of Mushin</td>
+							<td>{4 * totalTalentLvUpPerChar - mirrorOfMushin}</td>
+							<td>
+								<input type="number" className="talent-books-num-input" value={mirrorOfMushin - counterJoururiWorkshop2} onChange={(e) => setMirrorOfMushin(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop2}>
+											-
+										</button>
+										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop2)}</span>
+										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop2}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Daka's Bell</td>
+							<td>{3 * totalTalentLvUpPerChar - dakasBell}</td>
+							<td>
+								<input type="number" className="talent-books-num-input" value={dakasBell - counterJoururiWorkshop3} onChange={(e) => setDakasBell(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop3}>
+											-
+										</button>
+										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop3)}</span>
+										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop3}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="talent-books-total-row">
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar * 10 - LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell)}</td>
+							<td>{LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell) - LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
+							<td>{LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colSpan="5">Sumeru</td>
+						</tr>
+						<tr>
+							<td colSpan="4">Admonition Books</td>
+							<td colSpan="1">Monday / Thursday</td>
+						</tr>
+						<tr>
+							<td>Puppet Strings</td>
+							<td>{3 * totalTalentLvUpPerChar - puppetStrings}</td>
+							<td>
+								<input type="number" className="talent-books-num-input" value={puppetStrings - counterJoururiWorkshop1} onChange={(e) => setPuppetStrings(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop1}>
+											-
+										</button>
+										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop1)}</span>
+										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop1}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Traveler(Dendro), Cyno, Ayato</td>
+						</tr>
+						<tr>
+							<td>Mirror Of Mushin</td>
+							<td>{4 * totalTalentLvUpPerChar - mirrorOfMushin}</td>
+							<td>
+								<input type="number" className="talent-books-num-input" value={mirrorOfMushin - counterJoururiWorkshop2} onChange={(e) => setMirrorOfMushin(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop2}>
+											-
+										</button>
+										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop2)}</span>
+										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop2}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Daka's Bell</td>
+							<td>{3 * totalTalentLvUpPerChar - dakasBell}</td>
+							<td>
+								<input type="number" className="talent-books-num-input" value={dakasBell - counterJoururiWorkshop3} onChange={(e) => setDakasBell(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop3}>
+											-
+										</button>
+										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop3)}</span>
+										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop3}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="talent-books-total-row">
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar * 10 - LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell)}</td>
+							<td>{LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell) - LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
+							<td>{LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colSpan="4">Ingenuity Books</td>
+							<td colSpan="1">Tuesday / Friday</td>
+						</tr>
+						<tr>
+							<td>Puppet Strings</td>
+							<td>{3 * totalTalentLvUpPerChar - puppetStrings}</td>
+							<td>
+								<input type="number" className="talent-books-num-input" value={puppetStrings - counterJoururiWorkshop1} onChange={(e) => setPuppetStrings(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop1}>
+											-
+										</button>
+										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop1)}</span>
+										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop1}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Traveler(Dendro), Cyno, Ayato</td>
+						</tr>
+						<tr>
+							<td>Mirror Of Mushin</td>
+							<td>{4 * totalTalentLvUpPerChar - mirrorOfMushin}</td>
+							<td>
+								<input type="number" className="talent-books-num-input" value={mirrorOfMushin - counterJoururiWorkshop2} onChange={(e) => setMirrorOfMushin(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop2}>
+											-
+										</button>
+										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop2)}</span>
+										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop2}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Daka's Bell</td>
+							<td>{3 * totalTalentLvUpPerChar - dakasBell}</td>
+							<td>
+								<input type="number" className="talent-books-num-input" value={dakasBell - counterJoururiWorkshop3} onChange={(e) => setDakasBell(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop3}>
+											-
+										</button>
+										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop3)}</span>
+										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop3}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="talent-books-total-row">
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar * 10 - LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell)}</td>
+							<td>{LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell) - LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
+							<td>{LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colSpan="4">Praxis Books</td>
+							<td colSpan="1">Wednesday / Saturday</td>
+						</tr>
+						<tr>
+							<td>Puppet Strings</td>
+							<td>{3 * totalTalentLvUpPerChar - puppetStrings}</td>
+							<td>
+								<input type="number" className="talent-books-num-input" value={puppetStrings - counterJoururiWorkshop1} onChange={(e) => setPuppetStrings(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop1}>
+											-
+										</button>
+										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop1)}</span>
+										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop1}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Traveler(Dendro), Cyno, Ayato</td>
+						</tr>
+						<tr>
+							<td>Mirror Of Mushin</td>
+							<td>{4 * totalTalentLvUpPerChar - mirrorOfMushin}</td>
+							<td>
+								<input type="number" className="talent-books-num-input" value={mirrorOfMushin - counterJoururiWorkshop2} onChange={(e) => setMirrorOfMushin(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop2}>
+											-
+										</button>
+										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop2)}</span>
+										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop2}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Daka's Bell</td>
+							<td>{3 * totalTalentLvUpPerChar - dakasBell}</td>
+							<td>
+								<input type="number" className="talent-books-num-input" value={dakasBell - counterJoururiWorkshop3} onChange={(e) => setDakasBell(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop3}>
+											-
+										</button>
+										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop3)}</span>
+										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop3}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="talent-books-total-row">
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar * 10 - LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell)}</td>
+							<td>{LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell) - LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
+							<td>{LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
+							<td></td>
+						</tr>
+						<tr className="talent-books-total-row">
+							<td>OVERALL</td>
 							<td>{totalTalentLvUpPerChar * 10 - LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell)}</td>
 							<td>{LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell) - LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
 							<td>{LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>

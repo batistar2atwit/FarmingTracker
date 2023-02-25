@@ -4,6 +4,10 @@
 	padding-left: 2rem;
 	padding-bottom: 0.5rem;
 }
+.weekly-boss-header th {
+	padding: 10px 0px 10px 0px;
+	border-bottom: 5px solid rgb(26, 3, 118);
+}
 .weekly-boss-h1 {
 	text-align: center;
 	font-size: 25px;
@@ -17,9 +21,13 @@
 	text-align: left;
 }
 
-.weekly-boss-table tr:last-child {
-	border: 2px solid black;
+.weekly-boss-table tr:nth-child(5n + 5) {
+	border-bottom: 5px solid rgb(26, 3, 118);
 	font-weight: bold;
+}
+
+td[colspan='5'] {
+	text-align: center;
 }
 
 .weekly-boss-table {
