@@ -8,7 +8,6 @@ import AscMatsWorldBossMatsTab from './pages/AscMatsWorldBossMatsTab';
 import CharMatsCommonAscensionMatTab from './pages/CharMatsCommonAscensionMatTab';
 import CharMatsExpBookTab from './pages/CharMatsExpBookTab';
 import CharMatsTalentBooksTab from './pages/CharMatsTalentBooksTab';
-import CharMatsTalentLevelUpTab from './pages/CharMatsTalentLevelUpTab';
 import CharMatsWeeklyBossTab from './pages/CharMatsWeeklyBossTab';
 import MainPage from './pages/MainPage';
 import PageSignIn from './pages/PageSignIn';
@@ -25,10 +24,9 @@ function App() {
 					<Route path="/page-three" element={<CharMatsExpBookTab />}></Route>
 					<Route path="/page-four" element={<CharMatsWeeklyBossTab />}></Route>
 					<Route path="/page-five" element={<CharMatsTalentBooksTab />}></Route>
-					<Route path="/page-six" element={<CharMatsTalentLevelUpTab />}></Route>
-					<Route path="/page-seven" element={<CharMatsCommonAscensionMatTab />}></Route>
-					<Route path="/page-eight" element={<AscMatLocalSpecialties />}></Route>
-					<Route path="/page-nine" element={<WishCalculatorTab />}></Route>
+					<Route path="/page-six" element={<CharMatsCommonAscensionMatTab />}></Route>
+					<Route path="/page-seven" element={<AscMatLocalSpecialties />}></Route>
+					<Route path="/page-eight" element={<WishCalculatorTab />}></Route>
 					<Route path="/page-signIn" element={<PageSignIn />}></Route>
 				</Routes>
 			</Layout>

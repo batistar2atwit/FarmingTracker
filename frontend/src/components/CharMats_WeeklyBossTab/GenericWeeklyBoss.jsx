@@ -250,7 +250,7 @@ const GenericWeeklyBoss = () => {
 				<table className="weekly-boss-table">
 					<thead className="weekly-boss-header">
 						<tr>
-							<th>Talent LevelUp Material</th>
+							<th>Talent Ascension Material</th>
 							<th>Need</th>
 							<th>Have</th>
 							<th>Used</th>

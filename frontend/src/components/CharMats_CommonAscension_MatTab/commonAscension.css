@@ -1,3 +1,71 @@
-.common-ascension-h1 {
+.common-asc-mat-h1 {
 	text-align: center;
+}
+.common-asc-mat-h1 {
+	text-align: center;
+}
+
+.common-asc-mat-table :is(td, th) {
+	text-align: center;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	padding-bottom: 0.5rem;
+}
+.common-asc-mat-h1 {
+	text-align: center;
+}
+.common-asc-mat-table td {
+	/* padding-bottom: 10px; */
+	text-align: right;
+}
+
+.common-asc-mat-table td:nth-child(n + 5) {
+	text-align: left;
+}
+
+.common-asc-mat-table tr:nth-child(4n) {
+	border: 2px solid black;
+	font-weight: bold;
+}
+
+.common-asc-mat-table {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+.common-asc-mat-block {
+	display: flex;
+	justify-content: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	font-size: 25px;
+}
+
+.common-asc-mat-num-input {
+	width: 80px;
+	height: 50px;
+}
+
+.common-asc-mat-table input[type='number'] {
+	appearance: textfield;
+	font-size: 28px;
+	text-align: right;
+}
+
+.common-asc-mat-arrow-up,
+.common-asc-mat-arrow-down {
+	height: 35px;
+	width: 35px;
+}
+
+.common-asc-mat-arrow-down {
+	margin-right: 10px;
+}
+
+.common-asc-mat-arrow-up {
+	margin-left: 10px;
+}
+
+.common-asc-mat-arrow-mid-number {
+	font-size: 28px;
 }
