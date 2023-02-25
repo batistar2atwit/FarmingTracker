@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 
 const GenericLocalSpecialty = () => {
-	const [hurricaneSeed, setHurricaneSeed] = useState(0);
-	const [lightningPrism, setLightningPrism] = useState(0);
-	const [basaltPillar, setBasaltPillar] = useState(0);
-	const [hoarfrostCore, setHoarfrostCore] = useState(0);
-	const [everflameSeed, setEverflameSeed] = useState(0);
-	const [cleansingHeart, setCleansingHeart] = useState(0);
-	const [juvenileJade, setJuvenileJade] = useState(0);
-	const [crystallineBloom, setCrystallineBloom] = useState(0);
+	//Mondstadt
+	const [callaLily, setCallaLily] = useState(0);
+	const [cecilia, setCecilia] = useState(0);
+	const [dandelionSeed, setDandelionSeed] = useState(0);
+	const [philanemoMushroom, setPhilanemoMushroom] = useState(0);
+	const [smallLampGrass, setSmallLampGrass] = useState(0);
+	const [valberry, setValberry] = useState(0);
+	const [windwheelAster, setWindwheelAster] = useState(0);
+	const [wolfhook, setWolfhook] = useState(0);
+
+	//Liyue
 	const [marionetteCore, setMarionetteCore] = useState(0);
 	const [perpetualHeart, setPerpetualHeart] = useState(0);
 	const [smolderingPearl, setSmolderingPearl] = useState(0);
@@ -24,81 +27,90 @@ const GenericLocalSpecialty = () => {
 	const [quelledCreeper, setQuelledCreeper] = useState(0);
 	const [pseudoStamens, setPseudoStamens] = useState(0);
 
-	const totalWorldtyLvUpMatPerChar = 46;
+	const totalPerChar = 168;
 
-	const [counterHurricaneSeed, setCounterHurricaneSeed] = useState(0);
-	const incrementCounterHurricaneSeed = () => {
-		setCounterHurricaneSeed(counterHurricaneSeed + 1);
+	// Mondstadt
+	const [counterCallaLily, setCounterCallaLily] = useState(0);
+	const incrementCounterCallaLily = () => {
+		setCounterCallaLily(counterCallaLily + 1);
 	};
-	const decrementCounterHurricaneSeed = () => {
-		if (counterHurricaneSeed !== 0) {
-			setCounterHurricaneSeed(counterHurricaneSeed - 1);
+	const decrementCounterCallaLily = () => {
+		if (counterCallaLily !== 0) {
+			setCounterCallaLily(counterCallaLily - 1);
+		}
+	};
+	//
+	const [counterCecilia, setCounterCecilia] = useState(0);
+	const incrementCounterCecilia = () => {
+		setCounterCecilia(counterCecilia + 1);
+	};
+	const decrementCounterCecilia = () => {
+		if (counterCecilia !== 0) {
+			setCounterCecilia(counterCecilia - 1);
+		}
+	};
+	//
+	const [counterDandelionSeed, setCounterDandelionSeed] = useState(0);
+	const incrementCounterDandelionSeed = () => {
+		setCounterDandelionSeed(counterDandelionSeed + 1);
+	};
+	const decrementCounterDandelionSeed = () => {
+		if (counterDandelionSeed !== 0) {
+			setCounterDandelionSeed(counterDandelionSeed - 1);
+		}
+	};
+	//
+	const [counterPhilanemoMushroom, setCounterPhilanemoMushroom] = useState(0);
+	const incrementCounterPhilanemoMushroom = () => {
+		setCounterPhilanemoMushroom(counterPhilanemoMushroom + 1);
+	};
+	const decrementCounterPhilanemoMushroom = () => {
+		if (counterPhilanemoMushroom !== 0) {
+			setCounterPhilanemoMushroom(counterPhilanemoMushroom - 1);
+		}
+	};
+	//
+	const [counterSmallLampGrass, setCounterSmallLampGrass] = useState(0);
+	const incrementCounterSmallLampGrass = () => {
+		setCounterSmallLampGrass(counterSmallLampGrass + 1);
+	};
+	const decrementCounterSmallLampGrass = () => {
+		if (counterSmallLampGrass !== 0) {
+			setCounterSmallLampGrass(counterSmallLampGrass - 1);
+		}
+	};
+	//
+	const [counterValberry, setCounterValberry] = useState(0);
+	const incrementCounterValberry = () => {
+		setCounterValberry(counterValberry + 1);
+	};
+	const decrementCounterValberry = () => {
+		if (counterValberry !== 0) {
+			setCounterValberry(counterValberry - 1);
+		}
+	};
+	//
+	const [counterWindwheelAster, setCounterWindwheelAster] = useState(0);
+	const incrementCounterWindwheelAster = () => {
+		setCounterWindwheelAster(counterWindwheelAster + 1);
+	};
+	const decrementCounterWindwheelAster = () => {
+		if (counterWindwheelAster !== 0) {
+			setCounterWindwheelAster(counterWindwheelAster - 1);
+		}
+	};
+	//
+	const [counterWolfhook, setCounterWolfhook] = useState(0);
+	const incrementCounterWolfhook = () => {
+		setCounterWolfhook(counterWolfhook + 1);
+	};
+	const decrementCounterWolfhook = () => {
+		if (counterWolfhook !== 0) {
+			setCounterWolfhook(counterWolfhook - 1);
 		}
 	};
 
-	const [counterLightningPrism, setCounterLightningPrism] = useState(0);
-	const incrementCounterLightningPrism = () => {
-		setCounterLightningPrism(counterLightningPrism + 1);
-	};
-	const decrementCounterLightningPrism = () => {
-		if (counterLightningPrism !== 0) {
-			setCounterLightningPrism(counterLightningPrism - 1);
-		}
-	};
-	const [counterBasaltPillar, setCounterBasaltPillar] = useState(0);
-	const incrementCounterBasaltPillar = () => {
-		setCounterBasaltPillar(counterBasaltPillar + 1);
-	};
-	const decrementCounterBasaltPillar = () => {
-		if (counterBasaltPillar !== 0) {
-			setCounterBasaltPillar(counterBasaltPillar - 1);
-		}
-	};
-	const [counterHoarfrostCore, setCounterHoarfrostCore] = useState(0);
-	const incrementCounterHoarfrostCore = () => {
-		setCounterHoarfrostCore(counterHoarfrostCore + 1);
-	};
-	const decrementCounterHoarfrostCore = () => {
-		if (counterHoarfrostCore !== 0) {
-			setCounterHoarfrostCore(counterHoarfrostCore - 1);
-		}
-	};
-	const [counterEverflameSeed, setCounterEverflameSeed] = useState(0);
-	const incrementCounterEverflameSeed = () => {
-		setCounterEverflameSeed(counterEverflameSeed + 1);
-	};
-	const decrementCounterEverflameSeed = () => {
-		if (counterEverflameSeed !== 0) {
-			setCounterEverflameSeed(counterEverflameSeed - 1);
-		}
-	};
-	const [counterCleansingHeart, setCounterCleansingHeart] = useState(0);
-	const incrementCounterCleansingHeart = () => {
-		setCounterCleansingHeart(counterCleansingHeart + 1);
-	};
-	const decrementCounterCleansingHeart = () => {
-		if (counterCleansingHeart !== 0) {
-			setCounterCleansingHeart(counterCleansingHeart - 1);
-		}
-	};
-	const [counterJuvenileJade, setCounterJuvenileJade] = useState(0);
-	const incrementCounterJuvenileJade = () => {
-		setCounterJuvenileJade(counterJuvenileJade + 1);
-	};
-	const decrementCounterJuvenileJade = () => {
-		if (counterJuvenileJade !== 0) {
-			setCounterJuvenileJade(counterJuvenileJade - 1);
-		}
-	};
-	const [counterCrystallineBloom, setCounterCrystallineBloom] = useState(0);
-	const incrementCounterCrystallineBloom = () => {
-		setCounterCrystallineBloom(counterCrystallineBloom + 1);
-	};
-	const decrementCounterCrystallineBloom = () => {
-		if (counterCrystallineBloom !== 0) {
-			setCounterCrystallineBloom(counterCrystallineBloom - 1);
-		}
-	};
+	//Liyue
 	const [counterMarionetteCore, setCounterMarionetteCore] = useState(0);
 	const incrementCounterMarionetteCore = () => {
 		setCounterMarionetteCore(counterMarionetteCore + 1);
@@ -226,15 +238,21 @@ const GenericLocalSpecialty = () => {
 		}
 	};
 
+	const Mond_LiyTotalHave = (input1, input2, input3, input4, input5, input6, input7, input8) => {
+		return parseInt(input1) + parseInt(input2) + parseInt(input3) + parseInt(input4) + parseInt(input5) + parseInt(input6) + parseInt(input7) + parseInt(input8);
+	};
+	const Mond_LiyTotalUsed = (input1, input2, input3, input4, input5, input6, input7, input8) => {
+		return parseInt(input1) + parseInt(input2) + parseInt(input3) + parseInt(input4) + parseInt(input5) + parseInt(input6) + parseInt(input7) + parseInt(input8);
+	};
 	var inputsHave = [
-		hurricaneSeed,
-		lightningPrism,
-		basaltPillar,
-		hoarfrostCore,
-		everflameSeed,
-		cleansingHeart,
-		juvenileJade,
-		crystallineBloom,
+		callaLily,
+		cecilia,
+		dandelionSeed,
+		philanemoMushroom,
+		smallLampGrass,
+		valberry,
+		windwheelAster,
+		wolfhook,
 		marionetteCore,
 		perpetualHeart,
 		smolderingPearl,
@@ -248,17 +266,17 @@ const GenericLocalSpecialty = () => {
 		perpetualCaliber,
 		lightGuidingTetrahedron,
 		quelledCreeper,
-		pseudoStamens,
+		pseudoStamens
 	];
 	var inputsUsed = [
-		counterHurricaneSeed,
-		counterLightningPrism,
-		counterBasaltPillar,
-		counterHoarfrostCore,
-		counterEverflameSeed,
-		counterCleansingHeart,
-		counterJuvenileJade,
-		counterCrystallineBloom,
+		counterCallaLily,
+		counterCecilia,
+		counterDandelionSeed,
+		counterPhilanemoMushroom,
+		counterSmallLampGrass,
+		counterValberry,
+		counterWindwheelAster,
+		counterWolfhook,
 		counterMarionetteCore,
 		counterPerpetualHeart,
 		counterSmolderingPearl,
@@ -272,7 +290,7 @@ const GenericLocalSpecialty = () => {
 		counterPerpetualCaliber,
 		counterLightGuidingTetrahedron,
 		counterQuelledCreeper,
-		counterPseudoStamens,
+		counterPseudoStamens
 	];
 
 	const LvUpMatTotalHave = (
@@ -391,162 +409,81 @@ const GenericLocalSpecialty = () => {
 					</thead>
 					<tbody>
 						<tr>
-							<td>Hurricane Seed</td>
-							<td>{3 * totalWorldtyLvUpMatPerChar - hurricaneSeed}</td>
+							<td colSpan={5}>Mondstadt</td>
+						</tr>
+						<tr>
+							<td>Calla Lily</td>
+							<td>{2 * totalPerChar - callaLily}</td>
 							<td>
-								<input type="number" className="local-specialty-num-input" value={hurricaneSeed - counterHurricaneSeed} onChange={(e) => setHurricaneSeed(e.target.value)} placeholder="0" min="0" />
+								<input type="number" className="local-specialty-num-input" value={callaLily - counterCallaLily} onChange={(e) => setCallaLily(e.target.value)} placeholder="0" min="0" />
 							</td>
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterHurricaneSeed}>
+										<button className="local-specialty-arrow-down" onClick={decrementCounterCallaLily}>
 											-
 										</button>
 
-										<span className="local-specialty-arrow-mid-number">{parseInt(counterHurricaneSeed)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterHurricaneSeed}>
+										<span className="local-specialty-arrow-mid-number">{parseInt(counterCallaLily)}</span>
+										<button className="local-specialty-arrow-up" onClick={incrementCounterCallaLily}>
 											+
 										</button>
 									</>
 								}
 							</td>
-							<td>Jean, Sucrose, Venti</td>
+							<td></td>
 						</tr>
 						<tr>
-							<td>Lightning Prism</td>
-							<td>{5 * totalWorldtyLvUpMatPerChar - lightningPrism}</td>
+							<td>Cecilia</td>
+							<td>{2 * totalPerChar - cecilia}</td>
 							<td>
-								<input type="number" className="local-specialty-num-input" value={lightningPrism - counterLightningPrism} onChange={(e) => setLightningPrism(e.target.value)} placeholder="0" min="0" />
+								<input type="number" className="local-specialty-num-input" value={cecilia - counterCecilia} onChange={(e) => setCecilia(e.target.value)} placeholder="0" min="0" />
 							</td>
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterLightningPrism}>
+										<button className="local-specialty-arrow-down" onClick={decrementCounterCecilia}>
 											-
 										</button>
-										<span className="local-specialty-arrow-mid-number">{parseInt(counterLightningPrism)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterLightningPrism}>
+										<span className="local-specialty-arrow-mid-number">{parseInt(counterCecilia)}</span>
+										<button className="local-specialty-arrow-up" onClick={incrementCounterCecilia}>
 											+
 										</button>
 									</>
 								}
 							</td>
-							<td>Beidou, Fischl, Keqing, Lisa, Razor</td>
+							<td></td>
 						</tr>
 						<tr>
-							<td>Basalt Pillar</td>
-							<td>{4 * totalWorldtyLvUpMatPerChar - basaltPillar}</td>
+							<td>Dandelion Seed</td>
+							<td>{2 * totalPerChar - dandelionSeed}</td>
 							<td>
-								<input type="number" className="local-specialty-num-input" value={basaltPillar - counterBasaltPillar} onChange={(e) => setBasaltPillar(e.target.value)} placeholder="0" min="0" />
+								<input type="number" className="local-specialty-num-input" value={dandelionSeed - counterDandelionSeed} onChange={(e) => setDandelionSeed(e.target.value)} placeholder="0" min="0" />
 							</td>
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterBasaltPillar}>
+										<button className="local-specialty-arrow-down" onClick={decrementCounterDandelionSeed}>
 											-
 										</button>
-										<span className="local-specialty-arrow-mid-number">{parseInt(counterBasaltPillar)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterBasaltPillar}>
+										<span className="local-specialty-arrow-mid-number">{parseInt(counterDandelionSeed)}</span>
+										<button className="local-specialty-arrow-up" onClick={incrementCounterDandelionSeed}>
 											+
 										</button>
 									</>
 								}
 							</td>
-							<td>Albedo, Ningguang, Noelle, Zhongli</td>
+							<td></td>
 						</tr>
 						<tr>
-							<td>Hoarfrost Core</td>
-							<td>{6 * totalWorldtyLvUpMatPerChar - hoarfrostCore}</td>
-							<td>
-								<input type="number" className="local-specialty-num-input" value={hoarfrostCore - counterHoarfrostCore} onChange={(e) => setHoarfrostCore(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterHoarfrostCore}>
-											-
-										</button>
-										<span className="local-specialty-arrow-mid-number">{parseInt(counterHoarfrostCore)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterHoarfrostCore}>
-											+
-										</button>
-									</>
-								}
-							</td>
-							<td>Chongyun, Diona, Ganyu, Kaeya, Qiqi, Rosaria</td>
-						</tr>
-						<tr>
-							<td>Everflame Seed</td>
-							<td>{6 * totalWorldtyLvUpMatPerChar - everflameSeed} </td>
-							<td>
-								<input type="number" className="local-specialty-num-input" value={everflameSeed - counterEverflameSeed} onChange={(e) => setEverflameSeed(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterEverflameSeed}>
-											-
-										</button>
-										<span className="local-specialty-arrow-mid-number">{parseInt(counterEverflameSeed)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterEverflameSeed}>
-											+
-										</button>
-									</>
-								}
-							</td>
-							<td>Amber, Bennet, Diluc, Klee, Xiangling, Xinyan</td>
-						</tr>
-						<tr>
-							<td>Cleansing Heart</td>
-							<td>{4 * totalWorldtyLvUpMatPerChar - cleansingHeart}</td>
-							<td>
-								<input type="number" className="local-specialty-num-input" value={cleansingHeart - counterCleansingHeart} onChange={(e) => setCleansingHeart(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterCleansingHeart}>
-											-
-										</button>
-										<span className="local-specialty-arrow-mid-number">{parseInt(counterCleansingHeart)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterCleansingHeart}>
-											+
-										</button>
-									</>
-								}
-							</td>
-							<td>Barbara, Mona, Tartaglia, Xingqiu</td>
-						</tr>
-						<tr>
-							<td>Juvenile Jade</td>
-							<td>{3 * totalWorldtyLvUpMatPerChar - juvenileJade}</td>
-							<td>
-								<input type="number" className="local-specialty-num-input" value={juvenileJade - counterJuvenileJade} onChange={(e) => setJuvenileJade(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterJuvenileJade}>
-											-
-										</button>
-										<span className="local-specialty-arrow-mid-number">{parseInt(counterJuvenileJade)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterJuvenileJade}>
-											+
-										</button>
-									</>
-								}
-							</td>
-							<td>Hu Tao, Xiao, Yanfei</td>
-						</tr>
-						<tr>
-							<td>Crystalline Bloom</td>
-							<td>{2 * totalWorldtyLvUpMatPerChar - crystallineBloom}</td>
+							<td>Philanemo Mushroom</td>
+							<td>{3 * totalPerChar - philanemoMushroom}</td>
 							<td>
 								<input
 									type="number"
 									className="local-specialty-num-input"
-									value={crystallineBloom - counterCrystallineBloom}
-									onChange={(e) => setCrystallineBloom(e.target.value)}
+									value={philanemoMushroom - counterPhilanemoMushroom}
+									onChange={(e) => setPhilanemoMushroom(e.target.value)}
 									placeholder="0"
 									min="0"
 								/>
@@ -554,21 +491,120 @@ const GenericLocalSpecialty = () => {
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterCrystallineBloom}>
+										<button className="local-specialty-arrow-down" onClick={decrementCounterPhilanemoMushroom}>
 											-
 										</button>
-										<span className="local-specialty-arrow-mid-number">{parseInt(counterCrystallineBloom)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterCrystallineBloom}>
+										<span className="local-specialty-arrow-mid-number">{parseInt(counterPhilanemoMushroom)}</span>
+										<button className="local-specialty-arrow-up" onClick={incrementCounterPhilanemoMushroom}>
 											+
 										</button>
 									</>
 								}
 							</td>
-							<td>Aloy, Eula</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Small Lamp Grass</td>
+							<td>{3 * totalPerChar - smallLampGrass} </td>
+							<td>
+								<input type="number" className="local-specialty-num-input" value={smallLampGrass - counterSmallLampGrass} onChange={(e) => setSmallLampGrass(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="local-specialty-arrow-down" onClick={decrementCounterSmallLampGrass}>
+											-
+										</button>
+										<span className="local-specialty-arrow-mid-number">{parseInt(counterSmallLampGrass)}</span>
+										<button className="local-specialty-arrow-up" onClick={incrementCounterSmallLampGrass}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Valberry</td>
+							<td>{3 * totalPerChar - valberry}</td>
+							<td>
+								<input type="number" className="local-specialty-num-input" value={valberry - counterValberry} onChange={(e) => setValberry(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="local-specialty-arrow-down" onClick={decrementCounterValberry}>
+											-
+										</button>
+										<span className="local-specialty-arrow-mid-number">{parseInt(counterValberry)}</span>
+										<button className="local-specialty-arrow-up" onClick={incrementCounterValberry}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Windwheel Aster</td>
+							<td>{3 * totalPerChar - windwheelAster}</td>
+							<td>
+								<input type="number" className="local-specialty-num-input" value={windwheelAster - counterWindwheelAster} onChange={(e) => setWindwheelAster(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="local-specialty-arrow-down" onClick={decrementCounterWindwheelAster}>
+											-
+										</button>
+										<span className="local-specialty-arrow-mid-number">{parseInt(counterWindwheelAster)}</span>
+										<button className="local-specialty-arrow-up" onClick={incrementCounterWindwheelAster}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wolfhook</td>
+							<td>{1 * totalPerChar - wolfhook}</td>
+							<td>
+								<input type="number" className="local-specialty-num-input" value={wolfhook - counterWolfhook} onChange={(e) => setWolfhook(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="local-specialty-arrow-down" onClick={decrementCounterWolfhook}>
+											-
+										</button>
+										<span className="local-specialty-arrow-mid-number">{parseInt(counterWolfhook)}</span>
+										<button className="local-specialty-arrow-up" onClick={incrementCounterWolfhook}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td></td>
+						</tr>
+						<tr className="local-specialty-total-row">
+							<td>TOTAL</td>
+							<td>{totalPerChar * 19 - Mond_LiyTotalHave(callaLily, cecilia, dandelionSeed, philanemoMushroom, smallLampGrass, valberry, windwheelAster, wolfhook)}</td>
+							<td>
+								{Mond_LiyTotalHave(callaLily, cecilia, dandelionSeed, philanemoMushroom, smallLampGrass, valberry, windwheelAster, wolfhook) -
+									Mond_LiyTotalUsed(counterCallaLily, counterCecilia, counterDandelionSeed, counterPhilanemoMushroom, counterSmallLampGrass, counterValberry, counterWindwheelAster, counterWolfhook)}
+							</td>
+							<td>
+								{Mond_LiyTotalUsed(counterCallaLily, counterCecilia, counterDandelionSeed, counterPhilanemoMushroom, counterSmallLampGrass, counterValberry, counterWindwheelAster, counterWolfhook)}
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colSpan={5}>Liyue</td>
 						</tr>
 						<tr>
 							<td>Marionette Core</td>
-							<td>{2 * totalWorldtyLvUpMatPerChar - marionetteCore}</td>
+							<td>{2 * totalPerChar - marionetteCore}</td>
 							<td>
 								<input type="number" className="local-specialty-num-input" value={marionetteCore - counterMarionetteCore} onChange={(e) => setMarionetteCore(e.target.value)} placeholder="0" min="0" />
 							</td>
@@ -589,7 +625,7 @@ const GenericLocalSpecialty = () => {
 						</tr>
 						<tr>
 							<td>Perpetual Heart</td>
-							<td>{2 * totalWorldtyLvUpMatPerChar - perpetualHeart}</td>
+							<td>{2 * totalPerChar - perpetualHeart}</td>
 							<td>
 								<input type="number" className="local-specialty-num-input" value={perpetualHeart - counterPerpetualHeart} onChange={(e) => setPerpetualHeart(e.target.value)} placeholder="0" min="0" />
 							</td>
@@ -610,7 +646,7 @@ const GenericLocalSpecialty = () => {
 						</tr>
 						<tr>
 							<td>Smoldering Pearl</td>
-							<td>{2 * totalWorldtyLvUpMatPerChar - smolderingPearl}</td>
+							<td>{2 * totalPerChar - smolderingPearl}</td>
 							<td>
 								<input
 									type="number"
@@ -638,7 +674,7 @@ const GenericLocalSpecialty = () => {
 						</tr>
 						<tr>
 							<td>Dew of Repudiation</td>
-							<td>{2 * totalWorldtyLvUpMatPerChar - dewOfRepudiation}</td>
+							<td>{2 * totalPerChar - dewOfRepudiation}</td>
 							<td>
 								<input
 									type="number"
@@ -666,7 +702,7 @@ const GenericLocalSpecialty = () => {
 						</tr>
 						<tr>
 							<td>Storm Beads</td>
-							<td>{2 * totalWorldtyLvUpMatPerChar - stormBeads}</td>
+							<td>{2 * totalPerChar - stormBeads}</td>
 							<td>
 								<input type="number" className="local-specialty-num-input" value={stormBeads - counterStormBeads} onChange={(e) => setStormBeads(e.target.value)} placeholder="0" min="0" />
 							</td>
@@ -687,7 +723,7 @@ const GenericLocalSpecialty = () => {
 						</tr>
 						<tr>
 							<td>Riftborn Regalia</td>
-							<td>{2 * totalWorldtyLvUpMatPerChar - riftbornRegalia}</td>
+							<td>{2 * totalPerChar - riftbornRegalia}</td>
 							<td>
 								<input
 									type="number"
@@ -715,7 +751,7 @@ const GenericLocalSpecialty = () => {
 						</tr>
 						<tr>
 							<td>Dragonheir's False Fin</td>
-							<td>{2 * totalWorldtyLvUpMatPerChar - dragonheirsFalseFin}</td>
+							<td>{2 * totalPerChar - dragonheirsFalseFin}</td>
 							<td>
 								<input
 									type="number"
@@ -743,7 +779,7 @@ const GenericLocalSpecialty = () => {
 						</tr>
 						<tr>
 							<td>Runic Fang</td>
-							<td>{3 * totalWorldtyLvUpMatPerChar - runicFang}</td>
+							<td>{3 * totalPerChar - runicFang}</td>
 							<td>
 								<input type="number" className="local-specialty-num-input" value={runicFang - counterRunicFang} onChange={(e) => setRunicFang(e.target.value)} placeholder="0" min="0" />
 							</td>
@@ -764,7 +800,7 @@ const GenericLocalSpecialty = () => {
 						</tr>
 						<tr>
 							<td>Majestic Hooked Beak</td>
-							<td>{2 * totalWorldtyLvUpMatPerChar - majesticHookedBeak}</td>
+							<td>{2 * totalPerChar - majesticHookedBeak}</td>
 							<td>
 								<input
 									type="number"
@@ -792,7 +828,7 @@ const GenericLocalSpecialty = () => {
 						</tr>
 						<tr>
 							<td>Thunderclap Fruitcore</td>
-							<td>{2 * totalWorldtyLvUpMatPerChar - thunderclapFruitcore}</td>
+							<td>{2 * totalPerChar - thunderclapFruitcore}</td>
 							<td>
 								<input
 									type="number"
@@ -821,7 +857,7 @@ const GenericLocalSpecialty = () => {
 
 						<tr>
 							<td>Perpetual Caliber</td>
-							<td>{3 * totalWorldtyLvUpMatPerChar - perpetualCaliber}</td>
+							<td>{3 * totalPerChar - perpetualCaliber}</td>
 							<td>
 								<input
 									type="number"
@@ -849,7 +885,7 @@ const GenericLocalSpecialty = () => {
 						</tr>
 						<tr>
 							<td>Light Guiding Tetrahedron</td>
-							<td>{3 * totalWorldtyLvUpMatPerChar - lightGuidingTetrahedron}</td>
+							<td>{3 * totalPerChar - lightGuidingTetrahedron}</td>
 							<td>
 								<input
 									type="number"
@@ -877,7 +913,7 @@ const GenericLocalSpecialty = () => {
 						</tr>
 						<tr>
 							<td>Quelled Creeper</td>
-							<td>{2 * totalWorldtyLvUpMatPerChar - quelledCreeper}</td>
+							<td>{2 * totalPerChar - quelledCreeper}</td>
 							<td>
 								<input type="number" className="local-specialty-num-input" value={quelledCreeper - counterQuelledCreeper} onChange={(e) => setQuelledCreeper(e.target.value)} placeholder="0" min="0" />
 							</td>
@@ -899,7 +935,7 @@ const GenericLocalSpecialty = () => {
 
 						<tr>
 							<td>Pseudo Stamens</td>
-							<td>{1 * totalWorldtyLvUpMatPerChar - pseudoStamens}</td>
+							<td>{1 * totalPerChar - pseudoStamens}</td>
 							<td>
 								<input type="number" className="local-specialty-num-input" value={pseudoStamens - counterPseudoStamens} onChange={(e) => setPseudoStamens(e.target.value)} placeholder="0" min="0" />
 							</td>
@@ -920,7 +956,7 @@ const GenericLocalSpecialty = () => {
 						</tr>
 						<tr className="local-specialty-total-row">
 							<td>TOTAL</td>
-							<td>{totalWorldtyLvUpMatPerChar * 63 - LvUpMatTotalHave(...inputsHave)}</td>
+							<td>{totalPerChar * 63 - LvUpMatTotalHave(...inputsHave)}</td>
 							<td>{LvUpMatTotalHave(...inputsHave) - LvUpMatTotalUsed(...inputsUsed)}</td>
 							<td>{LvUpMatTotalUsed(...inputsUsed)}</td>
 							<td></td>

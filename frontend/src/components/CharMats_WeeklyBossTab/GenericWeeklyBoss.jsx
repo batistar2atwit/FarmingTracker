@@ -798,6 +798,13 @@ const GenericWeeklyBoss = () => {
 							<td>{LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
 							<td></td>
 						</tr>
+						<tr className="weekly-total-row">
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar * 10 - LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell)}</td>
+							<td>{LvUpMatTotalHave(puppetStrings, mirrorOfMushin, dakasBell) - LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
+							<td>{LvUpMatTotalUsed(counterJoururiWorkshop1, counterJoururiWorkshop2, counterJoururiWorkshop3)}</td>
+							<td></td>
+						</tr>
 					</tbody>
 				</table>
 			</div>

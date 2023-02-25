@@ -46,20 +46,20 @@
 	text-align: right;
 }
 
-.world-arrow-up,
-.world-arrow-down {
+.local-specialty-arrow-up,
+.local-specialty-arrow-down {
 	height: 25px;
 	width: 25px;
 }
 
-.world-arrow-down {
+.local-specialty-arrow-down {
 	margin-right: 10px;
 }
 
-.world-arrow-up {
+.local-specialty-arrow-up {
 	margin-left: 10px;
 }
 
-.world-arrow-mid-number {
+.local-specialty-arrow-mid-number {
 	font-size: 15px;
 }
