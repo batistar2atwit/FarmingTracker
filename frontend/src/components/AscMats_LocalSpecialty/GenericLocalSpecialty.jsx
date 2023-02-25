@@ -12,14 +12,15 @@ const GenericLocalSpecialty = () => {
 	const [wolfhook, setWolfhook] = useState(0);
 
 	//Liyue
-	const [marionetteCore, setMarionetteCore] = useState(0);
-	const [perpetualHeart, setPerpetualHeart] = useState(0);
-	const [smolderingPearl, setSmolderingPearl] = useState(0);
-	const [dewOfRepudiation, setDewOfRepudiation] = useState(0);
-	const [stormBeads, setStormBeads] = useState(0);
-	const [riftbornRegalia, setRiftbornRegalia] = useState(0);
-	const [dragonheirsFalseFin, setDragonheirsFalseFin] = useState(0);
-	const [runicFang, setRunicFang] = useState(0);
+	const [jueyunChili, setJueyunChili] = useState(0);
+	const [noctilucousJade, setNoctilucousJade] = useState(0);
+	const [silkFlower, setSilkFlower] = useState(0);
+	const [glazeLily, setGlazeLily] = useState(0);
+	const [qingxin, setQingxin] = useState(0);
+	const [starconch, setStarconch] = useState(0);
+	const [violetgrass, setVioletgrass] = useState(0);
+
+	const [corLapis, setCorLapis] = useState(0);
 	const [majesticHookedBeak, setMajesticHookedBeak] = useState(0);
 	const [thunderclapFruitcore, setThunderclapFruitcore] = useState(0);
 	const [perpetualCaliber, setPerpetualCaliber] = useState(0);
@@ -111,78 +112,88 @@ const GenericLocalSpecialty = () => {
 	};
 
 	//Liyue
-	const [counterMarionetteCore, setCounterMarionetteCore] = useState(0);
-	const incrementCounterMarionetteCore = () => {
-		setCounterMarionetteCore(counterMarionetteCore + 1);
+	//
+	const [counterJueyunChili, setCounterJueyunChili] = useState(0);
+	const incrementCounterJueyunChili = () => {
+		setCounterJueyunChili(counterJueyunChili + 1);
 	};
-	const decrementCounterMarionetteCore = () => {
-		if (counterMarionetteCore !== 0) {
-			setCounterMarionetteCore(counterMarionetteCore - 1);
+	const decrementCounterJueyunChili = () => {
+		if (counterJueyunChili !== 0) {
+			setCounterJueyunChili(counterJueyunChili - 1);
 		}
 	};
-	const [counterPerpetualHeart, setCounterPerpetualHeart] = useState(0);
-	const incrementCounterPerpetualHeart = () => {
-		setCounterPerpetualHeart(counterPerpetualHeart + 1);
+	//
+	const [counterNoctilucousJade, setCounterNoctilucousJade] = useState(0);
+	const incrementCounterNoctilucousJade = () => {
+		setCounterNoctilucousJade(counterNoctilucousJade + 1);
 	};
-	const decrementCounterPerpetualHeart = () => {
-		if (counterPerpetualHeart !== 0) {
-			setCounterPerpetualHeart(counterPerpetualHeart - 1);
+	const decrementCounterNoctilucousJade = () => {
+		if (counterNoctilucousJade !== 0) {
+			setCounterNoctilucousJade(counterNoctilucousJade - 1);
 		}
 	};
-	const [counterSmolderingPearl, setCounterSmolderingPearl] = useState(0);
-	const incrementCounterSmolderingPearl = () => {
-		setCounterSmolderingPearl(counterSmolderingPearl + 1);
+	//
+	const [counterSilkFlower, setCounterSilkFlower] = useState(0);
+	const incrementCounterSilkFlower = () => {
+		setCounterSilkFlower(counterSilkFlower + 1);
 	};
-	const decrementCounterSmolderingPearl = () => {
-		if (counterSmolderingPearl !== 0) {
-			setCounterSmolderingPearl(counterSmolderingPearl - 1);
+	const decrementCounterSilkFlower = () => {
+		if (counterSilkFlower !== 0) {
+			setCounterSilkFlower(counterSilkFlower - 1);
 		}
 	};
-	const [counterDewOfRepudiation, setCounterDewOfRepudiation] = useState(0);
-	const incrementCounterDewOfRepudiation = () => {
-		setCounterDewOfRepudiation(counterDewOfRepudiation + 1);
+	//
+	const [counterglazeLily, setCounterglazeLily] = useState(0);
+	const incrementCounterglazeLily = () => {
+		setCounterglazeLily(counterglazeLily + 1);
 	};
-	const decrementCounterDewOfRepudiation = () => {
-		if (counterDewOfRepudiation !== 0) {
-			setCounterDewOfRepudiation(counterDewOfRepudiation - 1);
+	const decrementCounterglazeLily = () => {
+		if (counterglazeLily !== 0) {
+			setCounterglazeLily(counterglazeLily - 1);
 		}
 	};
-	const [counterStormBeads, setCounterStormBeads] = useState(0);
-	const incrementCounterStormBeads = () => {
-		setCounterStormBeads(counterStormBeads + 1);
+	//
+	const [counterQingxin, setCounterQingxin] = useState(0);
+	const incrementCounterQingxin = () => {
+		setCounterQingxin(counterQingxin + 1);
 	};
-	const decrementCounterStormBeads = () => {
-		if (counterStormBeads !== 0) {
-			setCounterStormBeads(counterStormBeads - 1);
+	const decrementCounterQingxin = () => {
+		if (counterQingxin !== 0) {
+			setCounterQingxin(counterQingxin - 1);
 		}
 	};
-	const [counterRiftbornRegalia, setCounterRiftbornRegalia] = useState(0);
-	const incrementCounterRiftbornRegalia = () => {
-		setCounterRiftbornRegalia(counterRiftbornRegalia + 1);
+	//
+	const [counterStarconch, setCounterStarconch] = useState(0);
+	const incrementCounterStarconch = () => {
+		setCounterStarconch(counterStarconch + 1);
 	};
-	const decrementCounterRiftbornRegalia = () => {
-		if (counterRiftbornRegalia !== 0) {
-			setCounterRiftbornRegalia(counterRiftbornRegalia - 1);
+	const decrementCounterStarconch = () => {
+		if (counterStarconch !== 0) {
+			setCounterStarconch(counterStarconch - 1);
 		}
 	};
-	const [counterDragonheirsFalseFin, setCounterDragonheirsFalseFin] = useState(0);
-	const incrementCounterDragonheirsFalseFin = () => {
-		setCounterDragonheirsFalseFin(counterDragonheirsFalseFin + 1);
+	//
+	const [counterVioletgrass, setCounterVioletgrass] = useState(0);
+	const incrementCounterVioletgrass = () => {
+		setCounterVioletgrass(counterVioletgrass + 1);
 	};
-	const decrementCounterDragonheirsFalseFin = () => {
-		if (counterDragonheirsFalseFin !== 0) {
-			setCounterDragonheirsFalseFin(counterDragonheirsFalseFin - 1);
+	const decrementCounterVioletgrass = () => {
+		if (counterVioletgrass !== 0) {
+			setCounterVioletgrass(counterVioletgrass - 1);
 		}
 	};
-	const [counterRunicFang, setCounterRunicFang] = useState(0);
-	const incrementCounterRunicFang = () => {
-		setCounterRunicFang(counterRunicFang + 1);
+	//
+	const [counterCorLapis, setCounterCorLapis] = useState(0);
+	const incrementCounterCorLapis = () => {
+		setCounterCorLapis(counterCorLapis + 1);
 	};
-	const decrementCounterRunicFang = () => {
-		if (counterRunicFang !== 0) {
-			setCounterRunicFang(counterRunicFang - 1);
+	const decrementCounterCorLapis = () => {
+		if (counterCorLapis !== 0) {
+			setCounterCorLapis(counterCorLapis - 1);
 		}
 	};
+
+	//INAZUMA
 	const [counterMajesticHookedBeak, setCounterMajesticHookedBeak] = useState(0);
 	const incrementCounterMajesticHookedBeak = () => {
 		setCounterMajesticHookedBeak(counterMajesticHookedBeak + 1);
@@ -253,20 +264,20 @@ const GenericLocalSpecialty = () => {
 		valberry,
 		windwheelAster,
 		wolfhook,
-		marionetteCore,
-		perpetualHeart,
-		smolderingPearl,
-		dewOfRepudiation,
-		stormBeads,
-		riftbornRegalia,
-		dragonheirsFalseFin,
-		runicFang,
+		jueyunChili,
+		noctilucousJade,
+		silkFlower,
+		glazeLily,
+		qingxin,
+		starconch,
+		violetgrass,
+		corLapis,
 		majesticHookedBeak,
 		thunderclapFruitcore,
 		perpetualCaliber,
 		lightGuidingTetrahedron,
 		quelledCreeper,
-		pseudoStamens
+		pseudoStamens,
 	];
 	var inputsUsed = [
 		counterCallaLily,
@@ -277,20 +288,20 @@ const GenericLocalSpecialty = () => {
 		counterValberry,
 		counterWindwheelAster,
 		counterWolfhook,
-		counterMarionetteCore,
-		counterPerpetualHeart,
-		counterSmolderingPearl,
-		counterDewOfRepudiation,
-		counterStormBeads,
-		counterRiftbornRegalia,
-		counterDragonheirsFalseFin,
-		counterRunicFang,
+		counterJueyunChili,
+		counterNoctilucousJade,
+		counterSilkFlower,
+		counterglazeLily,
+		counterQingxin,
+		counterStarconch,
+		counterVioletgrass,
+		counterCorLapis,
 		counterMajesticHookedBeak,
 		counterThunderclapFruitcore,
 		counterPerpetualCaliber,
 		counterLightGuidingTetrahedron,
 		counterQuelledCreeper,
-		counterPseudoStamens
+		counterPseudoStamens,
 	];
 
 	const LvUpMatTotalHave = (
@@ -415,17 +426,30 @@ const GenericLocalSpecialty = () => {
 							<td>Calla Lily</td>
 							<td>{2 * totalPerChar - callaLily}</td>
 							<td>
-								<input type="number" className="local-specialty-num-input" value={callaLily - counterCallaLily} onChange={(e) => setCallaLily(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="local-specialty-num-input"
+									value={callaLily - counterCallaLily}
+									onChange={(e) => setCallaLily(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterCallaLily}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterCallaLily}
+										>
 											-
 										</button>
 
 										<span className="local-specialty-arrow-mid-number">{parseInt(counterCallaLily)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterCallaLily}>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterCallaLily}
+										>
 											+
 										</button>
 									</>
@@ -437,16 +461,29 @@ const GenericLocalSpecialty = () => {
 							<td>Cecilia</td>
 							<td>{2 * totalPerChar - cecilia}</td>
 							<td>
-								<input type="number" className="local-specialty-num-input" value={cecilia - counterCecilia} onChange={(e) => setCecilia(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="local-specialty-num-input"
+									value={cecilia - counterCecilia}
+									onChange={(e) => setCecilia(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterCecilia}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterCecilia}
+										>
 											-
 										</button>
 										<span className="local-specialty-arrow-mid-number">{parseInt(counterCecilia)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterCecilia}>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterCecilia}
+										>
 											+
 										</button>
 									</>
@@ -458,16 +495,29 @@ const GenericLocalSpecialty = () => {
 							<td>Dandelion Seed</td>
 							<td>{2 * totalPerChar - dandelionSeed}</td>
 							<td>
-								<input type="number" className="local-specialty-num-input" value={dandelionSeed - counterDandelionSeed} onChange={(e) => setDandelionSeed(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="local-specialty-num-input"
+									value={dandelionSeed - counterDandelionSeed}
+									onChange={(e) => setDandelionSeed(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterDandelionSeed}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterDandelionSeed}
+										>
 											-
 										</button>
 										<span className="local-specialty-arrow-mid-number">{parseInt(counterDandelionSeed)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterDandelionSeed}>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterDandelionSeed}
+										>
 											+
 										</button>
 									</>
@@ -491,11 +541,17 @@ const GenericLocalSpecialty = () => {
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterPhilanemoMushroom}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterPhilanemoMushroom}
+										>
 											-
 										</button>
 										<span className="local-specialty-arrow-mid-number">{parseInt(counterPhilanemoMushroom)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterPhilanemoMushroom}>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterPhilanemoMushroom}
+										>
 											+
 										</button>
 									</>
@@ -507,16 +563,29 @@ const GenericLocalSpecialty = () => {
 							<td>Small Lamp Grass</td>
 							<td>{3 * totalPerChar - smallLampGrass} </td>
 							<td>
-								<input type="number" className="local-specialty-num-input" value={smallLampGrass - counterSmallLampGrass} onChange={(e) => setSmallLampGrass(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="local-specialty-num-input"
+									value={smallLampGrass - counterSmallLampGrass}
+									onChange={(e) => setSmallLampGrass(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterSmallLampGrass}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterSmallLampGrass}
+										>
 											-
 										</button>
 										<span className="local-specialty-arrow-mid-number">{parseInt(counterSmallLampGrass)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterSmallLampGrass}>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterSmallLampGrass}
+										>
 											+
 										</button>
 									</>
@@ -528,16 +597,29 @@ const GenericLocalSpecialty = () => {
 							<td>Valberry</td>
 							<td>{3 * totalPerChar - valberry}</td>
 							<td>
-								<input type="number" className="local-specialty-num-input" value={valberry - counterValberry} onChange={(e) => setValberry(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="local-specialty-num-input"
+									value={valberry - counterValberry}
+									onChange={(e) => setValberry(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterValberry}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterValberry}
+										>
 											-
 										</button>
 										<span className="local-specialty-arrow-mid-number">{parseInt(counterValberry)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterValberry}>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterValberry}
+										>
 											+
 										</button>
 									</>
@@ -549,16 +631,29 @@ const GenericLocalSpecialty = () => {
 							<td>Windwheel Aster</td>
 							<td>{3 * totalPerChar - windwheelAster}</td>
 							<td>
-								<input type="number" className="local-specialty-num-input" value={windwheelAster - counterWindwheelAster} onChange={(e) => setWindwheelAster(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="local-specialty-num-input"
+									value={windwheelAster - counterWindwheelAster}
+									onChange={(e) => setWindwheelAster(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterWindwheelAster}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterWindwheelAster}
+										>
 											-
 										</button>
 										<span className="local-specialty-arrow-mid-number">{parseInt(counterWindwheelAster)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterWindwheelAster}>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterWindwheelAster}
+										>
 											+
 										</button>
 									</>
@@ -570,16 +665,29 @@ const GenericLocalSpecialty = () => {
 							<td>Wolfhook</td>
 							<td>{1 * totalPerChar - wolfhook}</td>
 							<td>
-								<input type="number" className="local-specialty-num-input" value={wolfhook - counterWolfhook} onChange={(e) => setWolfhook(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="local-specialty-num-input"
+									value={wolfhook - counterWolfhook}
+									onChange={(e) => setWolfhook(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterWolfhook}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterWolfhook}
+										>
 											-
 										</button>
 										<span className="local-specialty-arrow-mid-number">{parseInt(counterWolfhook)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterWolfhook}>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterWolfhook}
+										>
 											+
 										</button>
 									</>
@@ -603,56 +711,14 @@ const GenericLocalSpecialty = () => {
 							<td colSpan={5}>Liyue</td>
 						</tr>
 						<tr>
-							<td>Marionette Core</td>
-							<td>{2 * totalPerChar - marionetteCore}</td>
-							<td>
-								<input type="number" className="local-specialty-num-input" value={marionetteCore - counterMarionetteCore} onChange={(e) => setMarionetteCore(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterMarionetteCore}>
-											-
-										</button>
-										<span className="local-specialty-arrow-mid-number">{parseInt(counterMarionetteCore)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterMarionetteCore}>
-											+
-										</button>
-									</>
-								}
-							</td>
-							<td>Kazuha, Sayu</td>
-						</tr>
-						<tr>
-							<td>Perpetual Heart</td>
-							<td>{2 * totalPerChar - perpetualHeart}</td>
-							<td>
-								<input type="number" className="local-specialty-num-input" value={perpetualHeart - counterPerpetualHeart} onChange={(e) => setPerpetualHeart(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterPerpetualHeart}>
-											-
-										</button>
-										<span className="local-specialty-arrow-mid-number">{parseInt(counterPerpetualHeart)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterPerpetualHeart}>
-											+
-										</button>
-									</>
-								}
-							</td>
-							<td>Gorou, Ayaka</td>
-						</tr>
-						<tr>
-							<td>Smoldering Pearl</td>
-							<td>{2 * totalPerChar - smolderingPearl}</td>
+							<td>Jueyun Chili</td>
+							<td>{2 * totalPerChar - jueyunChili}</td>
 							<td>
 								<input
 									type="number"
 									className="local-specialty-num-input"
-									value={smolderingPearl - counterSmolderingPearl}
-									onChange={(e) => setSmolderingPearl(e.target.value)}
+									value={jueyunChili - counterJueyunChili}
+									onChange={(e) => setJueyunChili(e.target.value)}
 									placeholder="0"
 									min="0"
 								/>
@@ -660,27 +726,33 @@ const GenericLocalSpecialty = () => {
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterSmolderingPearl}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterJueyunChili}
+										>
 											-
 										</button>
-										<span className="local-specialty-arrow-mid-number">{parseInt(counterSmolderingPearl)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterSmolderingPearl}>
+										<span className="local-specialty-arrow-mid-number">{parseInt(counterJueyunChili)}</span>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterJueyunChili}
+										>
 											+
 										</button>
 									</>
 								}
 							</td>
-							<td>Thoma, Yoimia</td>
+							<td></td>
 						</tr>
 						<tr>
-							<td>Dew of Repudiation</td>
-							<td>{2 * totalPerChar - dewOfRepudiation}</td>
+							<td>Noctilucous Jade</td>
+							<td>{2 * totalPerChar - noctilucousJade}</td>
 							<td>
 								<input
 									type="number"
 									className="local-specialty-num-input"
-									value={dewOfRepudiation - counterDewOfRepudiation}
-									onChange={(e) => setDewOfRepudiation(e.target.value)}
+									value={noctilucousJade - counterNoctilucousJade}
+									onChange={(e) => setNoctilucousJade(e.target.value)}
 									placeholder="0"
 									min="0"
 								/>
@@ -688,48 +760,33 @@ const GenericLocalSpecialty = () => {
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterDewOfRepudiation}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterNoctilucousJade}
+										>
 											-
 										</button>
-										<span className="local-specialty-arrow-mid-number">{parseInt(counterDewOfRepudiation)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterDewOfRepudiation}>
+										<span className="local-specialty-arrow-mid-number">{parseInt(counterNoctilucousJade)}</span>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterNoctilucousJade}
+										>
 											+
 										</button>
 									</>
 								}
 							</td>
-							<td>Ayato, Kokomi</td>
+							<td></td>
 						</tr>
 						<tr>
-							<td>Storm Beads</td>
-							<td>{2 * totalPerChar - stormBeads}</td>
-							<td>
-								<input type="number" className="local-specialty-num-input" value={stormBeads - counterStormBeads} onChange={(e) => setStormBeads(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterStormBeads}>
-											-
-										</button>
-										<span className="local-specialty-arrow-mid-number">{parseInt(counterStormBeads)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterStormBeads}>
-											+
-										</button>
-									</>
-								}
-							</td>
-							<td>Kujou Sara, Raiden</td>
-						</tr>
-						<tr>
-							<td>Riftborn Regalia</td>
-							<td>{2 * totalPerChar - riftbornRegalia}</td>
+							<td>Silk Flower</td>
+							<td>{2 * totalPerChar - silkFlower}</td>
 							<td>
 								<input
 									type="number"
 									className="local-specialty-num-input"
-									value={riftbornRegalia - counterRiftbornRegalia}
-									onChange={(e) => setRiftbornRegalia(e.target.value)}
+									value={silkFlower - counterSilkFlower}
+									onChange={(e) => setSilkFlower(e.target.value)}
 									placeholder="0"
 									min="0"
 								/>
@@ -737,27 +794,33 @@ const GenericLocalSpecialty = () => {
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterRiftbornRegalia}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterSilkFlower}
+										>
 											-
 										</button>
-										<span className="local-specialty-arrow-mid-number">{parseInt(counterRiftbornRegalia)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterRiftbornRegalia}>
+										<span className="local-specialty-arrow-mid-number">{parseInt(counterSilkFlower)}</span>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterSilkFlower}
+										>
 											+
 										</button>
 									</>
 								}
 							</td>
-							<td>Itto, Yun Jin</td>
+							<td></td>
 						</tr>
 						<tr>
-							<td>Dragonheir's False Fin</td>
-							<td>{2 * totalPerChar - dragonheirsFalseFin}</td>
+							<td>Glaze Lily</td>
+							<td>{2 * totalPerChar - glazeLily}</td>
 							<td>
 								<input
 									type="number"
 									className="local-specialty-num-input"
-									value={dragonheirsFalseFin - counterDragonheirsFalseFin}
-									onChange={(e) => setDragonheirsFalseFin(e.target.value)}
+									value={glazeLily - counterglazeLily}
+									onChange={(e) => setGlazeLily(e.target.value)}
 									placeholder="0"
 									min="0"
 								/>
@@ -765,38 +828,169 @@ const GenericLocalSpecialty = () => {
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterDragonheirsFalseFin}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterglazeLily}
+										>
 											-
 										</button>
-										<span className="local-specialty-arrow-mid-number">{parseInt(counterDragonheirsFalseFin)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterDragonheirsFalseFin}>
+										<span className="local-specialty-arrow-mid-number">{parseInt(counterglazeLily)}</span>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterglazeLily}
+										>
 											+
 										</button>
 									</>
 								}
 							</td>
-							<td>Shenhe, Yae Miko</td>
+							<td></td>
 						</tr>
 						<tr>
-							<td>Runic Fang</td>
-							<td>{3 * totalPerChar - runicFang}</td>
+							<td>Qingxin</td>
+							<td>{3 * totalPerChar - qingxin}</td>
 							<td>
-								<input type="number" className="local-specialty-num-input" value={runicFang - counterRunicFang} onChange={(e) => setRunicFang(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="local-specialty-num-input"
+									value={qingxin - counterQingxin}
+									onChange={(e) => setQingxin(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterRunicFang}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterQingxin}
+										>
 											-
 										</button>
-										<span className="local-specialty-arrow-mid-number">{parseInt(counterRunicFang)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterRunicFang}>
+										<span className="local-specialty-arrow-mid-number">{parseInt(counterQingxin)}</span>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterQingxin}
+										>
 											+
 										</button>
 									</>
 								}
 							</td>
-							<td>Shinobu, Heizou, Yelan</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Starconch</td>
+							<td>{2 * totalPerChar - starconch}</td>
+							<td>
+								<input
+									type="number"
+									className="local-specialty-num-input"
+									value={starconch - counterStarconch}
+									onChange={(e) => setStarconch(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterStarconch}
+										>
+											-
+										</button>
+										<span className="local-specialty-arrow-mid-number">{parseInt(counterStarconch)}</span>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterStarconch}
+										>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Violetgrass</td>
+							<td>{2 * totalPerChar - violetgrass}</td>
+							<td>
+								<input
+									type="number"
+									className="local-specialty-num-input"
+									value={violetgrass - counterVioletgrass}
+									onChange={(e) => setVioletgrass(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterVioletgrass}
+										>
+											-
+										</button>
+										<span className="local-specialty-arrow-mid-number">{parseInt(counterVioletgrass)}</span>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterVioletgrass}
+										>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Cor Lapis</td>
+							<td>{3 * totalPerChar - corLapis}</td>
+							<td>
+								<input
+									type="number"
+									className="local-specialty-num-input"
+									value={corLapis - counterCorLapis}
+									onChange={(e) => setCorLapis(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterCorLapis}
+										>
+											-
+										</button>
+										<span className="local-specialty-arrow-mid-number">{parseInt(counterCorLapis)}</span>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterCorLapis}
+										>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td></td>
+						</tr>
+						<tr className="local-specialty-total-row">
+							<td>TOTAL</td>
+							<td>{totalPerChar * 18 - Mond_LiyTotalHave(jueyunChili, noctilucousJade, silkFlower, glazeLily, qingxin, starconch, violetgrass, corLapis)}</td>
+							<td>
+								{Mond_LiyTotalHave(jueyunChili, noctilucousJade, silkFlower, glazeLily, qingxin, starconch, violetgrass, corLapis) -
+									Mond_LiyTotalUsed(counterJueyunChili, counterNoctilucousJade, counterSilkFlower, counterglazeLily, counterQingxin, counterStarconch, counterVioletgrass, counterCorLapis)}
+							</td>
+							<td>{Mond_LiyTotalUsed(counterJueyunChili, counterNoctilucousJade, counterSilkFlower, counterglazeLily, counterQingxin, counterStarconch, counterVioletgrass, counterCorLapis)}</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>Majestic Hooked Beak</td>
@@ -814,11 +1008,17 @@ const GenericLocalSpecialty = () => {
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterMajesticHookedBeak}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterMajesticHookedBeak}
+										>
 											-
 										</button>
 										<span className="local-specialty-arrow-mid-number">{parseInt(counterMajesticHookedBeak)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterMajesticHookedBeak}>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterMajesticHookedBeak}
+										>
 											+
 										</button>
 									</>
@@ -842,11 +1042,17 @@ const GenericLocalSpecialty = () => {
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterThunderclapFruitcore}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterThunderclapFruitcore}
+										>
 											-
 										</button>
 										<span className="local-specialty-arrow-mid-number">{parseInt(counterThunderclapFruitcore)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterThunderclapFruitcore}>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterThunderclapFruitcore}
+										>
 											+
 										</button>
 									</>
@@ -871,11 +1077,17 @@ const GenericLocalSpecialty = () => {
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterPerpetualCaliber}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterPerpetualCaliber}
+										>
 											-
 										</button>
 										<span className="local-specialty-arrow-mid-number">{parseInt(counterPerpetualCaliber)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterPerpetualCaliber}>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterPerpetualCaliber}
+										>
 											+
 										</button>
 									</>
@@ -899,11 +1111,17 @@ const GenericLocalSpecialty = () => {
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterLightGuidingTetrahedron}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterLightGuidingTetrahedron}
+										>
 											-
 										</button>
 										<span className="local-specialty-arrow-mid-number">{parseInt(counterLightGuidingTetrahedron)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterLightGuidingTetrahedron}>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterLightGuidingTetrahedron}
+										>
 											+
 										</button>
 									</>
@@ -915,16 +1133,29 @@ const GenericLocalSpecialty = () => {
 							<td>Quelled Creeper</td>
 							<td>{2 * totalPerChar - quelledCreeper}</td>
 							<td>
-								<input type="number" className="local-specialty-num-input" value={quelledCreeper - counterQuelledCreeper} onChange={(e) => setQuelledCreeper(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="local-specialty-num-input"
+									value={quelledCreeper - counterQuelledCreeper}
+									onChange={(e) => setQuelledCreeper(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterQuelledCreeper}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterQuelledCreeper}
+										>
 											-
 										</button>
 										<span className="local-specialty-arrow-mid-number">{parseInt(counterQuelledCreeper)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterQuelledCreeper}>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterQuelledCreeper}
+										>
 											+
 										</button>
 									</>
@@ -937,16 +1168,29 @@ const GenericLocalSpecialty = () => {
 							<td>Pseudo Stamens</td>
 							<td>{1 * totalPerChar - pseudoStamens}</td>
 							<td>
-								<input type="number" className="local-specialty-num-input" value={pseudoStamens - counterPseudoStamens} onChange={(e) => setPseudoStamens(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="local-specialty-num-input"
+									value={pseudoStamens - counterPseudoStamens}
+									onChange={(e) => setPseudoStamens(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="local-specialty-arrow-down" onClick={decrementCounterPseudoStamens}>
+										<button
+											className="local-specialty-arrow-down"
+											onClick={decrementCounterPseudoStamens}
+										>
 											-
 										</button>
 										<span className="local-specialty-arrow-mid-number">{parseInt(counterPseudoStamens)}</span>
-										<button className="local-specialty-arrow-up" onClick={incrementCounterPseudoStamens}>
+										<button
+											className="local-specialty-arrow-up"
+											onClick={incrementCounterPseudoStamens}
+										>
 											+
 										</button>
 									</>

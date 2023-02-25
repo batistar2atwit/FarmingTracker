@@ -269,17 +269,30 @@ const GenericTalentBooks = () => {
 							<td>Dvalin's Plume</td>
 							<td>{3 * totalTalentLvUpPerChar - teachings}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={teachings - counterDvalin1} onChange={(e) => setTeachings(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={teachings - counterDvalin1}
+									onChange={(e) => setTeachings(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterDvalin1}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterDvalin1}
+										>
 											-
 										</button>
 
 										<span className="talent-books-arrow-mid-number">{parseInt(counterDvalin1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterDvalin1}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterDvalin1}
+										>
 											+
 										</button>
 									</>
@@ -291,16 +304,29 @@ const GenericTalentBooks = () => {
 							<td>Dvalin's Claw </td>
 							<td>{4 * totalTalentLvUpPerChar - guide}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={guide - counterDvalin2} onChange={(e) => setGuide(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={guide - counterDvalin2}
+									onChange={(e) => setGuide(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterDvalin2}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterDvalin2}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterDvalin2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterDvalin2}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterDvalin2}
+										>
 											+
 										</button>
 									</>
@@ -311,16 +337,29 @@ const GenericTalentBooks = () => {
 							<td>Dvalin's Sigh</td>
 							<td>{5 * totalTalentLvUpPerChar - philosophies}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={philosophies - counterDvalin3} onChange={(e) => setPhilosophies(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={philosophies - counterDvalin3}
+									onChange={(e) => setPhilosophies(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterDvalin3}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterDvalin3}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterDvalin3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterDvalin3}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterDvalin3}
+										>
 											+
 										</button>
 									</>
@@ -342,16 +381,29 @@ const GenericTalentBooks = () => {
 							<td>Tail of Boreas</td>
 							<td>{3 * totalTalentLvUpPerChar - tailOfBoreas}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={tailOfBoreas - counterAndrius1} onChange={(e) => setTailOfBoreas(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={tailOfBoreas - counterAndrius1}
+									onChange={(e) => setTailOfBoreas(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterAndrius1}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterAndrius1}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterAndrius1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterAndrius1}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterAndrius1}
+										>
 											+
 										</button>
 									</>
@@ -363,16 +415,29 @@ const GenericTalentBooks = () => {
 							<td>Ring of Boreas</td>
 							<td>{4 * totalTalentLvUpPerChar - ringOfBoreas} </td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={ringOfBoreas - counterAndrius2} onChange={(e) => setRingOfBoreas(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={ringOfBoreas - counterAndrius2}
+									onChange={(e) => setRingOfBoreas(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterAndrius2}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterAndrius2}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterAndrius2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterAndrius2}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterAndrius2}
+										>
 											+
 										</button>
 									</>
@@ -395,11 +460,17 @@ const GenericTalentBooks = () => {
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterAndrius3}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterAndrius3}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterAndrius3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterAndrius3}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterAndrius3}
+										>
 											+
 										</button>
 									</>
@@ -433,11 +504,17 @@ const GenericTalentBooks = () => {
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterChilde1}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterChilde1}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterChilde1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterChilde1}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterChilde1}
+										>
 											+
 										</button>
 									</>
@@ -449,16 +526,29 @@ const GenericTalentBooks = () => {
 							<td>Shard of a Foul Legacy</td>
 							<td>{3 * totalTalentLvUpPerChar - shardOfAFoulLegacy}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={shardOfAFoulLegacy - counterChilde2} onChange={(e) => setShardOfAFoulLegacy(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={shardOfAFoulLegacy - counterChilde2}
+									onChange={(e) => setShardOfAFoulLegacy(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterChilde2}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterChilde2}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterChilde2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterChilde2}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterChilde2}
+										>
 											+
 										</button>
 									</>
@@ -469,16 +559,29 @@ const GenericTalentBooks = () => {
 							<td>Shadow of the Warrior</td>
 							<td>{3 * totalTalentLvUpPerChar - shadowOfTheWarrior}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={shadowOfTheWarrior - counterChilde3} onChange={(e) => setShadowOfTheWarrior(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={shadowOfTheWarrior - counterChilde3}
+									onChange={(e) => setShadowOfTheWarrior(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterChilde3}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterChilde3}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterChilde3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterChilde3}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterChilde3}
+										>
 											+
 										</button>
 									</>
@@ -503,16 +606,29 @@ const GenericTalentBooks = () => {
 							<td>Dragon Lord's Crown</td>
 							<td>{3 * totalTalentLvUpPerChar - dragonLordCrown}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={dragonLordCrown - counterAzhdaha1} onChange={(e) => setDragonLordCrown(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={dragonLordCrown - counterAzhdaha1}
+									onChange={(e) => setDragonLordCrown(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterAzhdaha1}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterAzhdaha1}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterAzhdaha1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterAzhdaha1}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterAzhdaha1}
+										>
 											+
 										</button>
 									</>
@@ -524,16 +640,29 @@ const GenericTalentBooks = () => {
 							<td>Bloodjade Branch</td>
 							<td>{3 * totalTalentLvUpPerChar - bloodjadeBranch}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={bloodjadeBranch - counterAzhdaha2} onChange={(e) => setBloodjadeBranch(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={bloodjadeBranch - counterAzhdaha2}
+									onChange={(e) => setBloodjadeBranch(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterAzhdaha2}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterAzhdaha2}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterAzhdaha2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterAzhdaha2}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterAzhdaha2}
+										>
 											+
 										</button>
 									</>
@@ -544,16 +673,29 @@ const GenericTalentBooks = () => {
 							<td>Gilded Scale</td>
 							<td>{3 * totalTalentLvUpPerChar - gildedScale}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={gildedScale - counterAzhdaha3} onChange={(e) => setGildedScale(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={gildedScale - counterAzhdaha3}
+									onChange={(e) => setGildedScale(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterAzhdaha3}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterAzhdaha3}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterAzhdaha3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterAzhdaha3}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterAzhdaha3}
+										>
 											+
 										</button>
 									</>
@@ -576,16 +718,29 @@ const GenericTalentBooks = () => {
 							<td>Molten Moment</td>
 							<td>{3 * totalTalentLvUpPerChar - moltenMoment}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={moltenMoment - counterSignora1} onChange={(e) => setMoltenMoment(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={moltenMoment - counterSignora1}
+									onChange={(e) => setMoltenMoment(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterSignora1}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterSignora1}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterSignora1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterSignora1}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterSignora1}
+										>
 											+
 										</button>
 									</>
@@ -597,16 +752,29 @@ const GenericTalentBooks = () => {
 							<td>Hellfire Butterfly</td>
 							<td>{3 * totalTalentLvUpPerChar - hellfireButterfly}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={hellfireButterfly - counterSignora2} onChange={(e) => setHellfireButterfly(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={hellfireButterfly - counterSignora2}
+									onChange={(e) => setHellfireButterfly(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterSignora2}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterSignora2}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterSignora2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterSignora2}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterSignora2}
+										>
 											+
 										</button>
 									</>
@@ -617,16 +785,29 @@ const GenericTalentBooks = () => {
 							<td>Ashen Heart</td>
 							<td>{3 * totalTalentLvUpPerChar - ashenHeart}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={ashenHeart - counterSignora3} onChange={(e) => setAshenHeart(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={ashenHeart - counterSignora3}
+									onChange={(e) => setAshenHeart(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterSignora3}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterSignora3}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterSignora3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterSignora3}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterSignora3}
+										>
 											+
 										</button>
 									</>
@@ -660,11 +841,17 @@ const GenericTalentBooks = () => {
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterShogun1}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterShogun1}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterShogun1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterShogun1}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterShogun1}
+										>
 											+
 										</button>
 									</>
@@ -688,11 +875,17 @@ const GenericTalentBooks = () => {
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterShogun2}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterShogun2}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterShogun2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterShogun2}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterShogun2}
+										>
 											+
 										</button>
 									</>
@@ -703,16 +896,29 @@ const GenericTalentBooks = () => {
 							<td>The Meaning of Aeons</td>
 							<td>{3 * totalTalentLvUpPerChar - theMeaningOfAeons}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={theMeaningOfAeons - counterShogun3} onChange={(e) => setTheMeaningOfAeons(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={theMeaningOfAeons - counterShogun3}
+									onChange={(e) => setTheMeaningOfAeons(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterShogun3}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterShogun3}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterShogun3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterShogun3}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterShogun3}
+										>
 											+
 										</button>
 									</>
@@ -737,16 +943,29 @@ const GenericTalentBooks = () => {
 							<td>Puppet Strings</td>
 							<td>{3 * totalTalentLvUpPerChar - puppetStrings}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={puppetStrings - counterJoururiWorkshop1} onChange={(e) => setPuppetStrings(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={puppetStrings - counterJoururiWorkshop1}
+									onChange={(e) => setPuppetStrings(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop1}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop1}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop1}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop1}
+										>
 											+
 										</button>
 									</>
@@ -758,16 +977,29 @@ const GenericTalentBooks = () => {
 							<td>Mirror Of Mushin</td>
 							<td>{4 * totalTalentLvUpPerChar - mirrorOfMushin}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={mirrorOfMushin - counterJoururiWorkshop2} onChange={(e) => setMirrorOfMushin(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={mirrorOfMushin - counterJoururiWorkshop2}
+									onChange={(e) => setMirrorOfMushin(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop2}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop2}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop2}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop2}
+										>
 											+
 										</button>
 									</>
@@ -778,16 +1010,29 @@ const GenericTalentBooks = () => {
 							<td>Daka's Bell</td>
 							<td>{3 * totalTalentLvUpPerChar - dakasBell}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={dakasBell - counterJoururiWorkshop3} onChange={(e) => setDakasBell(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={dakasBell - counterJoururiWorkshop3}
+									onChange={(e) => setDakasBell(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop3}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop3}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop3}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop3}
+										>
 											+
 										</button>
 									</>
@@ -809,16 +1054,29 @@ const GenericTalentBooks = () => {
 							<td>Puppet Strings</td>
 							<td>{3 * totalTalentLvUpPerChar - puppetStrings}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={puppetStrings - counterJoururiWorkshop1} onChange={(e) => setPuppetStrings(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={puppetStrings - counterJoururiWorkshop1}
+									onChange={(e) => setPuppetStrings(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop1}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop1}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop1}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop1}
+										>
 											+
 										</button>
 									</>
@@ -830,16 +1088,29 @@ const GenericTalentBooks = () => {
 							<td>Mirror Of Mushin</td>
 							<td>{4 * totalTalentLvUpPerChar - mirrorOfMushin}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={mirrorOfMushin - counterJoururiWorkshop2} onChange={(e) => setMirrorOfMushin(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={mirrorOfMushin - counterJoururiWorkshop2}
+									onChange={(e) => setMirrorOfMushin(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop2}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop2}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop2}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop2}
+										>
 											+
 										</button>
 									</>
@@ -850,16 +1121,29 @@ const GenericTalentBooks = () => {
 							<td>Daka's Bell</td>
 							<td>{3 * totalTalentLvUpPerChar - dakasBell}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={dakasBell - counterJoururiWorkshop3} onChange={(e) => setDakasBell(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={dakasBell - counterJoururiWorkshop3}
+									onChange={(e) => setDakasBell(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop3}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop3}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop3}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop3}
+										>
 											+
 										</button>
 									</>
@@ -881,16 +1165,29 @@ const GenericTalentBooks = () => {
 							<td>Puppet Strings</td>
 							<td>{3 * totalTalentLvUpPerChar - puppetStrings}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={puppetStrings - counterJoururiWorkshop1} onChange={(e) => setPuppetStrings(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={puppetStrings - counterJoururiWorkshop1}
+									onChange={(e) => setPuppetStrings(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop1}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop1}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop1}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop1}
+										>
 											+
 										</button>
 									</>
@@ -902,16 +1199,29 @@ const GenericTalentBooks = () => {
 							<td>Mirror Of Mushin</td>
 							<td>{4 * totalTalentLvUpPerChar - mirrorOfMushin}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={mirrorOfMushin - counterJoururiWorkshop2} onChange={(e) => setMirrorOfMushin(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={mirrorOfMushin - counterJoururiWorkshop2}
+									onChange={(e) => setMirrorOfMushin(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop2}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop2}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop2}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop2}
+										>
 											+
 										</button>
 									</>
@@ -922,16 +1232,29 @@ const GenericTalentBooks = () => {
 							<td>Daka's Bell</td>
 							<td>{3 * totalTalentLvUpPerChar - dakasBell}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={dakasBell - counterJoururiWorkshop3} onChange={(e) => setDakasBell(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={dakasBell - counterJoururiWorkshop3}
+									onChange={(e) => setDakasBell(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop3}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop3}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop3}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop3}
+										>
 											+
 										</button>
 									</>
@@ -956,16 +1279,29 @@ const GenericTalentBooks = () => {
 							<td>Puppet Strings</td>
 							<td>{3 * totalTalentLvUpPerChar - puppetStrings}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={puppetStrings - counterJoururiWorkshop1} onChange={(e) => setPuppetStrings(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={puppetStrings - counterJoururiWorkshop1}
+									onChange={(e) => setPuppetStrings(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop1}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop1}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop1}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop1}
+										>
 											+
 										</button>
 									</>
@@ -977,16 +1313,29 @@ const GenericTalentBooks = () => {
 							<td>Mirror Of Mushin</td>
 							<td>{4 * totalTalentLvUpPerChar - mirrorOfMushin}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={mirrorOfMushin - counterJoururiWorkshop2} onChange={(e) => setMirrorOfMushin(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={mirrorOfMushin - counterJoururiWorkshop2}
+									onChange={(e) => setMirrorOfMushin(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop2}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop2}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop2}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop2}
+										>
 											+
 										</button>
 									</>
@@ -997,16 +1346,29 @@ const GenericTalentBooks = () => {
 							<td>Daka's Bell</td>
 							<td>{3 * totalTalentLvUpPerChar - dakasBell}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={dakasBell - counterJoururiWorkshop3} onChange={(e) => setDakasBell(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={dakasBell - counterJoururiWorkshop3}
+									onChange={(e) => setDakasBell(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop3}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop3}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop3}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop3}
+										>
 											+
 										</button>
 									</>
@@ -1028,16 +1390,29 @@ const GenericTalentBooks = () => {
 							<td>Puppet Strings</td>
 							<td>{3 * totalTalentLvUpPerChar - puppetStrings}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={puppetStrings - counterJoururiWorkshop1} onChange={(e) => setPuppetStrings(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={puppetStrings - counterJoururiWorkshop1}
+									onChange={(e) => setPuppetStrings(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop1}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop1}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop1}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop1}
+										>
 											+
 										</button>
 									</>
@@ -1049,16 +1424,29 @@ const GenericTalentBooks = () => {
 							<td>Mirror Of Mushin</td>
 							<td>{4 * totalTalentLvUpPerChar - mirrorOfMushin}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={mirrorOfMushin - counterJoururiWorkshop2} onChange={(e) => setMirrorOfMushin(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={mirrorOfMushin - counterJoururiWorkshop2}
+									onChange={(e) => setMirrorOfMushin(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop2}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop2}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop2}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop2}
+										>
 											+
 										</button>
 									</>
@@ -1069,16 +1457,29 @@ const GenericTalentBooks = () => {
 							<td>Daka's Bell</td>
 							<td>{3 * totalTalentLvUpPerChar - dakasBell}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={dakasBell - counterJoururiWorkshop3} onChange={(e) => setDakasBell(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={dakasBell - counterJoururiWorkshop3}
+									onChange={(e) => setDakasBell(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop3}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop3}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop3}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop3}
+										>
 											+
 										</button>
 									</>
@@ -1100,16 +1501,29 @@ const GenericTalentBooks = () => {
 							<td>Puppet Strings</td>
 							<td>{3 * totalTalentLvUpPerChar - puppetStrings}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={puppetStrings - counterJoururiWorkshop1} onChange={(e) => setPuppetStrings(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={puppetStrings - counterJoururiWorkshop1}
+									onChange={(e) => setPuppetStrings(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop1}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop1}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop1}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop1}
+										>
 											+
 										</button>
 									</>
@@ -1121,16 +1535,29 @@ const GenericTalentBooks = () => {
 							<td>Mirror Of Mushin</td>
 							<td>{4 * totalTalentLvUpPerChar - mirrorOfMushin}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={mirrorOfMushin - counterJoururiWorkshop2} onChange={(e) => setMirrorOfMushin(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={mirrorOfMushin - counterJoururiWorkshop2}
+									onChange={(e) => setMirrorOfMushin(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop2}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop2}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop2}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop2}
+										>
 											+
 										</button>
 									</>
@@ -1141,16 +1568,29 @@ const GenericTalentBooks = () => {
 							<td>Daka's Bell</td>
 							<td>{3 * totalTalentLvUpPerChar - dakasBell}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={dakasBell - counterJoururiWorkshop3} onChange={(e) => setDakasBell(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="talent-books-num-input"
+									value={dakasBell - counterJoururiWorkshop3}
+									onChange={(e) => setDakasBell(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterJoururiWorkshop3}>
+										<button
+											className="talent-books-arrow-down"
+											onClick={decrementCounterJoururiWorkshop3}
+										>
 											-
 										</button>
 										<span className="talent-books-arrow-mid-number">{parseInt(counterJoururiWorkshop3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterJoururiWorkshop3}>
+										<button
+											className="talent-books-arrow-up"
+											onClick={incrementCounterJoururiWorkshop3}
+										>
 											+
 										</button>
 									</>
