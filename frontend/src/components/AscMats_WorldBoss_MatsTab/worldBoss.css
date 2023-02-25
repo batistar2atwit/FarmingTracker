@@ -6,6 +6,7 @@
 }
 .world-boss-mat-h1 {
 	text-align: center;
+		font-size: 25px;
 }
 .world-boss-table td {
 	/* padding-bottom: 10px; */
@@ -29,26 +30,26 @@
 .world-boss-block {
 	display: flex;
 	justify-content: center;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	font-size: 25px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 15px;
 }
 
 .world-boss-num-input {
-	width: 80px;
-	height: 50px;
+	width: 60px;
+	height: 30px;
 }
 
 .world-boss-table input[type='number'] {
 	appearance: textfield;
-	font-size: 28px;
+	font-size: 15px;
 	text-align: right;
 }
 
 .world-arrow-up,
 .world-arrow-down {
-	height: 35px;
-	width: 35px;
+	height: 25px;
+	width: 25px;
 }
 
 .world-arrow-down {
@@ -60,5 +61,5 @@
 }
 
 .world-arrow-mid-number {
-	font-size: 28px;
+	font-size: 15px;
 }

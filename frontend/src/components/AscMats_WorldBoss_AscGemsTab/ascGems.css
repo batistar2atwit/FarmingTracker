@@ -3,13 +3,14 @@
 }
 .asc-gems-h1 {
 	text-align: center;
+	font-size: 25px;
 }
 .asc-overall-table,
 .asc-gems-table {
 	border-bottom: 2px solid black;
 	border-collapse: collapse;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 .comp-overall-asc-gem-table,
 .comp-asc-gem-table {
@@ -22,8 +23,8 @@
 	text-align: center;
 	align-items: center;
 	justify-content: center;
-	padding-bottom: 30px;
-	padding-top: 30px;
+	padding-bottom: 15px;
+	padding-top: 15px;
 }
 
 .asc-gems-table {
@@ -35,11 +36,10 @@
 	flex-direction: row;
 	column-gap: 20px;
 	row-gap: 20px;
-	padding-bottom: 30px;
 }
 
 .asc-num-input {
-	width: 170px;
+	width: 145px;
 	height: 30px;
 	font-size: 17px;
 }

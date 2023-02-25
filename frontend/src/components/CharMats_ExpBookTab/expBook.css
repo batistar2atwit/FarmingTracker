@@ -3,10 +3,11 @@
 	padding-right: 1rem;
 	padding-left: 1rem;
 	padding-bottom: 0.5rem;
-	font-size: 25px;
+	font-size: 20px;
 }
 .exp-books-h1 {
 	text-align: center;
+	font-size: 25px;
 }
 .exp-book-table td {
 	/* padding-bottom: 10px; */
@@ -26,11 +27,12 @@
 .farming-table {
 	display: flex;
 	justify-content: center;
-	padding-bottom: 40px;
-	padding-top: 40px;
+	padding-bottom: 10px;
+	padding-top: 20px;
 }
 .exp-block-table h2 {
 	display: flex;
+	font-size: 20px;
 }
 
 .exp-req-block-table {
@@ -40,17 +42,17 @@
 
 .book-farming-req-block,
 .mora-farming-req-block {
-	padding: 20px 50px 20px 50px;
+	padding: 0px 50px 0px 50px;
 }
 
 :is(.book-farming-req-table, .mora-farming-req-table) :is(td, th) {
 	padding: 5px 10px 5px 10px;
-	font-size: 25px;
+	font-size: 15px;
 }
 .exp-book-table input[type='number'] {
 	text-align: right;
 	appearance: textfield;
-	font-size: 20px;
+	font-size: 15px;
 }
 
 .exp-book-table input::-webkit-outer-spin-button,
@@ -63,8 +65,8 @@
 .exp-lv-num-output,
 .exp-num-input,
 .exp-num-output {
-	width: 60px;
-	height: 40px;
+	width: 50px;
+	height: 30px;
 }
 
 .exp-needed-sub-output {

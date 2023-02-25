@@ -173,7 +173,6 @@ const GenericEXPBook = () => {
 	return (
 		<div className="exp-block-table">
 			<h1 className="exp-books-h1">Ley Lines -Experience Books</h1>
-			<h3>These tables will only consider farming data between World Level 6 to 8 where the calculation for the Ley Lines drops is set to avg=max/min</h3>
 			<div className="farming-table">
 				<table className="exp-book-table">
 					<thead>

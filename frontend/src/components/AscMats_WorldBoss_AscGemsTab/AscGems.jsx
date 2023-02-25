@@ -6,7 +6,7 @@ import GenericAscGems from './GenericAscGems';
 const AscGems = () => {
 	//Render GemTable component
 	return (
-		<div className="block-table">
+		<div className="asc-block-table">
 			<h1 className="asc-gems-h1">World Boss - Ascension Gems</h1>
 			<div className="asc-overall-table">
 				<div>
