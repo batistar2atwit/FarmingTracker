@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const GenericCommonAscension = () => {
+const GenericGeneralDrops = () => {
 	//DVALIN Talent LV Up Materials
 
 	const LvUpMatTotalHave = (talentHave1, talentHave2, talentHave3) => {
@@ -792,4 +792,4 @@ const GenericCommonAscension = () => {
 	);
 };
 
-export default GenericCommonAscension;
+export default GenericGeneralDrops;

@@ -50,42 +50,62 @@ const Header = () => {
 				<nav className={`${classes.header__content__nav} ${menuOpen && size.width < 768 ? classes.isMenu : ''}`}>
 					<ul>
 						<li>
-							<Link to="/page-one" onClick={menuToggleHandler}>
-								Ascension Gems
-							</Link>
+							<a href="#!">Character Ascension</a>
+							<ul className="nav-dropdown">
+								<li>
+									<Link to="/page-one" onClick={menuToggleHandler}>
+										Ascension Gems
+									</Link>
+								</li>
+								<li>
+									<Link to="/page-two" onClick={menuToggleHandler}>
+										World Boss Mats
+									</Link>
+								</li>
+								<li>
+									<Link to="/page-three" onClick={menuToggleHandler}>
+										EXP Book
+									</Link>
+								</li>
+								<li>
+									<Link to="/page-four" onClick={menuToggleHandler}>
+										Local Specialty
+									</Link>
+								</li>
+							</ul>
 						</li>
 						<li>
-							<Link to="/page-two" onClick={menuToggleHandler}>
-								World Boss Mats
-							</Link>
+							<a href="#!">Talent Ascension</a>
+							<ul className="nav-dropdown">
+								<li>
+									<Link to="/page-five" onClick={menuToggleHandler}>
+										Weekly Boss
+									</Link>
+								</li>
+								<li>
+									<Link to="/page-six" onClick={menuToggleHandler}>
+										Talent Books
+									</Link>
+								</li>
+							</ul>
 						</li>
 						<li>
-							<Link to="/page-three" onClick={menuToggleHandler}>
-								EXP Book
-							</Link>
+							<a href="#!">Common Ascension Materials</a>
+							<ul className="common-asc-nav-dropdown">
+								<li>
+									<Link to="/page-seven" onClick={menuToggleHandler}>
+										General Drops
+									</Link>
+								</li>
+								<li>
+									<Link to="/page-eight" onClick={menuToggleHandler}>
+										Elite Drops
+									</Link>
+								</li>
+							</ul>
 						</li>
 						<li>
-							<Link to="/page-four" onClick={menuToggleHandler}>
-								Weekly Boss
-							</Link>
-						</li>
-						<li>
-							<Link to="/page-five" onClick={menuToggleHandler}>
-								Talent Books
-							</Link>
-						</li>
-						<li>
-							<Link to="/page-six" onClick={menuToggleHandler}>
-								Common Ascension Materials
-							</Link>
-						</li>
-						<li>
-							<Link to="/page-seven" onClick={menuToggleHandler}>
-								Local Specialty
-							</Link>
-						</li>
-						<li>
-							<Link to="/page-eight" onClick={menuToggleHandler}>
+							<Link to="/page-nine" onClick={menuToggleHandler}>
 								Wish Calculator
 							</Link>
 						</li>

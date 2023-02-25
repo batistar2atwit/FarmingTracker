@@ -21,13 +21,15 @@
 	text-align: left;
 }
 
-.weekly-boss-table tr:nth-child(5n + 5) {
+.weekly-boss-table tr:nth-child(5n) {
 	border-bottom: 5px solid rgb(26, 3, 118);
 	font-weight: bold;
 }
 
 td[colspan='5'] {
 	text-align: center;
+	font-weight: bold;
+	padding: 10px;
 }
 
 .weekly-boss-table {
