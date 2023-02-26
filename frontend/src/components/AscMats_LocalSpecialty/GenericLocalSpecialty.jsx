@@ -615,7 +615,7 @@ const GenericLocalSpecialty = () => {
 							<th>Need</th>
 							<th>Have</th>
 							<th>Used</th>
-							<th></th>
+							<th>Characters</th>
 						</tr>
 					</thead>
 					<tbody>

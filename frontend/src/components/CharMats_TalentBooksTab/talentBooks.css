@@ -9,8 +9,12 @@
 	font-size: 25px;
 }
 .talent-books-table td {
+	text-align: center;
+}
+.talent-books-table td:nth-child(-n + 1) {
 	text-align: right;
 }
+
 .talent-books-table td[colspan='5'] {
 	border: 2px solid black;
 	font-weight: bold;
@@ -25,13 +29,13 @@
 	font-weight: bold;
 }
 .talent-books-table tr :is(td[rowSpan='3']) {
-	text-align: center;
+	text-align: left;
 }
 
 .talent-books-table tr:last-child td {
 	border-top: 2px solid black;
 	font-weight: bold;
-
+	text-align: left;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }

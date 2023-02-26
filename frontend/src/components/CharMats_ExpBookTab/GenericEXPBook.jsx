@@ -172,7 +172,7 @@ const GenericEXPBook = () => {
 
 	return (
 		<div className="exp-block-table">
-			<h1 className="exp-books-h1">Ley Lines -Experience Books</h1>
+			<h1 className="exp-books-h1">Experience Books Needed + Ley Line Runs Req</h1>
 			<div className="farming-table">
 				<table className="exp-book-table">
 					<thead>

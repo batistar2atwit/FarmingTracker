@@ -1,33 +1,47 @@
-.common-asc-mat-table :is(td, th) {
+.elite-asc-mat-table :is(td, th) {
 	text-align: center;
 	padding-right: 2rem;
 	padding-left: 2rem;
 	padding-bottom: 0.5rem;
 }
-.common-asc-mat-h1 {
+.elite-asc-mat-h1 {
 	text-align: center;
 	font-size: 25px;
 }
-.common-asc-mat-table td {
-	/* padding-bottom: 10px; */
-	text-align: right;
+.elite-asc-mat-table td {
+	text-align: center;
+}
+.elite-asc-mat-table td:nth-child(-n + 1) {
+	text-align: center;
 }
 
-.common-asc-mat-table td:nth-child(n + 5) {
+.elite-asc-mat-table td[colspan='6'] {
+	border: 2px solid black;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: burlywood;
+}
+
+.elite-asc-mat-table tr :is(td[rowSpan='3']) {
 	text-align: left;
 }
 
-.common-asc-mat-table tr:last-child {
-	border: 2px solid black;
+.elite-asc-mat-table tr:last-child td {
+	border-top: 2px solid black;
 	font-weight: bold;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
-.common-asc-mat-table {
+.elite-asc-mat-table {
 	border: 2px solid black;
 	border-collapse: collapse;
 }
 
-.common-asc-mat-block {
+.elite-asc-mat-block {
 	display: flex;
 	justify-content: center;
 	padding-top: 20px;
@@ -35,31 +49,34 @@
 	font-size: 15px;
 }
 
-.common-asc-mat-num-input {
+.elite-asc-mat-num-input {
 	width: 60px;
 	height: 30px;
 }
 
-.common-asc-mat-table input[type='number'] {
+.elite-asc-mat-table input[type='number'] {
 	appearance: textfield;
 	font-size: 15px;
 	text-align: right;
 }
 
-.world-arrow-up,
-.world-arrow-down {
+.elite-asc-mat-arrow-up,
+.elite-asc-mat-arrow-down {
 	height: 25px;
 	width: 25px;
 }
 
-.world-arrow-down {
+.elite-asc-mat-arrow-down {
 	margin-right: 10px;
 }
 
-.world-arrow-up {
+.elite-asc-mat-arrow-up {
 	margin-left: 10px;
 }
 
-.world-arrow-mid-number {
+.elite-asc-mat-arrow-mid-number {
 	font-size: 15px;
+}
+.elite-asc-mat-total-row {
+	font-weight: bold;
 }

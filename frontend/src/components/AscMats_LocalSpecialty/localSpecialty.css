@@ -17,6 +17,10 @@
 	text-align: left;
 }
 
+.local-specialty-table td[colspan='5'] {
+	background-color: burlywood;
+}
+
 .local-specialty-table tr:last-child {
 	border: 2px solid black;
 }

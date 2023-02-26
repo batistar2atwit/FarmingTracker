@@ -386,11 +386,10 @@ const GenericWorldBoss = () => {
 							<th>Need</th>
 							<th>Have</th>
 							<th>Used</th>
-							<th></th>
+							<th>Characters</th>
 						</tr>
 					</thead>
 					<tbody>
-
 						<tr>
 							<td>Hurricane Seed</td>
 							<td>{3 * totalWorldLvUpMatPerChar - hurricaneSeed}</td>
@@ -910,7 +909,7 @@ const GenericWorldBoss = () => {
 							<td>{totalWorldLvUpMatPerChar * 63 - LvUpMatTotalHave(...inputsHave)}</td>
 							<td>{LvUpMatTotalHave(...inputsHave) - LvUpMatTotalUsed(...inputsUsed)}</td>
 							<td>{LvUpMatTotalUsed(...inputsUsed)}</td>
-							<td></td>
+							<td>63</td>
 						</tr>
 					</tbody>
 				</table>
