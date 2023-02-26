@@ -19,9 +19,17 @@
 
 .local-specialty-table tr:last-child {
 	border: 2px solid black;
-	font-weight: bold;
 }
 
+.local-specialty-total-row {
+	font-weight: bold;
+	border: 2px solid black;
+}
+.total-specialty-total-row td {
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 .local-specialty-table {
 	border: 2px solid black;
 	border-collapse: collapse;

@@ -1,6 +1,11 @@
 Common Ascension Materials
-   General Enemy Drops Tab
-   Elite Enemy Drops Tab
+   Event Banner Wins
+   Permanent Banner Wins
+   Novice Banner Wins
+   Missing Character Tracker
+   Primo used for all pulls Calculator
+   Pity W/L/H percentage
+   5 Star Charcter at pity counter
 
 
 GOT 4/9 tabs done
