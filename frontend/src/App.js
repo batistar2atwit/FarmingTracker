@@ -5,7 +5,7 @@ import Layout from './components/Navbar/Layout';
 import AscMatLocalSpecialties from './pages/AscMatLocalSpecialties';
 import AscMatsWorldBossAscGemsTab from './pages/AscMatsWorldBossAscGemsTab';
 import AscMatsWorldBossMatsTab from './pages/AscMatsWorldBossMatsTab';
-import CharMatsCommonAscensionMatEliteTab from './pages/CharMatsCommonAscensionMatEliteTab';
+// import CharMatsCommonAscensionMatEliteTab from './pages/CharMatsCommonAscensionMatEliteTab';
 import CharMatsCommonAscensionMatGeneralTab from './pages/CharMatsCommonAscensionMatGeneralTab';
 import CharMatsExpBookTab from './pages/CharMatsExpBookTab';
 import CharMatsTalentBooksTab from './pages/CharMatsTalentBooksTab';
@@ -27,7 +27,7 @@ function App() {
 					<Route path="/page-five" element={<CharMatsWeeklyBossTab />}></Route>
 					<Route path="/page-six" element={<CharMatsTalentBooksTab />}></Route>
 					<Route path="/page-seven" element={<CharMatsCommonAscensionMatGeneralTab />}></Route>
-					<Route path="/page-eight" element={<CharMatsCommonAscensionMatEliteTab />}></Route>
+					{/* <Route path="/page-eight" element={<CharMatsCommonAscensionMatEliteTab />}></Route> */}
 					<Route path="/page-nine" element={<WishCalculatorTab />}></Route>
 					<Route path="/page-signIn" element={<PageSignIn />}></Route>
 				</Routes>

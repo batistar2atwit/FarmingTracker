@@ -523,7 +523,7 @@ const GenericTalentBooks = () => {
 					</thead>
 					<tbody>
 						<tr>
-							<td colSpan="5">Mondstadt</td>
+							<td colSpan="5">Mondstadt - Forsaken Rift</td>
 						</tr>
 						<tr>
 							<td colSpan="4">Freedom Books</td>
@@ -743,7 +743,7 @@ const GenericTalentBooks = () => {
 							<td></td>
 						</tr>
 						<tr>
-							<td colSpan="5">Liyue</td>
+							<td colSpan="5">Liyue - Taishan Mansion</td>
 						</tr>
 						<tr>
 							<td colSpan="4">Prosperity Books</td>
@@ -963,7 +963,7 @@ const GenericTalentBooks = () => {
 							<td></td>
 						</tr>
 						<tr>
-							<td colSpan="5">Inazuma</td>
+							<td colSpan="5">Inazuma - Violet Court</td>
 						</tr>
 						<tr>
 							<td colSpan="4">Transience Books</td>
@@ -1183,7 +1183,7 @@ const GenericTalentBooks = () => {
 							<td></td>
 						</tr>
 						<tr>
-							<td colSpan="5">Sumeru</td>
+							<td colSpan="5">Sumeru - Steeple of Ignorance</td>
 						</tr>
 						<tr>
 							<td colSpan="4">Admonition Books</td>

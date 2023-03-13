@@ -97,11 +97,11 @@ const Header = () => {
 										General Drops
 									</Link>
 								</li>
-								<li>
+								{/* <li>
 									<Link to="/page-eight" onClick={menuToggleHandler}>
 										Elite Drops
 									</Link>
-								</li>
+								</li> */}
 							</ul>
 						</li>
 						<li>

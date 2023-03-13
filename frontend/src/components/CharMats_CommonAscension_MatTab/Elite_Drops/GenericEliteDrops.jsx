@@ -509,13 +509,12 @@ const GenericGeneralDrops = () => {
 
 	return (
 		<div>
-			<h1 className="elite-asc-mat-h1">Talent Books - Level-Up Materials</h1>
+			<h1 className="elite-asc-mat-h1">Elite Common Ascension Materials</h1>
 			<div className="elite-asc-mat-block">
 				<table className="elite-asc-mat-table">
 					<thead className="elite-asc-mat-header">
 						<tr>
 							<th>Character</th>
-
 							<th>Need</th>
 							<th>Have</th>
 							<th>Used</th>

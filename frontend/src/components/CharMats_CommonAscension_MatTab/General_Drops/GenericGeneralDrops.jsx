@@ -10,470 +10,1230 @@ const GenericGeneralDrops = () => {
 		return parseInt(talentUsed1) + parseInt(talentUsed2) + parseInt(talentUsed3);
 	};
 
-	const [freedom1, setFreedom1] = useState(0);
-	const [freedom2, setFreedom2] = useState(0);
-	const [freedom3, setFreedom3] = useState(0);
+	//Hilichurl Horns
+	const [charHeavyHorn, setCharHeavyHorn] = useState(0);
+	const [charBlackBronzeHorn, setCharBlackBronzeHorn] = useState(0);
+	const [charBlackCrystalHorn, setCharBlackCrystalHorn] = useState(0);
 
-	const [resistance1, setResistance1] = useState(0);
-	const [resistance2, setResistance2] = useState(0);
-	const [resistance3, setResistance3] = useState(0);
+	const [talHeavyHorn, CharHeavyHorn] = useState(0);
+	const [talBlackBronzeHorn, setTalBlackBronzeHorn] = useState(0);
+	const [talBlackCrystalHorn, setTalBlackCrystalHorn] = useState(0);
 
-	const [ballad1, setBallad1] = useState(0);
-	const [ballad2, setBallad2] = useState(0);
-	const [ballad3, setBallad3] = useState(0);
+	//Ley Line Branches
+	const [charDeadLeyLineBranch, setCharDeadLeyLineBranch] = useState(0);
+	const [charDeadLeyLineLeaves, setCharDeadLeyLineLeaves] = useState(0);
+	const [charLeyLineSprout, setCharLeyLineSprout] = useState(0);
 
-	const [prosperity1, setProsperity1] = useState(0);
-	const [prosperity2, setProsperity2] = useState(0);
-	const [prosperity3, setProsperity3] = useState(0);
+	const [talDeadLeyLineBranch, setTalDeadLeyLineBranch] = useState(0);
+	const [talDeadLeyLineLeaves, setTalDeadLeyLineLeaves] = useState(0);
+	const [talLeyLineSprout, setTalLeyLineSprout] = useState(0);
 
-	const [diligence1, setDiligence1] = useState(0);
-	const [diligence2, setDiligence2] = useState(0);
-	const [diligence3, setDiligence3] = useState(0);
+	//Chaos Parts
+	const [charChaosDevice, setCharChaosDevice] = useState(0);
+	const [charChaosCircuit, setCharChaosCircuit] = useState(0);
+	const [charChaosCore, setCharChaosCore] = useState(0);
 
-	const [gold1, setGold1] = useState(0);
-	const [gold2, setGold2] = useState(0);
-	const [gold3, setGold3] = useState(0);
+	const [talChaosDevice, setTalChaosDevice] = useState(0);
+	const [talChaosCircuit, setTalChaosCircuit] = useState(0);
+	const [talChaosCore, setTalChaosCore] = useState(0);
 
-	const [transience1, setTransience1] = useState(0);
-	const [transience2, setTransience2] = useState(0);
-	const [transience3, setTransience3] = useState(0);
+	//Mist Grasses
+	const [charMistGrassPollen, setCharMistGrassPollen] = useState(0);
+	const [charMistGrass, setCharMistGrass] = useState(0);
+	const [charMistGrassWick, setCharMistGrassWick] = useState(0);
 
-	const [elegance1, setElegance1] = useState(0);
-	const [elegance2, setElegance2] = useState(0);
-	const [elegance3, setElegance3] = useState(0);
+	const [talMistGrassPollen, setTalMistGrassPollen] = useState(0);
+	const [talMistGrass, setTalMistGrass] = useState(0);
+	const [talMistGrassWick, setTalMistGrassWick] = useState(0);
 
-	const [light1, setLight1] = useState(0);
-	const [light2, setLight2] = useState(0);
-	const [light3, setLight3] = useState(0);
+	//Sacrificial Knives
+	const [charHunterSacrificialKnife, setCharHunterSacrificialKnife] = useState(0);
+	const [charAgentSacrificialKnife, setCharAgentSacrificialKnife] = useState(0);
+	const [charInspectorSacrificialKnife, setCharInspectorSacrificialKnife] = useState(0);
 
-	const [admonition1, setAdmonition1] = useState(0);
-	const [admonition2, setAdmonition2] = useState(0);
-	const [admonition3, setAdmonition3] = useState(0);
+	const [talHunterSacrificialKnife, setTalHunterSacrificialKnife] = useState(0);
+	const [talAgentSacrificialKnife, setTalAgentSacrificialKnife] = useState(0);
+	const [talInspectorSacrificialKnife, setTalInspectorSacrificialKnife] = useState(0);
 
-	const [ingenuity1, setIngenuity1] = useState(0);
-	const [ingenuity2, setIngenuity2] = useState(0);
-	const [ingenuity3, setIngenuity3] = useState(0);
+	//Bone Shards
+	const [charFragileBoneShard, setCharFragileBoneShard] = useState(0);
+	const [charSturdyBoneShard, setCharSturdyBoneShard] = useState(0);
+	const [charFossilizedBoneShard, setCharFossilizedBoneShard] = useState(0);
 
-	const [praxis1, setPraxis1] = useState(0);
-	const [praxis2, setPraxis2] = useState(0);
-	const [praxis3, setPraxis3] = useState(0);
+	const [talFragileBoneShard, setTalFragileBoneShard] = useState(0);
+	const [talSturdyBoneShard, setTalSturdyBoneShard] = useState(0);
+	const [talFossilizedBoneShard, setTalFossilizedBoneShard] = useState(0);
+
+	//Sentinel Chaos Parts
+	const [charChaosGear, setCharChaosGear] = useState(0);
+	const [charChaosAxis, setCharChaosAxis] = useState(0);
+	const [charChaosOculus, setCharChaosOculus] = useState(0);
+
+	const [talChaosGear, setTalChaosGear] = useState(0);
+	const [talChaosAxis, setTalChaosAxis] = useState(0);
+	const [talChaosOculus, setTalChaosOculus] = useState(0);
+
+	//Mirror Maiden Prisms
+	const [charDismalPrism, setCharDismalPrism] = useState(0);
+	const [charCrystalPrism, setCharCrystalPrism] = useState(0);
+	const [charPolarizingPrism, setCharPolarizingPrism] = useState(0);
+
+	const [talDismalPrism, setTalDismalPrism] = useState(0);
+	const [talCrystalPrism, setTalCrystalPrism] = useState(0);
+	const [talPolarizingPrism, setTalPolarizingPrism] = useState(0);
+
+	//Concealed Riftwolf Claws
+	const [charConcealedClaw, setCharConcealedClaw] = useState(0);
+	const [charConcealedUnguis, setCharConcealedUnguis] = useState(0);
+	const [charConcealedTalon, setCharConcealedTalon] = useState(0);
+
+	const [talConcealedClaw, setTalConcealedClaw] = useState(0);
+	const [talConcealedUnguis, setTalConcealedUnguis] = useState(0);
+	const [talConcealedTalon, setTalConcealedTalon] = useState(0);
+
+	//Statuettes
+	const [charGloomyStatuette, setCharGloomyStatuette] = useState(0);
+	const [charDarkStatuette, setCharDarkStatuette] = useState(0);
+	const [charDeathlyStatuette, setCharDeathlyStatuette] = useState(0);
+
+	const [talGloomyStatuette, setTalGloomyStatuette] = useState(0);
+	const [talDarkStatuette, setTalDarkStatuette] = useState(0);
+	const [talDeathlyStatuette, setTalDeathlyStatuette] = useState(0);
+
+	//Fungal Nuclei
+	const [charInactivatedFungalNucleus, setCharInactivatedFungalNucleus] = useState(0);
+	const [charDormantFungalNucleus, setCharDormantFungalNucleus] = useState(0);
+	const [charRobustFungalNucleus, setCharRobustFungalNucleus] = useState(0);
+
+	const [talInactivatedFungalNucleus, setTalInactivatedFungalNucleus] = useState(0);
+	const [talDormantFungalNucleus, setTalDormantFungalNucleus] = useState(0);
+	const [talRobustFungalNucleus, setTalRobustFungalNucleus] = useState(0);
+
+	//Drake Chaos Parts
+	const [charChaosStorage, setCharChaosStorage] = useState(0);
+	const [charChaosModule, setCharChaosModule] = useState(0);
+	const [charChaosBolt, setCharChaosBolt] = useState(0);
+
+	const [talChaosStorage, setTalChaosStorage] = useState(0);
+	const [talChaosModule, setTalChaosModule] = useState(0);
+	const [talChaosBolt, setTalChaosBolt] = useState(0);
+
+	//Primal Construct Prisms
+	const [charDamagedPrism, setCharDamagedPrism] = useState(0);
+	const [charTurbidPrism, setCharTurbidPrism] = useState(0);
+	const [charRadiantPrism, setCharRadiantPrism] = useState(0);
+
+	const [talDamagedPrism, setTalDamagedPrism] = useState(0);
+	const [talTurbidPrism, setTalTurbidPrism] = useState(0);
+	const [talRadiantPrism, setTalRadiantPrism] = useState(0);
+
+	//Consecrated Beast Shells
+	const [charDesiccatedShell, setCharDesiccatedShell] = useState(0);
+	const [charSturdyShell, setCharSturdyShell] = useState(0);
+	const [charMarkedShell, setCharMarkedShell] = useState(0);
+
+	const [talDesiccatedShell, setTalDesiccatedShell] = useState(0);
+	const [talSturdyShell, setTalSturdyShell] = useState(0);
+	const [talMarkedShell, setTalMarkedShell] = useState(0);
+
+	//Total per Character
+	const totalTalentLvUpPerChar_Char1 = 18;
+	const totalTalentLvUpPerChar_Char2 = 30;
+	const totalTalentLvUpPerChar_Char3 = 36;
 
 	//6 talent mat times 3 skills
-	const totalTalentLvUpPerChar1 = 3 * 3;
-	const totalTalentLvUpPerChar2 = 21 * 3;
-	const totalTalentLvUpPerChar3 = 38 * 3;
-	//
-	const [counterFreedom11, setCounterFreedom11] = useState(0);
-	const incrementCounterFreedom11 = () => {
-		setCounterFreedom11(counterFreedom11 + 1);
+	const totalTalentLvUpPerChar_Tal1 = 6 * 3;
+	const totalTalentLvUpPerChar_Tal2 = 22 * 3;
+	const totalTalentLvUpPerChar_Tal3 = 31 * 3;
+
+	//Hilichurl Horns
+	const [counterCharHeavyHorn, setCounterCharHeavyHorn] = useState(0);
+	const incrementCounterCharHeavyHorn = () => {
+		setCounterCharHeavyHorn(counterCharHeavyHorn + 1);
 	};
-	const decrementCounterFreedom11 = () => {
-		if (counterFreedom11 !== 0) {
-			setCounterFreedom11(counterFreedom11 - 1);
+	const decrementCounterCharHeavyHorn = () => {
+		if (counterCharHeavyHorn !== 0) {
+			setCounterCharHeavyHorn(counterCharHeavyHorn - 1);
 		}
 	};
 	//
-	const [counterFreedom2, setCounterFreedom2] = useState(0);
-	const incrementCounterFreedom2 = () => {
-		setCounterFreedom2(counterFreedom2 + 1);
+	const [counterTalHeavyHorn, setCounterTalHeavyHorn] = useState(0);
+	const incrementCounterTalHeavyHorn = () => {
+		setCounterTalHeavyHorn(counterTalHeavyHorn + 1);
 	};
-	const decrementCounterFreedom2 = () => {
-		if (counterFreedom2 !== 0) {
-			setCounterFreedom2(counterFreedom2 - 1);
+	const decrementCounterTalHeavyHorn = () => {
+		if (counterTalHeavyHorn !== 0) {
+			setCounterTalHeavyHorn(counterTalHeavyHorn - 1);
 		}
 	};
 	//
-	const [counterFreedom3, setCounterFreedom3] = useState(0);
-	const incrementCounterFreedom3 = () => {
-		setCounterFreedom3(counterFreedom3 + 1);
+	const [counterCharBlackBronzeHorn, setCounterCharBlackBronzeHorn] = useState(0);
+	const incrementCounterCharBlackBronzeHorn = () => {
+		setCounterCharBlackBronzeHorn(counterCharBlackBronzeHorn + 1);
 	};
-	const decrementCounterFreedom3 = () => {
-		if (counterFreedom3 !== 0) {
-			setCounterFreedom3(counterFreedom3 - 1);
+	const decrementCounterCharBlackBronzeHorn = () => {
+		if (counterCharBlackBronzeHorn !== 0) {
+			setCounterCharBlackBronzeHorn(counterCharBlackBronzeHorn - 1);
+		}
+	};
+	//
+	const [counterTalBlackBronzeHorn, setCounterTalBlackBronzeHorn] = useState(0);
+	const incrementCounterTalBlackBronzeHorn = () => {
+		setCounterTalBlackBronzeHorn(counterTalBlackBronzeHorn + 1);
+	};
+	const decrementCounterTalBlackBronzeHorn = () => {
+		if (counterTalBlackBronzeHorn !== 0) {
+			setCounterTalBlackBronzeHorn(counterTalBlackBronzeHorn - 1);
 		}
 	};
 
 	//
-	const [counterResistance1, setCounterResistance1] = useState(0);
-	const incrementCounterResistance1 = () => {
-		setCounterResistance1(counterResistance1 + 1);
+	const [counterCharBlackCrystalHorn, setCounterCharBlackCrystalHorn] = useState(0);
+	const incrementCounterCharBlackCrystalHorn = () => {
+		setCounterCharBlackCrystalHorn(counterCharBlackCrystalHorn + 1);
 	};
-	const decrementCounterResistance1 = () => {
-		if (counterResistance1 !== 0) {
-			setCounterResistance1(counterResistance1 - 1);
-		}
-	};
-	//
-	const [counterResistance2, setCounterResistance2] = useState(0);
-	const incrementCounterResistance2 = () => {
-		setCounterResistance2(counterResistance2 + 1);
-	};
-	const decrementCounterResistance2 = () => {
-		if (counterResistance2 !== 0) {
-			setCounterResistance2(counterResistance2 - 1);
-		}
-	};
-	//
-	const [counterResistance3, setCounterResistance3] = useState(0);
-	const incrementCounterResistance3 = () => {
-		setCounterResistance3(counterResistance3 + 1);
-	};
-	const decrementCounterResistance3 = () => {
-		if (counterResistance3 !== 0) {
-			setCounterResistance3(counterResistance3 - 1);
+	const decrementCounterCharBlackCrystalHorn = () => {
+		if (counterCharBlackCrystalHorn !== 0) {
+			setCounterCharBlackCrystalHorn(counterCharBlackCrystalHorn - 1);
 		}
 	};
 
 	//
-	const [counterBallad1, setCounterBallad1] = useState(0);
-	const incrementCounterBallad1 = () => {
-		setCounterBallad1(counterBallad1 + 1);
+	const [counterTalBlackCrystalHorn, setCounterTalBlackCrystalHorn] = useState(0);
+	const incrementCounterTalBlackCrystalHorn = () => {
+		setCounterTalBlackCrystalHorn(counterTalBlackCrystalHorn + 1);
 	};
-	const decrementCounterBallad1 = () => {
-		if (counterBallad1 !== 0) {
-			setCounterBallad1(counterBallad1 - 1);
+	const decrementCounterTalBlackCrystalHorn = () => {
+		if (counterTalBlackCrystalHorn !== 0) {
+			setCounterTalBlackCrystalHorn(counterTalBlackCrystalHorn - 1);
+		}
+	};
+
+	//Ley Line Branches
+	const [counterCharDeadLeyLineBranch, setCounterCharDeadLeyLineBranch] = useState(0);
+	const incrementCounterCharDeadLeyLineBranch = () => {
+		setCounterCharDeadLeyLineBranch(counterCharDeadLeyLineBranch + 1);
+	};
+	const decrementCounterCharDeadLeyLineBranch = () => {
+		if (counterCharDeadLeyLineBranch !== 0) {
+			setCounterCharDeadLeyLineBranch(counterCharDeadLeyLineBranch - 1);
 		}
 	};
 	//
-	const [counterBallad2, setCounterBallad2] = useState(0);
-	const incrementCounterBallad2 = () => {
-		setCounterBallad2(counterBallad2 + 1);
+	const [counterTalDeadLeyLineBranch, setCounterTalDeadLeyLineBranch] = useState(0);
+	const incrementCounterTalDeadLeyLineBranch = () => {
+		setCounterTalDeadLeyLineBranch(counterTalDeadLeyLineBranch + 1);
 	};
-	const decrementCounterBallad2 = () => {
-		if (counterBallad2 !== 0) {
-			setCounterBallad2(counterBallad2 - 1);
-		}
-	};
-	//
-	const [counterBallad3, setCounterBallad3] = useState(0);
-	const incrementCounterBallad3 = () => {
-		setCounterBallad3(counterBallad3 + 1);
-	};
-	const decrementCounterBallad3 = () => {
-		if (counterBallad3 !== 0) {
-			setCounterBallad3(counterBallad3 - 1);
+	const decrementCounterTalDeadLeyLineBranch = () => {
+		if (counterTalDeadLeyLineBranch !== 0) {
+			setCounterTalDeadLeyLineBranch(counterTalDeadLeyLineBranch - 1);
 		}
 	};
 
 	//
-	const [counterProsperity1, setCounterProsperity1] = useState(0);
-	const incrementCounterProsperity1 = () => {
-		setCounterProsperity1(counterProsperity1 + 1);
+	const [counterCharDeadLeyLineLeaves, setCounterCharDeadLeyLineLeaves] = useState(0);
+	const incrementCounterCharDeadLeyLineLeaves = () => {
+		setCounterCharDeadLeyLineLeaves(counterCharDeadLeyLineLeaves + 1);
 	};
-	const decrementCounterProsperity1 = () => {
-		if (counterProsperity1 !== 0) {
-			setCounterProsperity1(counterProsperity1 - 1);
+	const decrementCounterCharDeadLeyLineLeaves = () => {
+		if (counterCharDeadLeyLineLeaves !== 0) {
+			setCounterCharDeadLeyLineLeaves(counterCharDeadLeyLineLeaves - 1);
 		}
 	};
 	//
-	const [counterProsperity2, setCounterProsperity2] = useState(0);
-	const incrementCounterProsperity2 = () => {
-		setCounterProsperity2(counterProsperity2 + 1);
+	const [counterTalDeadLeyLineLeaves, setCounterTalDeadLeyLineLeaves] = useState(0);
+	const incrementCounterTalDeadLeyLineLeaves = () => {
+		setCounterTalDeadLeyLineLeaves(counterTalDeadLeyLineLeaves + 1);
 	};
-	const decrementCounterProsperity2 = () => {
-		if (counterProsperity2 !== 0) {
-			setCounterProsperity2(counterProsperity2 - 1);
+	const decrementCounterTalDeadLeyLineLeaves = () => {
+		if (counterTalDeadLeyLineLeaves !== 0) {
+			setCounterTalDeadLeyLineLeaves(counterTalDeadLeyLineLeaves - 1);
 		}
 	};
 	//
-	const [counterProsperity3, setCounterProsperity3] = useState(0);
-	const incrementCounterProsperity3 = () => {
-		setCounterProsperity3(counterProsperity3 + 1);
+	const [counterCharLeyLineSprout, setCounterCharLeyLineSprout] = useState(0);
+	const incrementCounterCharLeyLineSprout = () => {
+		setCounterCharLeyLineSprout(counterCharLeyLineSprout + 1);
 	};
-	const decrementCounterProsperity3 = () => {
-		if (counterProsperity3 !== 0) {
-			setCounterProsperity3(counterProsperity3 - 1);
+	const decrementCounterCharLeyLineSprout = () => {
+		if (counterCharLeyLineSprout !== 0) {
+			setCounterCharLeyLineSprout(counterCharLeyLineSprout - 1);
+		}
+	};
+	//
+	const [counterTalLeyLineSprout, setCounterTalLeyLineSprout] = useState(0);
+	const incrementCounterTalLeyLineSprout = () => {
+		setCounterTalLeyLineSprout(counterTalLeyLineSprout + 1);
+	};
+	const decrementCounterTalLeyLineSprout = () => {
+		if (counterTalLeyLineSprout !== 0) {
+			setCounterTalLeyLineSprout(counterTalLeyLineSprout - 1);
+		}
+	};
+
+	//Chaos Parts
+	const [counterCharChaosDevice, setCounterCharChaosDevice] = useState(0);
+	const incrementCounterCharChaosDevice = () => {
+		setCounterCharChaosDevice(counterCharChaosDevice + 1);
+	};
+	const decrementCounterCharChaosDevice = () => {
+		if (counterCharChaosDevice !== 0) {
+			setCounterCharChaosDevice(counterCharChaosDevice - 1);
+		}
+	};
+	//
+	const [counterTalChaosDevice, setCounterTalChaosDevice] = useState(0);
+	const incrementCounterTalChaosDevice = () => {
+		setCounterTalChaosDevice(counterTalChaosDevice + 1);
+	};
+	const decrementCounterTalChaosDevice = () => {
+		if (counterTalChaosDevice !== 0) {
+			setCounterTalChaosDevice(counterTalChaosDevice - 1);
 		}
 	};
 
 	//
-	const [counterDiligence1, setCounterDiligence1] = useState(0);
-	const incrementCounterDiligence1 = () => {
-		setCounterDiligence1(counterDiligence1 + 1);
+	const [counterCharChaosCircuit, setCounterCharChaosCircuit] = useState(0);
+	const incrementCounterCharChaosCircuit = () => {
+		setCounterCharChaosCircuit(counterCharChaosCircuit + 1);
 	};
-	const decrementCounterDiligence1 = () => {
-		if (counterDiligence1 !== 0) {
-			setCounterDiligence1(counterDiligence1 - 1);
+	const decrementCounterCharChaosCircuit = () => {
+		if (counterCharChaosCircuit !== 0) {
+			setCounterCharChaosCircuit(counterCharChaosCircuit - 1);
 		}
 	};
 	//
-	const [counterDiligence2, setCounterDiligence2] = useState(0);
-	const incrementCounterDiligence2 = () => {
-		setCounterDiligence2(counterDiligence2 + 1);
+	const [counterTalChaosCircuit, setCounterTalChaosCircuit] = useState(0);
+	const incrementCounterTalChaosCircuit = () => {
+		setCounterTalChaosCircuit(counterTalChaosCircuit + 1);
 	};
-	const decrementCounterDiligence2 = () => {
-		if (counterDiligence2 !== 0) {
-			setCounterDiligence2(counterDiligence2 - 1);
+	const decrementCounterTalChaosCircuit = () => {
+		if (counterTalChaosCircuit !== 0) {
+			setCounterTalChaosCircuit(counterTalChaosCircuit - 1);
 		}
 	};
 	//
-	const [counterDiligence3, setCounterDiligence3] = useState(0);
-	const incrementCounterDiligence3 = () => {
-		setCounterDiligence3(counterDiligence3 + 1);
+	const [counterCharChaosCore, setCounterCharChaosCore] = useState(0);
+	const incrementCounterCharChaosCore = () => {
+		setCounterCharChaosCore(counterCharChaosCore + 1);
 	};
-	const decrementCounterDiligence3 = () => {
-		if (counterDiligence3 !== 0) {
-			setCounterDiligence3(counterDiligence3 - 1);
+	const decrementCounterCharChaosCore = () => {
+		if (counterCharChaosCore !== 0) {
+			setCounterCharChaosCore(counterCharChaosCore - 1);
+		}
+	};
+	//
+	const [counterTalChaosCore, setCounterTalChaosCore] = useState(0);
+	const incrementCounterTalChaosCore = () => {
+		setCounterTalChaosCore(counterTalChaosCore + 1);
+	};
+	const decrementCounterTalChaosCore = () => {
+		if (counterTalChaosCore !== 0) {
+			setCounterTalChaosCore(counterTalChaosCore - 1);
+		}
+	};
+	//Mist Grasses
+	const [counterCharMistGrassPollen, setCounterCharMistGrassPollen] = useState(0);
+	const incrementCounterCharMistGrassPollen = () => {
+		setCounterCharMistGrassPollen(counterCharMistGrassPollen + 1);
+	};
+	const decrementCounterCharMistGrassPollen = () => {
+		if (counterCharMistGrassPollen !== 0) {
+			setCounterCharMistGrassPollen(counterCharMistGrassPollen - 1);
+		}
+	};
+	//
+	const [counterTalMistGrassPollen, setCounterTalMistGrassPollen] = useState(0);
+	const incrementCounterTalMistGrassPollen = () => {
+		setCounterTalMistGrassPollen(counterTalMistGrassPollen + 1);
+	};
+	const decrementCounterTalMistGrassPollen = () => {
+		if (counterTalMistGrassPollen !== 0) {
+			setCounterTalMistGrassPollen(counterTalMistGrassPollen - 1);
 		}
 	};
 
 	//
-	const [counterGold1, setCounterGold1] = useState(0);
-	const incrementCounterGold1 = () => {
-		setCounterGold1(counterGold1 + 1);
+	const [counterCharMistGrass, setCounterCharMistGrass] = useState(0);
+	const incrementCounterCharMistGrass = () => {
+		setCounterCharMistGrass(counterCharMistGrass + 1);
 	};
-	const decrementCounterGold1 = () => {
-		if (counterGold1 !== 0) {
-			setCounterGold1(counterGold1 - 1);
+	const decrementCounterCharMistGrass = () => {
+		if (counterCharMistGrass !== 0) {
+			setCounterCharMistGrass(counterCharMistGrass - 1);
 		}
 	};
 	//
-	const [counterGold2, setCounterGold2] = useState(0);
-	const incrementCounterGold2 = () => {
-		setCounterGold2(counterGold2 + 1);
+	const [counterTalMistGrass, setCounterTalMistGrass] = useState(0);
+	const incrementCounterTalMistGrass = () => {
+		setCounterTalMistGrass(counterTalMistGrass + 1);
 	};
-	const decrementCounterGold2 = () => {
-		if (counterGold2 !== 0) {
-			setCounterGold2(counterGold2 - 1);
+	const decrementCounterTalMistGrass = () => {
+		if (counterTalMistGrass !== 0) {
+			setCounterTalMistGrass(counterTalMistGrass - 1);
 		}
 	};
 	//
-	const [counterGold3, setCounterGold3] = useState(0);
-	const incrementCounterGold3 = () => {
-		setCounterGold3(counterGold3 + 1);
+	const [counterCharInspectorSacrificialKnife, setCounterCharInspectorSacrificialKnife] = useState(0);
+	const incrementCounterCharInspectorSacrificialKnife = () => {
+		setCounterCharInspectorSacrificialKnife(counterCharInspectorSacrificialKnife + 1);
 	};
-	const decrementCounterGold3 = () => {
-		if (counterGold3 !== 0) {
-			setCounterGold3(counterGold3 - 1);
+	const decrementCounterCharInspectorSacrificialKnife = () => {
+		if (counterCharInspectorSacrificialKnife !== 0) {
+			setCounterCharInspectorSacrificialKnife(counterCharInspectorSacrificialKnife - 1);
+		}
+	};
+	//
+	const [counterTalInspectorSacrificialKnife, setCounterTalInspectorSacrificialKnife] = useState(0);
+	const incrementCounterTalInspectorSacrificialKnife = () => {
+		setCounterTalInspectorSacrificialKnife(counterTalInspectorSacrificialKnife + 1);
+	};
+	const decrementCounterTalInspectorSacrificialKnife = () => {
+		if (counterTalInspectorSacrificialKnife !== 0) {
+			setCounterTalInspectorSacrificialKnife(counterTalInspectorSacrificialKnife - 1);
+		}
+	};
+
+	//Sacrificial Knives
+	const [counterCharHunterSacrificialKnife, setCounterCharHunterSacrificialKnife] = useState(0);
+	const incrementCounterCharHunterSacrificialKnife = () => {
+		setCounterCharHunterSacrificialKnife(counterCharHunterSacrificialKnife + 1);
+	};
+	const decrementCounterCharHunterSacrificialKnife = () => {
+		if (counterCharHunterSacrificialKnife !== 0) {
+			setCounterCharHunterSacrificialKnife(counterCharHunterSacrificialKnife - 1);
+		}
+	};
+	//
+	const [counterTalHunterSacrificialKnife, setCounterTalHunterSacrificialKnife] = useState(0);
+	const incrementCounterTalHunterSacrificialKnife = () => {
+		setCounterTalHunterSacrificialKnife(counterTalHunterSacrificialKnife + 1);
+	};
+	const decrementCounterTalHunterSacrificialKnife = () => {
+		if (counterTalHunterSacrificialKnife !== 0) {
+			setCounterTalHunterSacrificialKnife(counterTalHunterSacrificialKnife - 1);
 		}
 	};
 
 	//
-	const [counterTransience1, setCounterTransience1] = useState(0);
-	const incrementCounterTransience1 = () => {
-		setCounterTransience1(counterTransience1 + 1);
+	const [counterCharAgentSacrificialKnife, setCounterCharAgentSacrificialKnife] = useState(0);
+	const incrementCounterCharAgentSacrificialKnife = () => {
+		setCounterCharAgentSacrificialKnife(counterCharAgentSacrificialKnife + 1);
 	};
-	const decrementCounterTransience1 = () => {
-		if (counterTransience1 !== 0) {
-			setCounterTransience1(counterTransience1 - 1);
+	const decrementCounterCharAgentSacrificialKnife = () => {
+		if (counterCharAgentSacrificialKnife !== 0) {
+			setCounterCharAgentSacrificialKnife(counterCharAgentSacrificialKnife - 1);
 		}
 	};
 	//
-	const [counterTransience2, setCounterTransience2] = useState(0);
-	const incrementCounterTransience2 = () => {
-		setCounterTransience2(counterTransience2 + 1);
+	const [counterTalAgentSacrificialKnife, setCounterTalAgentSacrificialKnife] = useState(0);
+	const incrementCounterTalAgentSacrificialKnife = () => {
+		setCounterTalAgentSacrificialKnife(counterTalAgentSacrificialKnife + 1);
 	};
-	const decrementCounterTransience2 = () => {
-		if (counterTransience2 !== 0) {
-			setCounterTransience2(counterTransience2 - 1);
+	const decrementCounterTalAgentSacrificialKnife = () => {
+		if (counterTalAgentSacrificialKnife !== 0) {
+			setCounterTalAgentSacrificialKnife(counterTalAgentSacrificialKnife - 1);
 		}
 	};
 	//
-	const [counterTransience3, setCounterTransience3] = useState(0);
-	const incrementCounterTransience3 = () => {
-		setCounterTransience3(counterTransience3 + 1);
+	const [counterCharMistGrassWick, setCounterCharMistGrassWick] = useState(0);
+	const incrementCounterCharMistGrassWick = () => {
+		setCounterCharMistGrassWick(counterCharMistGrassWick + 1);
 	};
-	const decrementCounterTransience3 = () => {
-		if (counterTransience3 !== 0) {
-			setCounterTransience3(counterTransience3 - 1);
+	const decrementCounterCharMistGrassWick = () => {
+		if (counterCharMistGrassWick !== 0) {
+			setCounterCharMistGrassWick(counterCharMistGrassWick - 1);
 		}
 	};
 	//
-	const [counterElegance1, setCounterElegance1] = useState(0);
-	const incrementCounterElegance1 = () => {
-		setCounterElegance1(counterElegance1 + 1);
+	const [counterTalMistGrassWick, setCounterTalMistGrassWick] = useState(0);
+	const incrementCounterTalMistGrassWick = () => {
+		setCounterTalMistGrassWick(counterTalMistGrassWick + 1);
 	};
-	const decrementCounterElegance1 = () => {
-		if (counterElegance1 !== 0) {
-			setCounterElegance1(counterElegance1 - 1);
-		}
-	};
-	//
-	const [counterElegance2, setCounterElegance2] = useState(0);
-	const incrementCounterElegance2 = () => {
-		setCounterElegance2(counterElegance2 + 1);
-	};
-	const decrementCounterElegance2 = () => {
-		if (counterElegance2 !== 0) {
-			setCounterElegance2(counterElegance2 - 1);
-		}
-	};
-	//
-	const [counterElegance3, setCounterElegance3] = useState(0);
-	const incrementCounterElegance3 = () => {
-		setCounterElegance3(counterElegance3 + 1);
-	};
-	const decrementCounterElegance3 = () => {
-		if (counterElegance3 !== 0) {
-			setCounterElegance3(counterElegance3 - 1);
-		}
-	};
-	//
-	const [counterLight1, setCounterLight1] = useState(0);
-	const incrementCounterLight1 = () => {
-		setCounterLight1(counterLight1 + 1);
-	};
-	const decrementCounterLight1 = () => {
-		if (counterLight1 !== 0) {
-			setCounterLight1(counterLight1 - 1);
-		}
-	};
-	//
-	const [counterLight2, setCounterLight2] = useState(0);
-	const incrementCounterLight2 = () => {
-		setCounterLight2(counterLight2 + 1);
-	};
-	const decrementCounterLight2 = () => {
-		if (counterLight2 !== 0) {
-			setCounterLight2(counterLight2 - 1);
-		}
-	};
-	//
-	const [counterLight3, setCounterLight3] = useState(0);
-	const incrementCounterLight3 = () => {
-		setCounterLight3(counterLight3 + 1);
-	};
-	const decrementCounterLight3 = () => {
-		if (counterLight3 !== 0) {
-			setCounterLight3(counterLight3 - 1);
-		}
-	};
-	//
-	const [counterAdmonition1, setCounterAdmonition1] = useState(0);
-	const incrementCounterAdmonition1 = () => {
-		setCounterAdmonition1(counterAdmonition1 + 1);
-	};
-	const decrementCounterAdmonition1 = () => {
-		if (counterAdmonition1 !== 0) {
-			setCounterAdmonition1(counterAdmonition1 - 1);
-		}
-	};
-	//
-	const [counterAdmonition2, setCounterAdmonition2] = useState(0);
-	const incrementCounterAdmonition2 = () => {
-		setCounterAdmonition2(counterAdmonition2 + 1);
-	};
-	const decrementCounterAdmonition2 = () => {
-		if (counterAdmonition2 !== 0) {
-			setCounterAdmonition2(counterAdmonition2 - 1);
-		}
-	};
-	//
-	const [counterAdmonition3, setCounterAdmonition3] = useState(0);
-	const incrementCounterAdmonition3 = () => {
-		setCounterAdmonition3(counterAdmonition3 + 1);
-	};
-	const decrementCounterAdmonition3 = () => {
-		if (counterAdmonition3 !== 0) {
-			setCounterAdmonition3(counterAdmonition3 - 1);
-		}
-	};
-	//
-	const [counterIngenuity1, setCounterIngenuity1] = useState(0);
-	const incrementCounterIngenuity1 = () => {
-		setCounterIngenuity1(counterIngenuity1 + 1);
-	};
-	const decrementCounterIngenuity1 = () => {
-		if (counterIngenuity1 !== 0) {
-			setCounterIngenuity1(counterIngenuity1 - 1);
-		}
-	};
-	//
-	const [counterIngenuity2, setCounterIngenuity2] = useState(0);
-	const incrementCounterIngenuity2 = () => {
-		setCounterIngenuity2(counterIngenuity2 + 1);
-	};
-	const decrementCounterIngenuity2 = () => {
-		if (counterIngenuity2 !== 0) {
-			setCounterIngenuity2(counterIngenuity2 - 1);
-		}
-	};
-	//
-	const [counterIngenuity3, setCounterIngenuity3] = useState(0);
-	const incrementCounterIngenuity3 = () => {
-		setCounterIngenuity3(counterIngenuity3 + 1);
-	};
-	const decrementCounterIngenuity3 = () => {
-		if (counterIngenuity3 !== 0) {
-			setCounterIngenuity3(counterIngenuity3 - 1);
+	const decrementCounterTalMistGrassWick = () => {
+		if (counterTalMistGrassWick !== 0) {
+			setCounterTalMistGrassWick(counterTalMistGrassWick - 1);
 		}
 	};
 
-	const [counterPraxis1, setCounterPraxis1] = useState(0);
-	const incrementCounterPraxis1 = () => {
-		setCounterPraxis1(counterPraxis1 + 1);
+	//Bone Shards
+	const [counterCharFragileBoneShard, setCounterCharFragileBoneShard] = useState(0);
+	const incrementCounterCharFragileBoneShard = () => {
+		setCounterCharFragileBoneShard(counterCharFragileBoneShard + 1);
 	};
-	const decrementCounterPraxis1 = () => {
-		if (counterPraxis1 !== 0) {
-			setCounterPraxis1(counterPraxis1 - 1);
+	const decrementCounterCharFragileBoneShard = () => {
+		if (counterCharFragileBoneShard !== 0) {
+			setCounterCharFragileBoneShard(counterCharFragileBoneShard - 1);
 		}
 	};
-	const [counterPraxis2, setCounterPraxis2] = useState(0);
-	const incrementCounterPraxis2 = () => {
-		setCounterPraxis2(counterPraxis2 + 1);
+	//
+	const [counterTalFragileBoneShard, setCounterTalFragileBoneShard] = useState(0);
+	const incrementCounterTalFragileBoneShard = () => {
+		setCounterTalFragileBoneShard(counterTalFragileBoneShard + 1);
 	};
-	const decrementCounterPraxis2 = () => {
-		if (counterPraxis2 !== 0) {
-			setCounterPraxis2(counterPraxis2 - 1);
-		}
-	};
-	const [counterPraxis3, setCounterPraxis3] = useState(0);
-	const incrementCounterPraxis3 = () => {
-		setCounterPraxis3(counterPraxis3 + 1);
-	};
-	const decrementCounterPraxis3 = () => {
-		if (counterPraxis3 !== 0) {
-			setCounterPraxis3(counterPraxis3 - 1);
+	const decrementCounterTalFragileBoneShard = () => {
+		if (counterTalFragileBoneShard !== 0) {
+			setCounterTalFragileBoneShard(counterTalFragileBoneShard - 1);
 		}
 	};
 
-	const inputsHave1 = [freedom1, resistance1, ballad1, prosperity1, diligence1, gold1, transience1, elegance1, light1, admonition1, ingenuity1, praxis1];
-	const inputsHave2 = [freedom2, resistance2, ballad2, prosperity2, diligence2, gold2, transience2, elegance2, light2, admonition2, ingenuity2, praxis2];
-	const inputsHave3 = [freedom3, resistance3, ballad3, prosperity3, diligence3, gold3, transience3, elegance3, light3, admonition3, ingenuity3, praxis3];
-	const inputsUsed1 = [
-		counterFreedom11,
-		counterResistance1,
-		counterBallad1,
-		counterProsperity1,
-		counterDiligence1,
-		counterGold1,
-		counterTransience1,
-		counterElegance1,
-		counterLight1,
-		counterAdmonition1,
-		counterIngenuity1,
-		counterPraxis1,
+	//
+	const [counterCharSturdyBoneShard, setCounterCharSturdyBoneShard] = useState(0);
+	const incrementCounterCharSturdyBoneShard = () => {
+		setCounterCharSturdyBoneShard(counterCharSturdyBoneShard + 1);
+	};
+	const decrementCounterCharSturdyBoneShard = () => {
+		if (counterCharSturdyBoneShard !== 0) {
+			setCounterCharSturdyBoneShard(counterCharSturdyBoneShard - 1);
+		}
+	};
+	//
+	const [counterTalSturdyBoneShard, setCounterTalSturdyBoneShard] = useState(0);
+	const incrementCounterTalSturdyBoneShard = () => {
+		setCounterTalSturdyBoneShard(counterTalSturdyBoneShard + 1);
+	};
+	const decrementCounterTalSturdyBoneShard = () => {
+		if (counterTalSturdyBoneShard !== 0) {
+			setCounterTalSturdyBoneShard(counterTalSturdyBoneShard - 1);
+		}
+	};
+	//
+	const [counterCharFossilizedBoneShard, setCounterCharFossilizedBoneShard] = useState(0);
+	const incrementCounterCharFossilizedBoneShard = () => {
+		setCounterCharFossilizedBoneShard(counterCharFossilizedBoneShard + 1);
+	};
+	const decrementCounterCharFossilizedBoneShard = () => {
+		if (counterCharFossilizedBoneShard !== 0) {
+			setCounterCharFossilizedBoneShard(counterCharFossilizedBoneShard - 1);
+		}
+	};
+	//
+	const [counterTalFossilizedBoneShard, setCounterTalFossilizedBoneShard] = useState(0);
+	const incrementCounterTalFossilizedBoneShard = () => {
+		setCounterTalFossilizedBoneShard(counterTalFossilizedBoneShard + 1);
+	};
+	const decrementCounterTalFossilizedBoneShard = () => {
+		if (counterTalFossilizedBoneShard !== 0) {
+			setCounterTalFossilizedBoneShard(counterTalFossilizedBoneShard - 1);
+		}
+	};
+
+	//Sentinel Chaos Parts
+	const [counterCharChaosGear, setCounterCharChaosGear] = useState(0);
+	const incrementCounterCharChaosGear = () => {
+		setCounterCharChaosGear(counterCharChaosGear + 1);
+	};
+	const decrementCounterCharChaosGear = () => {
+		if (counterCharChaosGear !== 0) {
+			setCounterCharChaosGear(counterCharChaosGear - 1);
+		}
+	};
+	//
+	const [counterTalChaosGear, setCounterTalChaosGear] = useState(0);
+	const incrementCounterTalChaosGear = () => {
+		setCounterTalChaosGear(counterTalChaosGear + 1);
+	};
+	const decrementCounterTalChaosGear = () => {
+		if (counterTalChaosGear !== 0) {
+			setCounterTalChaosGear(counterTalChaosGear - 1);
+		}
+	};
+
+	//
+	const [counterCharChaosAxis, setCounterCharChaosAxis] = useState(0);
+	const incrementCounterCharChaosAxis = () => {
+		setCounterCharChaosAxis(counterCharChaosAxis + 1);
+	};
+	const decrementCounterCharChaosAxis = () => {
+		if (counterCharChaosAxis !== 0) {
+			setCounterCharChaosAxis(counterCharChaosAxis - 1);
+		}
+	};
+	//
+	const [counterTalChaosAxis, setCounterTalChaosAxis] = useState(0);
+	const incrementCounterTalChaosAxis = () => {
+		setCounterTalChaosAxis(counterTalChaosAxis + 1);
+	};
+	const decrementCounterTalChaosAxis = () => {
+		if (counterTalChaosAxis !== 0) {
+			setCounterTalChaosAxis(counterTalChaosAxis - 1);
+		}
+	};
+	//
+	const [counterCharChaosOculus, setCounterCharChaosOculus] = useState(0);
+	const incrementCounterCharChaosOculus = () => {
+		setCounterCharChaosOculus(counterCharChaosOculus + 1);
+	};
+	const decrementCounterCharChaosOculus = () => {
+		if (counterCharChaosOculus !== 0) {
+			setCounterCharChaosOculus(counterCharChaosOculus - 1);
+		}
+	};
+	//
+	const [counterTalChaosOculus, setCounterTalChaosOculus] = useState(0);
+	const incrementCounterTalChaosOculus = () => {
+		setCounterTalChaosOculus(counterTalChaosOculus + 1);
+	};
+	const decrementCounterTalChaosOculus = () => {
+		if (counterTalChaosOculus !== 0) {
+			setCounterTalChaosOculus(counterTalChaosOculus - 1);
+		}
+	};
+	//Mirror Maiden Prisms
+	const [counterCharDismalPrism, setCounterCharDismalPrism] = useState(0);
+	const incrementCounterCharDismalPrism = () => {
+		setCounterCharDismalPrism(counterCharDismalPrism + 1);
+	};
+	const decrementCounterCharDismalPrism = () => {
+		if (counterCharDismalPrism !== 0) {
+			setCounterCharDismalPrism(counterCharDismalPrism - 1);
+		}
+	};
+	//
+	const [counterTalDismalPrism, setCounterTalDismalPrism] = useState(0);
+	const incrementCounterTalDismalPrism = () => {
+		setCounterTalDismalPrism(counterTalDismalPrism + 1);
+	};
+	const decrementCounterTalDismalPrism = () => {
+		if (counterTalDismalPrism !== 0) {
+			setCounterTalDismalPrism(counterTalDismalPrism - 1);
+		}
+	};
+
+	//
+	const [counterCharCrystalPrism, setCounterCharCrystalPrism] = useState(0);
+	const incrementCounterCharCrystalPrism = () => {
+		setCounterCharCrystalPrism(counterCharCrystalPrism + 1);
+	};
+	const decrementCounterCharCrystalPrism = () => {
+		if (counterCharCrystalPrism !== 0) {
+			setCounterCharCrystalPrism(counterCharCrystalPrism - 1);
+		}
+	};
+	//
+	const [counterTalCrystalPrism, setCounterTalCrystalPrism] = useState(0);
+	const incrementCounterTalCrystalPrism = () => {
+		setCounterTalCrystalPrism(counterTalCrystalPrism + 1);
+	};
+	const decrementCounterTalCrystalPrism = () => {
+		if (counterTalCrystalPrism !== 0) {
+			setCounterTalCrystalPrism(counterTalCrystalPrism - 1);
+		}
+	};
+	//
+	const [counterCharPolarizingPrism, setCounterCharPolarizingPrism] = useState(0);
+	const incrementCounterCharPolarizingPrism = () => {
+		setCounterCharPolarizingPrism(counterCharPolarizingPrism + 1);
+	};
+	const decrementCounterCharPolarizingPrism = () => {
+		if (counterCharPolarizingPrism !== 0) {
+			setCounterCharPolarizingPrism(counterCharPolarizingPrism - 1);
+		}
+	};
+	//
+	const [counterTalPolarizingPrism, setCounterTalPolarizingPrism] = useState(0);
+	const incrementCounterTalPolarizingPrism = () => {
+		setCounterTalPolarizingPrism(counterTalPolarizingPrism + 1);
+	};
+	const decrementCounterTalPolarizingPrism = () => {
+		if (counterTalPolarizingPrism !== 0) {
+			setCounterTalPolarizingPrism(counterTalPolarizingPrism - 1);
+		}
+	};
+
+	//Concealed Riftwolf Claws
+	const [counterCharConcealedClaw, setCounterCharConcealedClaw] = useState(0);
+	const incrementCounterCharConcealedClaw = () => {
+		setCounterCharConcealedClaw(counterCharConcealedClaw + 1);
+	};
+	const decrementCounterCharConcealedClaw = () => {
+		if (counterCharConcealedClaw !== 0) {
+			setCounterCharConcealedClaw(counterCharConcealedClaw - 1);
+		}
+	};
+	//
+	const [counterTalConcealedClaw, setCounterTalConcealedClaw] = useState(0);
+	const incrementCounterTalConcealedClaw = () => {
+		setCounterTalConcealedClaw(counterTalConcealedClaw + 1);
+	};
+	const decrementCounterTalConcealedClaw = () => {
+		if (counterTalConcealedClaw !== 0) {
+			setCounterTalConcealedClaw(counterTalConcealedClaw - 1);
+		}
+	};
+
+	//
+	const [counterCharConcealedUnguis, setCounterCharConcealedUnguis] = useState(0);
+	const incrementCounterCharConcealedUnguis = () => {
+		setCounterCharConcealedUnguis(counterCharConcealedUnguis + 1);
+	};
+	const decrementCounterCharConcealedUnguis = () => {
+		if (counterCharConcealedUnguis !== 0) {
+			setCounterCharConcealedUnguis(counterCharConcealedUnguis - 1);
+		}
+	};
+	//
+	const [counterTalConcealedUnguis, setCounterTalConcealedUnguis] = useState(0);
+	const incrementCounterTalConcealedUnguis = () => {
+		setCounterTalConcealedUnguis(counterTalConcealedUnguis + 1);
+	};
+	const decrementCounterTalConcealedUnguis = () => {
+		if (counterTalConcealedUnguis !== 0) {
+			setCounterTalConcealedUnguis(counterTalConcealedUnguis - 1);
+		}
+	};
+	//
+	const [counterCharConcealedTalon, setCounterCharConcealedTalon] = useState(0);
+	const incrementCounterCharConcealedTalon = () => {
+		setCounterCharConcealedTalon(counterCharConcealedTalon + 1);
+	};
+	const decrementCounterCharConcealedTalon = () => {
+		if (counterCharConcealedTalon !== 0) {
+			setCounterCharConcealedTalon(counterCharConcealedTalon - 1);
+		}
+	};
+	//
+	const [counterTalConcealedTalon, setCounterTalConcealedTalon] = useState(0);
+	const incrementCounterTalConcealedTalon = () => {
+		setCounterTalConcealedTalon(counterTalConcealedTalon + 1);
+	};
+	const decrementCounterTalConcealedTalon = () => {
+		if (counterTalConcealedTalon !== 0) {
+			setCounterTalConcealedTalon(counterTalConcealedTalon - 1);
+		}
+	};
+
+	//Statuettes
+	const [counterCharGloomyStatuette, setCounterCharGloomyStatuette] = useState(0);
+	const incrementCounterCharGloomyStatuette = () => {
+		setCounterCharGloomyStatuette(counterCharGloomyStatuette + 1);
+	};
+	const decrementCounterCharGloomyStatuette = () => {
+		if (counterCharGloomyStatuette !== 0) {
+			setCounterCharGloomyStatuette(counterCharGloomyStatuette - 1);
+		}
+	};
+	//
+	const [counterTalGloomyStatuette, setCounterTalGloomyStatuette] = useState(0);
+	const incrementCounterTalGloomyStatuette = () => {
+		setCounterTalGloomyStatuette(counterTalGloomyStatuette + 1);
+	};
+	const decrementCounterTalGloomyStatuette = () => {
+		if (counterTalGloomyStatuette !== 0) {
+			setCounterTalGloomyStatuette(counterTalGloomyStatuette - 1);
+		}
+	};
+
+	//
+	const [counterCharDarkStatuette, setCounterCharDarkStatuette] = useState(0);
+	const incrementCounterCharDarkStatuette = () => {
+		setCounterCharDarkStatuette(counterCharDarkStatuette + 1);
+	};
+	const decrementCounterCharDarkStatuette = () => {
+		if (counterCharDarkStatuette !== 0) {
+			setCounterCharDarkStatuette(counterCharDarkStatuette - 1);
+		}
+	};
+	//
+	const [counterTalDarkStatuette, setCounterTalDarkStatuette] = useState(0);
+	const incrementCounterTalDarkStatuette = () => {
+		setCounterTalDarkStatuette(counterTalDarkStatuette + 1);
+	};
+	const decrementCounterTalDarkStatuette = () => {
+		if (counterTalDarkStatuette !== 0) {
+			setCounterTalDarkStatuette(counterTalDarkStatuette - 1);
+		}
+	};
+	//
+	const [counterCharDeathlyStatuette, setCounterCharDeathlyStatuette] = useState(0);
+	const incrementCounterCharDeathlyStatuette = () => {
+		setCounterCharDeathlyStatuette(counterCharDeathlyStatuette + 1);
+	};
+	const decrementCounterCharDeathlyStatuette = () => {
+		if (counterCharDeathlyStatuette !== 0) {
+			setCounterCharDeathlyStatuette(counterCharDeathlyStatuette - 1);
+		}
+	};
+	//
+	const [counterTalDeathlyStatuette, setCounterTalDeathlyStatuette] = useState(0);
+	const incrementCounterTalDeathlyStatuette = () => {
+		setCounterTalDeathlyStatuette(counterTalDeathlyStatuette + 1);
+	};
+	const decrementCounterTalDeathlyStatuette = () => {
+		if (counterTalDeathlyStatuette !== 0) {
+			setCounterTalDeathlyStatuette(counterTalDeathlyStatuette - 1);
+		}
+	};
+
+	//Fungal Nuclei
+	const [counterCharInactivatedFungalNucleus, setCounterCharInactivatedFungalNucleus] = useState(0);
+	const incrementCounterCharInactivatedFungalNucleus = () => {
+		setCounterCharInactivatedFungalNucleus(counterCharInactivatedFungalNucleus + 1);
+	};
+	const decrementCounterCharInactivatedFungalNucleus = () => {
+		if (counterCharInactivatedFungalNucleus !== 0) {
+			setCounterCharInactivatedFungalNucleus(counterCharInactivatedFungalNucleus - 1);
+		}
+	};
+	//
+	const [counterTalInactivatedFungalNucleus, setCounterTalInactivatedFungalNucleus] = useState(0);
+	const incrementCounterTalInactivatedFungalNucleus = () => {
+		setCounterTalInactivatedFungalNucleus(counterTalInactivatedFungalNucleus + 1);
+	};
+	const decrementCounterTalInactivatedFungalNucleus = () => {
+		if (counterTalInactivatedFungalNucleus !== 0) {
+			setCounterTalInactivatedFungalNucleus(counterTalInactivatedFungalNucleus - 1);
+		}
+	};
+
+	//
+	const [counterCharDormantFungalNucleus, setCounterCharDormantFungalNucleus] = useState(0);
+	const incrementCounterCharDormantFungalNucleus = () => {
+		setCounterCharDormantFungalNucleus(counterCharDormantFungalNucleus + 1);
+	};
+	const decrementCounterCharDormantFungalNucleus = () => {
+		if (counterCharDormantFungalNucleus !== 0) {
+			setCounterCharDormantFungalNucleus(counterCharDormantFungalNucleus - 1);
+		}
+	};
+	//
+	const [counterTalDormantFungalNucleus, setCounterTalDormantFungalNucleus] = useState(0);
+	const incrementCounterTalDormantFungalNucleus = () => {
+		setCounterTalDormantFungalNucleus(counterTalDormantFungalNucleus + 1);
+	};
+	const decrementCounterTalDormantFungalNucleus = () => {
+		if (counterTalDormantFungalNucleus !== 0) {
+			setCounterTalDormantFungalNucleus(counterTalDormantFungalNucleus - 1);
+		}
+	};
+	//
+	const [counterCharRobustFungalNucleus, setCounterCharRobustFungalNucleus] = useState(0);
+	const incrementCounterCharRobustFungalNucleus = () => {
+		setCounterCharRobustFungalNucleus(counterCharRobustFungalNucleus + 1);
+	};
+	const decrementCounterCharRobustFungalNucleus = () => {
+		if (counterCharRobustFungalNucleus !== 0) {
+			setCounterCharRobustFungalNucleus(counterCharRobustFungalNucleus - 1);
+		}
+	};
+	//
+	const [counterTalRobustFungalNucleus, setCounterTalRobustFungalNucleus] = useState(0);
+	const incrementCounterTalRobustFungalNucleus = () => {
+		setCounterTalRobustFungalNucleus(counterTalRobustFungalNucleus + 1);
+	};
+	const decrementCounterTalRobustFungalNucleus = () => {
+		if (counterTalRobustFungalNucleus !== 0) {
+			setCounterTalRobustFungalNucleus(counterTalRobustFungalNucleus - 1);
+		}
+	};
+
+	//Drake Chaos Parts
+	const [counterCharChaosStorage, setCounterCharChaosStorage] = useState(0);
+	const incrementCounterCharChaosStorage = () => {
+		setCounterCharChaosStorage(counterCharChaosStorage + 1);
+	};
+	const decrementCounterCharChaosStorage = () => {
+		if (counterCharChaosStorage !== 0) {
+			setCounterCharChaosStorage(counterCharChaosStorage - 1);
+		}
+	};
+	//
+	const [counterTalChaosStorage, setCounterTalChaosStorage] = useState(0);
+	const incrementCounterTalChaosStorage = () => {
+		setCounterTalChaosStorage(counterTalChaosStorage + 1);
+	};
+	const decrementCounterTalChaosStorage = () => {
+		if (counterTalChaosStorage !== 0) {
+			setCounterTalChaosStorage(counterTalChaosStorage - 1);
+		}
+	};
+
+	//
+	const [counterCharChaosModule, setCounterCharChaosModule] = useState(0);
+	const incrementCounterCharChaosModule = () => {
+		setCounterCharChaosModule(counterCharChaosModule + 1);
+	};
+	const decrementCounterCharChaosModule = () => {
+		if (counterCharChaosModule !== 0) {
+			setCounterCharChaosModule(counterCharChaosModule - 1);
+		}
+	};
+	//
+	const [counterTalChaosModule, setCounterTalChaosModule] = useState(0);
+	const incrementCounterTalChaosModule = () => {
+		setCounterTalChaosModule(counterTalChaosModule + 1);
+	};
+	const decrementCounterTalChaosModule = () => {
+		if (counterTalChaosModule !== 0) {
+			setCounterTalChaosModule(counterTalChaosModule - 1);
+		}
+	};
+	//
+	const [counterCharChaosBolt, setCounterCharChaosBolt] = useState(0);
+	const incrementCounterCharChaosBolt = () => {
+		setCounterCharChaosBolt(counterCharChaosBolt + 1);
+	};
+	const decrementCounterCharChaosBolt = () => {
+		if (counterCharChaosBolt !== 0) {
+			setCounterCharChaosBolt(counterCharChaosBolt - 1);
+		}
+	};
+	//
+	const [counterTalChaosBolt, setCounterTalChaosBolt] = useState(0);
+	const incrementCounterTalChaosBolt = () => {
+		setCounterTalChaosBolt(counterTalChaosBolt + 1);
+	};
+	const decrementCounterTalChaosBolt = () => {
+		if (counterTalChaosBolt !== 0) {
+			setCounterTalChaosBolt(counterTalChaosBolt - 1);
+		}
+	};
+
+	//Primal Construct Prisms
+	const [counterCharDamagedPrism, setCounterCharDamagedPrism] = useState(0);
+	const incrementCounterCharDamagedPrism = () => {
+		setCounterCharDamagedPrism(counterCharDamagedPrism + 1);
+	};
+	const decrementCounterCharDamagedPrism = () => {
+		if (counterCharDamagedPrism !== 0) {
+			setCounterCharDamagedPrism(counterCharDamagedPrism - 1);
+		}
+	};
+	//
+	const [counterTalDamagedPrism, setCounterTalDamagedPrism] = useState(0);
+	const incrementCounterTalDamagedPrism = () => {
+		setCounterTalDamagedPrism(counterTalDamagedPrism + 1);
+	};
+	const decrementCounterTalDamagedPrism = () => {
+		if (counterTalDamagedPrism !== 0) {
+			setCounterTalDamagedPrism(counterTalDamagedPrism - 1);
+		}
+	};
+
+	//
+	const [counterCharTurbidPrism, setCounterCharTurbidPrism] = useState(0);
+	const incrementCounterCharTurbidPrism = () => {
+		setCounterCharTurbidPrism(counterCharTurbidPrism + 1);
+	};
+	const decrementCounterCharTurbidPrism = () => {
+		if (counterCharTurbidPrism !== 0) {
+			setCounterCharTurbidPrism(counterCharTurbidPrism - 1);
+		}
+	};
+	//
+	const [counterTalTurbidPrism, setCounterTalTurbidPrism] = useState(0);
+	const incrementCounterTalTurbidPrism = () => {
+		setCounterTalTurbidPrism(counterTalTurbidPrism + 1);
+	};
+	const decrementCounterTalTurbidPrism = () => {
+		if (counterTalTurbidPrism !== 0) {
+			setCounterTalTurbidPrism(counterTalTurbidPrism - 1);
+		}
+	};
+	//
+	const [counterCharRadiantPrism, setCounterCharRadiantPrism] = useState(0);
+	const incrementCounterCharRadiantPrism = () => {
+		setCounterCharRadiantPrism(counterCharRadiantPrism + 1);
+	};
+	const decrementCounterCharRadiantPrism = () => {
+		if (counterCharRadiantPrism !== 0) {
+			setCounterCharRadiantPrism(counterCharRadiantPrism - 1);
+		}
+	};
+	//
+	const [counterTalRadiantPrism, setCounterTalRadiantPrism] = useState(0);
+	const incrementCounterTalRadiantPrism = () => {
+		setCounterTalRadiantPrism(counterTalRadiantPrism + 1);
+	};
+	const decrementCounterTalRadiantPrism = () => {
+		if (counterTalRadiantPrism !== 0) {
+			setCounterTalRadiantPrism(counterTalRadiantPrism - 1);
+		}
+	};
+
+	//Consecrated Beast Shells
+	const [counterCharDesiccatedShell, setCounterCharDesiccatedShell] = useState(0);
+	const incrementCounterCharDesiccatedShell = () => {
+		setCounterCharDesiccatedShell(counterCharDesiccatedShell + 1);
+	};
+	const decrementCounterCharDesiccatedShell = () => {
+		if (counterCharDesiccatedShell !== 0) {
+			setCounterCharDesiccatedShell(counterCharDesiccatedShell - 1);
+		}
+	};
+	//
+	const [counterTalDesiccatedShell, setCounterTalDesiccatedShell] = useState(0);
+	const incrementCounterTalDesiccatedShell = () => {
+		setCounterTalDesiccatedShell(counterTalDesiccatedShell + 1);
+	};
+	const decrementCounterTalDesiccatedShell = () => {
+		if (counterTalDesiccatedShell !== 0) {
+			setCounterTalDesiccatedShell(counterTalDesiccatedShell - 1);
+		}
+	};
+
+	//
+	const [counterCharSturdyShell, setCounterCharSturdyShell] = useState(0);
+	const incrementCounterCharSturdyShell = () => {
+		setCounterCharSturdyShell(counterCharSturdyShell + 1);
+	};
+	const decrementCounterCharSturdyShell = () => {
+		if (counterCharSturdyShell !== 0) {
+			setCounterCharSturdyShell(counterCharSturdyShell - 1);
+		}
+	};
+	//
+	const [counterTalSturdyShell, setCounterTalSturdyShell] = useState(0);
+	const incrementCounterTalSturdyShell = () => {
+		setCounterTalSturdyShell(counterTalSturdyShell + 1);
+	};
+	const decrementCounterTalSturdyShell = () => {
+		if (counterTalSturdyShell !== 0) {
+			setCounterTalSturdyShell(counterTalSturdyShell - 1);
+		}
+	};
+	//
+	const [counterCharMarkedShell, setCounterCharMarkedShell] = useState(0);
+	const incrementCounterCharMarkedShell = () => {
+		setCounterCharMarkedShell(counterCharMarkedShell + 1);
+	};
+	const decrementCounterCharMarkedShell = () => {
+		if (counterCharMarkedShell !== 0) {
+			setCounterCharMarkedShell(counterCharMarkedShell - 1);
+		}
+	};
+	//
+	const [counterTalMarkedShell, setCounterTalMarkedShell] = useState(0);
+	const incrementCounterTalMarkedShell = () => {
+		setCounterTalMarkedShell(counterTalMarkedShell + 1);
+	};
+	const decrementCounterTalMarkedShell = () => {
+		if (counterTalMarkedShell !== 0) {
+			setCounterTalMarkedShell(counterTalMarkedShell - 1);
+		}
+	};
+
+	const inputsCharHave1 = [
+		charHeavyHorn,
+		charDeadLeyLineBranch,
+		charChaosDevice,
+		charMistGrassPollen,
+		charHunterSacrificialKnife,
+		charFragileBoneShard,
+		charChaosGear,
+		charDismalPrism,
+		charConcealedClaw,
+		charGloomyStatuette,
+		charInactivatedFungalNucleus,
+		charChaosStorage,
+		charDamagedPrism,
+		charDesiccatedShell,
 	];
-	const inputsUsed2 = [
-		counterFreedom2,
-		counterResistance2,
-		counterBallad2,
-		counterProsperity2,
-		counterDiligence2,
-		counterGold2,
-		counterTransience2,
-		counterElegance2,
-		counterLight2,
-		counterAdmonition2,
-		counterIngenuity2,
-		counterPraxis2,
+	const inputsCharHave2 = [
+		charBlackBronzeHorn,
+		charDeadLeyLineLeaves,
+		charChaosCircuit,
+		charMistGrass,
+		charAgentSacrificialKnife,
+		charSturdyBoneShard,
+		charChaosAxis,
+		charCrystalPrism,
+		charConcealedUnguis,
+		charDarkStatuette,
+		charDormantFungalNucleus,
+		charChaosModule,
+		charTurbidPrism,
+		charSturdyShell,
 	];
-	const inputsUsed3 = [
-		counterFreedom3,
-		counterResistance3,
-		counterBallad3,
-		counterProsperity3,
-		counterDiligence3,
-		counterGold3,
-		counterTransience3,
-		counterElegance3,
-		counterLight3,
-		counterAdmonition3,
-		counterIngenuity3,
-		counterPraxis3,
+	const inputsCharHave3 = [
+		charBlackCrystalHorn,
+		charLeyLineSprout,
+		charChaosCore,
+		charMistGrassWick,
+		charInspectorSacrificialKnife,
+		charFossilizedBoneShard,
+		charChaosOculus,
+		charPolarizingPrism,
+		charConcealedTalon,
+		charDeathlyStatuette,
+		charRobustFungalNucleus,
+		charChaosBolt,
+		charRadiantPrism,
+		charMarkedShell,
+	];
+	const inputsTalHave1 = [
+		talHeavyHorn,
+		talDeadLeyLineBranch,
+		talChaosDevice,
+		talMistGrassPollen,
+		talHunterSacrificialKnife,
+		talFragileBoneShard,
+		talChaosGear,
+		talDismalPrism,
+		talConcealedClaw,
+		talGloomyStatuette,
+		talInactivatedFungalNucleus,
+		talChaosStorage,
+		talDamagedPrism,
+		talDesiccatedShell,
+	];
+	const inputsTalHave2 = [
+		talBlackBronzeHorn,
+		talDeadLeyLineLeaves,
+		talChaosCircuit,
+		talMistGrass,
+		talAgentSacrificialKnife,
+		talSturdyBoneShard,
+		talChaosAxis,
+		talCrystalPrism,
+		talConcealedUnguis,
+		talDarkStatuette,
+		talDormantFungalNucleus,
+		talChaosModule,
+		talTurbidPrism,
+		talSturdyShell,
+	];
+	const inputsTalHave3 = [
+		talBlackCrystalHorn,
+		talLeyLineSprout,
+		talChaosCore,
+		talMistGrassWick,
+		talInspectorSacrificialKnife,
+		talFossilizedBoneShard,
+		talChaosOculus,
+		talPolarizingPrism,
+		talConcealedTalon,
+		talDeathlyStatuette,
+		talRobustFungalNucleus,
+		talChaosBolt,
+		talRadiantPrism,
+		talMarkedShell,
+	];
+	const inputsCharUsed1 = [
+		counterCharHeavyHorn,
+
+		counterCharDeadLeyLineBranch,
+
+		counterCharChaosDevice,
+
+		counterCharMistGrassPollen,
+
+		counterCharHunterSacrificialKnife,
+
+		counterCharFragileBoneShard,
+
+		counterCharChaosGear,
+
+		counterCharDismalPrism,
+
+		counterCharConcealedClaw,
+
+		counterCharGloomyStatuette,
+
+		counterCharInactivatedFungalNucleus,
+
+		counterCharChaosStorage,
+
+		counterCharDamagedPrism,
+
+		counterCharDesiccatedShell,
+	];
+	const inputsCharUsed2 = [
+		counterCharBlackBronzeHorn,
+		counterCharDeadLeyLineLeaves,
+		counterCharChaosCircuit,
+		counterCharMistGrass,
+		counterCharAgentSacrificialKnife,
+		counterCharSturdyBoneShard,
+		counterCharChaosAxis,
+		counterCharCrystalPrism,
+		counterCharConcealedUnguis,
+		counterCharDarkStatuette,
+		counterCharDormantFungalNucleus,
+		counterCharChaosModule,
+		counterCharTurbidPrism,
+		counterCharSturdyShell,
+	];
+	const inputsCharUsed3 = [
+		counterCharBlackCrystalHorn,
+		counterCharLeyLineSprout,
+		counterCharChaosCore,
+		counterCharInspectorSacrificialKnife,
+		counterCharMistGrassWick,
+		counterCharFossilizedBoneShard,
+		counterCharChaosOculus,
+		counterCharPolarizingPrism,
+		counterCharConcealedTalon,
+		counterCharDeathlyStatuette,
+		counterCharRobustFungalNucleus,
+		counterCharChaosBolt,
+		counterCharRadiantPrism,
+		counterCharMarkedShell,
 	];
 
-	const OverallTotalHave = (input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11, input12) => {
+	const inputsTalUsed1 = [
+		counterTalHeavyHorn,
+
+		counterTalDeadLeyLineBranch,
+
+		counterTalChaosDevice,
+
+		counterTalMistGrassPollen,
+
+		counterTalInspectorSacrificialKnife,
+
+		counterTalFragileBoneShard,
+
+		counterTalChaosGear,
+
+		counterTalDismalPrism,
+
+		counterTalConcealedClaw,
+
+		counterTalGloomyStatuette,
+
+		counterTalInactivatedFungalNucleus,
+
+		counterTalChaosStorage,
+
+		counterTalDamagedPrism,
+
+		counterTalDesiccatedShell,
+	];
+	const inputsTalUsed2 = [
+		counterTalBlackBronzeHorn,
+		counterTalDeadLeyLineLeaves,
+		counterTalChaosCircuit,
+		counterTalMistGrass,
+		counterTalHunterSacrificialKnife,
+		counterTalSturdyBoneShard,
+		counterTalChaosAxis,
+		counterTalCrystalPrism,
+		counterTalConcealedUnguis,
+		counterTalDarkStatuette,
+		counterTalDormantFungalNucleus,
+		counterTalChaosModule,
+		counterTalTurbidPrism,
+		counterTalSturdyShell,
+	];
+	const inputsTalUsed3 = [
+		counterTalBlackCrystalHorn,
+		counterTalLeyLineSprout,
+		counterTalChaosCore,
+		counterTalMistGrassWick,
+		counterTalAgentSacrificialKnife,
+		counterCharFossilizedBoneShard,
+		counterTalChaosOculus,
+		counterTalPolarizingPrism,
+		counterTalConcealedTalon,
+		counterTalDeathlyStatuette,
+		counterTalRobustFungalNucleus,
+		counterTalChaosBolt,
+		counterTalRadiantPrism,
+		counterTalMarkedShell,
+	];
+
+	const OverallTotalHave = (input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11, input12, input13, input14) => {
 		return (
 			parseInt(input1) +
 			parseInt(input2) +
@@ -486,11 +1246,13 @@ const GenericGeneralDrops = () => {
 			parseInt(input9) +
 			parseInt(input10) +
 			parseInt(input11) +
-			parseInt(input12)
+			parseInt(input12) +
+			parseInt(input13) +
+			parseInt(input14)
 		);
 	};
 
-	const OverallTotalUsed = (input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11, input12) => {
+	const OverallTotalUsed = (input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11, input12, input13, input14) => {
 		return (
 			parseInt(input1) +
 			parseInt(input2) +
@@ -503,18 +1265,23 @@ const GenericGeneralDrops = () => {
 			parseInt(input9) +
 			parseInt(input10) +
 			parseInt(input11) +
-			parseInt(input12)
+			parseInt(input12) +
+			parseInt(input13) +
+			parseInt(input14)
 		);
 	};
 
 	return (
 		<div>
-			<h1 className="talent-books-h1">Talent Books - Level-Up Materials</h1>
-			<div className="talent-books-block">
-				<table className="talent-books-table">
-					<thead className="talent-books-header">
+			<h1 className="general-asc-mat-h1">Generic Common Ascension Materials</h1>
+			<div className="general-asc-mat-block">
+				<table className="general-asc-mat-table">
+					<thead className="general-asc-mat-header">
 						<tr>
 							<th>Character</th>
+							<th>Need</th>
+							<th>Have</th>
+							<th>Used</th>
 							<th>Talent Books</th>
 							<th>Need</th>
 							<th>Have</th>
@@ -524,24 +1291,42 @@ const GenericGeneralDrops = () => {
 					</thead>
 					<tbody>
 						<tr>
-							<td colSpan="6">Freedom Books</td>
+							<td colSpan="9">Hilichurl Horns</td>
 						</tr>
 						<tr>
-							<td>LV1: </td>
-							<td>LV1: </td>
-							<td>{7 * totalTalentLvUpPerChar1 - freedom1}</td>
+							<td>Heavy Horn</td>
+							<td>{7 * totalTalentLvUpPerChar_Char1 - charHeavyHorn}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={freedom1 - counterFreedom11} onChange={(e) => setFreedom1(e.target.value)} placeholder="0" min="0" />
+								<input type="number" className="general-asc-mat-num-input" value={charHeavyHorn - counterCharHeavyHorn} onChange={(e) => setCharHeavyHorn(e.target.value)} placeholder="0" min="0" />
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterFreedom11}>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharHeavyHorn}>
 											-
 										</button>
 
-										<span className="talent-books-arrow-mid-number">{parseInt(counterFreedom11)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterFreedom11}>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharHeavyHorn)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharHeavyHorn}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Heavy Horn</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal1 - talHeavyHorn}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={talHeavyHorn - counterTalHeavyHorn} onChange={(e) => CharHeavyHorn(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalHeavyHorn}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalHeavyHorn)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalHeavyHorn}>
 											+
 										</button>
 									</>
@@ -549,21 +1334,54 @@ const GenericGeneralDrops = () => {
 							</td>
 							<td rowSpan={3}>Aloy, Amber, Barbara, Diona, Klee, Sucrose, Tartaglia</td>
 						</tr>
+
 						<tr>
-							<td>LV2: </td>
-							<td>LV2: </td>
-							<td>{7 * totalTalentLvUpPerChar2 - freedom2}</td>
+							<td>Black Bronze Horn </td>
+
+							<td>{7 * totalTalentLvUpPerChar_Char2 - charBlackBronzeHorn}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={freedom2 - counterFreedom3} onChange={(e) => setFreedom2(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charBlackBronzeHorn - counterCharBlackBronzeHorn}
+									onChange={(e) => setCharBlackBronzeHorn(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterFreedom3}>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharBlackBronzeHorn}>
 											-
 										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterFreedom3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterFreedom3}>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharBlackBronzeHorn)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharBlackBronzeHorn}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Black Bronze Horn</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal2 - talBlackBronzeHorn}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talBlackBronzeHorn - counterTalBlackBronzeHorn}
+									onChange={(e) => setTalBlackBronzeHorn(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalBlackBronzeHorn}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalBlackBronzeHorn)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalBlackBronzeHorn}>
 											+
 										</button>
 									</>
@@ -571,73 +1389,174 @@ const GenericGeneralDrops = () => {
 							</td>
 						</tr>
 						<tr>
-							<td>LV3: </td>
-							<td>LV3: </td>
-							<td>{7 * totalTalentLvUpPerChar3 - freedom3}</td>
+							<td>Black Crystal Horn</td>
+							<td>{7 * totalTalentLvUpPerChar_Char3 - charBlackCrystalHorn}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={freedom3 - counterFreedom2} onChange={(e) => setFreedom3(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charBlackCrystalHorn - counterCharBlackCrystalHorn}
+									onChange={(e) => setCharBlackCrystalHorn(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterFreedom2}>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharBlackCrystalHorn}>
 											-
 										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterFreedom2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterFreedom2}>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharBlackCrystalHorn)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharBlackCrystalHorn}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Black Crystal Horn</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal3 - talBlackCrystalHorn}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talBlackCrystalHorn - counterTalBlackCrystalHorn}
+									onChange={(e) => setTalBlackCrystalHorn(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalBlackCrystalHorn}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalBlackCrystalHorn)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalBlackCrystalHorn}>
 											+
 										</button>
 									</>
 								}
 							</td>
 						</tr>
-						<tr className="talent-books-total-row">
-							<td>TOTAL </td>
-							<td>{totalTalentLvUpPerChar1 + totalTalentLvUpPerChar2 + totalTalentLvUpPerChar3 * 7 - LvUpMatTotalHave(freedom1, freedom2, freedom3)}</td>
-							<td>{LvUpMatTotalHave(freedom1, freedom2, freedom3) - LvUpMatTotalUsed(counterFreedom11, counterFreedom3, counterFreedom2)}</td>
-							<td>{LvUpMatTotalUsed(counterFreedom11, counterFreedom3, counterFreedom2)}</td>
+						<tr className="general-asc-mat-total-row">
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Char1 + totalTalentLvUpPerChar_Char2 + totalTalentLvUpPerChar_Char3 * 7 - LvUpMatTotalHave(charHeavyHorn, charBlackBronzeHorn, charBlackCrystalHorn)}</td>
+							<td>{LvUpMatTotalHave(charHeavyHorn, charBlackBronzeHorn, charBlackCrystalHorn) - LvUpMatTotalUsed(counterCharHeavyHorn, counterCharBlackCrystalHorn, counterCharBlackBronzeHorn)}</td>
+							<td>{LvUpMatTotalUsed(counterCharHeavyHorn, counterCharBlackCrystalHorn, counterCharBlackBronzeHorn)}</td>
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Tal1 + totalTalentLvUpPerChar_Tal2 + totalTalentLvUpPerChar_Tal3 * 7 - LvUpMatTotalHave(talHeavyHorn, talBlackBronzeHorn, talBlackCrystalHorn)}</td>
+							<td>{LvUpMatTotalHave(talHeavyHorn, talBlackBronzeHorn, talBlackCrystalHorn) - LvUpMatTotalUsed(counterTalHeavyHorn, counterTalBlackCrystalHorn, counterTalBlackBronzeHorn)}</td>
+							<td>{LvUpMatTotalUsed(counterTalHeavyHorn, counterTalBlackCrystalHorn, counterTalBlackBronzeHorn)}</td>
 							<td></td>
 						</tr>
 						<tr>
-							<td colSpan="6">Freedom Books</td>
+							<td colSpan="9">Ley Line Branches</td>
 						</tr>
+
 						<tr>
-							<td>LV1: </td>
-							<td>LV1: </td>
-							<td>{5 * totalTalentLvUpPerChar1 - resistance1}</td>
+							<td>Dead Ley Line Branch</td>
+							<td>{7 * totalTalentLvUpPerChar_Char1 - charDeadLeyLineBranch}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={resistance1 - counterResistance1} onChange={(e) => setResistance1(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charDeadLeyLineBranch - counterCharDeadLeyLineBranch}
+									onChange={(e) => setCharDeadLeyLineBranch(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterResistance1}>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharDeadLeyLineBranch}>
 											-
 										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterResistance1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterResistance1}>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharDeadLeyLineBranch)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharDeadLeyLineBranch}>
 											+
 										</button>
 									</>
 								}
 							</td>
-							<td rowSpan={3}>Bennett, Diluc, Eula, Jean, Mona, Noelle, Razor</td>
-						</tr>
-						<tr>
-							<td>LV2: </td>
-							<td>LV2: </td>
-							<td>{5 * totalTalentLvUpPerChar2 - resistance2} </td>
+							<td>Dead Ley Line Branch</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal1 - talDeadLeyLineBranch}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={resistance2 - counterResistance2} onChange={(e) => setResistance2(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talDeadLeyLineBranch - counterTalDeadLeyLineBranch}
+									onChange={(e) => setTalDeadLeyLineBranch(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterResistance2}>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalDeadLeyLineBranch}>
 											-
 										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterResistance2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterResistance2}>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalDeadLeyLineBranch)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalDeadLeyLineBranch}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Aloy, Amber, Barbara, Diona, Klee, Sucrose, Tartaglia</td>
+						</tr>
+
+						<tr>
+							<td>Dead Ley Line Leaves</td>
+							<td>{7 * totalTalentLvUpPerChar_Char2 - charDeadLeyLineLeaves}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charDeadLeyLineLeaves - counterCharDeadLeyLineLeaves}
+									onChange={(e) => setCharDeadLeyLineLeaves(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharDeadLeyLineLeaves}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharDeadLeyLineLeaves)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharDeadLeyLineLeaves}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Dead Ley Line Leaves</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal2 - talDeadLeyLineLeaves}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talDeadLeyLineLeaves - counterTalDeadLeyLineLeaves}
+									onChange={(e) => setTalDeadLeyLineLeaves(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalDeadLeyLineLeaves}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalDeadLeyLineLeaves)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalDeadLeyLineLeaves}>
 											+
 										</button>
 									</>
@@ -645,726 +1564,2181 @@ const GenericGeneralDrops = () => {
 							</td>
 						</tr>
 						<tr>
-							<td>LV3: </td>
-							<td>LV3: </td>
-							<td>{5 * totalTalentLvUpPerChar3 - resistance3}</td>
+							<td>Ley Line Sprout</td>
+							<td>{7 * totalTalentLvUpPerChar_Char3 - charLeyLineSprout}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={resistance3 - counterResistance3} onChange={(e) => setResistance3(e.target.value)} placeholder="0" min="0" />
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charLeyLineSprout - counterCharLeyLineSprout}
+									onChange={(e) => setCharLeyLineSprout(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
 								{
 									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterResistance3}>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharLeyLineSprout}>
 											-
 										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterResistance3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterResistance3}>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharLeyLineSprout)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharLeyLineSprout}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Ley Line Sprout</td>
+
+							<td>{7 * totalTalentLvUpPerChar_Tal3 - talLeyLineSprout}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talLeyLineSprout - counterTalLeyLineSprout}
+									onChange={(e) => setTalLeyLineSprout(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalLeyLineSprout}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalLeyLineSprout)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalLeyLineSprout}>
 											+
 										</button>
 									</>
 								}
 							</td>
 						</tr>
-						<tr className="talent-books-total-row">
+						<tr className="general-asc-mat-total-row">
 							<td>TOTAL</td>
-							<td>{totalTalentLvUpPerChar1 + totalTalentLvUpPerChar2 + totalTalentLvUpPerChar3 * 5 - LvUpMatTotalHave(resistance1, resistance2, resistance3)}</td>
-							<td>{LvUpMatTotalHave(resistance1, resistance2, resistance3) - LvUpMatTotalUsed(counterResistance1, counterResistance2, counterResistance3)}</td>
-							<td>{LvUpMatTotalUsed(counterResistance1, counterResistance2, counterResistance3)}</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td colSpan="6">Freedom Books</td>
-						</tr>
-						<tr>
-							<td>LV1: </td>
-							<td>LV1: </td>
-							<td>{6 * totalTalentLvUpPerChar1 - ballad1}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={ballad1 - counterBallad1} onChange={(e) => setBallad1(e.target.value)} placeholder="0" min="0" />
+								{totalTalentLvUpPerChar_Char1 + totalTalentLvUpPerChar_Char2 + totalTalentLvUpPerChar_Char3 * 7 - LvUpMatTotalHave(charDeadLeyLineBranch, charDeadLeyLineLeaves, charLeyLineSprout)}
 							</td>
 							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterBallad1}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterBallad1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterBallad1}>
-											+
-										</button>
-									</>
-								}
+								{LvUpMatTotalHave(charDeadLeyLineBranch, charDeadLeyLineLeaves, charLeyLineSprout) -
+									LvUpMatTotalUsed(counterCharDeadLeyLineBranch, counterCharDeadLeyLineLeaves, counterCharLeyLineSprout)}
 							</td>
-							<td rowSpan={3}>Albedo,Fischl,Kaeya,Lisa,Rosaria,Venti</td>
-						</tr>
-						<tr>
-							<td>LV2: </td>
-							<td>LV2: </td>
-							<td>{6 * totalTalentLvUpPerChar2 - ballad2}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={ballad2 - counterBallad2} onChange={(e) => setBallad2(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterBallad2}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterBallad2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterBallad2}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr>
-							<td>LV3: </td>
-							<td>LV3: </td>
-							<td>{6 * totalTalentLvUpPerChar3 - ballad3}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={ballad3 - counterBallad3} onChange={(e) => setBallad3(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterBallad3}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterBallad3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterBallad3}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr className="talent-books-total-row">
+
+							<td>{LvUpMatTotalUsed(counterCharDeadLeyLineBranch, counterCharDeadLeyLineLeaves, counterCharLeyLineSprout)}</td>
 							<td>TOTAL</td>
-							<td>{totalTalentLvUpPerChar1 + totalTalentLvUpPerChar2 + totalTalentLvUpPerChar3 * 6 - LvUpMatTotalHave(ballad1, ballad2, ballad3)}</td>
-							<td>{LvUpMatTotalHave(ballad1, ballad2, ballad3) - LvUpMatTotalUsed(counterBallad1, counterBallad2, counterBallad3)}</td>
-							<td>{LvUpMatTotalUsed(counterBallad1, counterBallad2, counterBallad3)}</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td colSpan="6">Freedom Books</td>
-						</tr>
-						<tr>
-							<td>LV1: </td>
-							<td>LV1: </td>
-							<td>{6 * totalTalentLvUpPerChar1 - prosperity1}</td>
+							<td>{totalTalentLvUpPerChar_Tal1 + totalTalentLvUpPerChar_Tal2 + totalTalentLvUpPerChar_Tal3 * 7 - LvUpMatTotalHave(talDeadLeyLineBranch, talDeadLeyLineLeaves, talLeyLineSprout)}</td>
 							<td>
-								<input type="number" className="talent-books-num-input" value={prosperity1 - counterProsperity1} onChange={(e) => setProsperity1(e.target.value)} placeholder="0" min="0" />
+								{LvUpMatTotalHave(talDeadLeyLineBranch, talDeadLeyLineLeaves, talLeyLineSprout) - LvUpMatTotalUsed(counterTalDeadLeyLineBranch, counterTalDeadLeyLineLeaves, counterTalLeyLineSprout)}
 							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterProsperity1}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterProsperity1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterProsperity1}>
-											+
-										</button>
-									</>
-								}
-							</td>
-							<td rowSpan={3}>Keqing, Ningguang, Qiqi, Shenhe, Xiao, Yelan</td>
-						</tr>
-						<tr>
-							<td>LV2: </td>
-							<td>LV2: </td>
-							<td>{6 * totalTalentLvUpPerChar2 - prosperity2}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={prosperity2 - counterProsperity2} onChange={(e) => setProsperity2(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterProsperity2}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterProsperity2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterProsperity2}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr>
-							<td>LV3: </td>
-							<td>LV3: </td>
-							<td>{6 * totalTalentLvUpPerChar3 - prosperity3}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={prosperity3 - counterProsperity3} onChange={(e) => setProsperity3(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterProsperity3}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterProsperity3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterProsperity3}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr className="talent-books-total-row">
-							<td>TOTAL</td>
-							<td>{totalTalentLvUpPerChar1 + totalTalentLvUpPerChar2 + totalTalentLvUpPerChar3 * 6 - LvUpMatTotalHave(prosperity1, prosperity2, prosperity3)}</td>
-							<td>{LvUpMatTotalHave(prosperity1, prosperity2, prosperity3) - LvUpMatTotalUsed(counterProsperity1, counterProsperity2, counterProsperity3)}</td>
-							<td>{LvUpMatTotalUsed(counterProsperity1, counterProsperity2, counterProsperity3)}</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td colSpan="6">Freedom Books</td>
-						</tr>
-						<tr>
-							<td>LV1: </td>
-							<td>LV1: </td>
-							<td>{7 * totalTalentLvUpPerChar1 - diligence1}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={diligence1 - counterDiligence1} onChange={(e) => setDiligence1(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterDiligence1}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterDiligence1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterDiligence1}>
-											+
-										</button>
-									</>
-								}
-							</td>
-							<td rowSpan={3}>Chongyun, Ganyu, Hu Tao, Kazuha, Xiangling, Yaoyao, Yun Jin</td>
-						</tr>
-						<tr>
-							<td>LV2: </td>
-							<td>LV2: </td>
-							<td>{7 * totalTalentLvUpPerChar2 - diligence2}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={diligence2 - counterDiligence2} onChange={(e) => setDiligence2(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterDiligence2}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterDiligence2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterDiligence2}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr>
-							<td>LV3: </td>
-							<td>LV3: </td>
-							<td>{7 * totalTalentLvUpPerChar3 - diligence3}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={diligence3 - counterDiligence3} onChange={(e) => setDiligence3(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterDiligence3}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterDiligence3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterDiligence3}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr className="talent-books-total-row">
-							<td>TOTAL</td>
-							<td>{totalTalentLvUpPerChar1 + totalTalentLvUpPerChar2 + totalTalentLvUpPerChar3 * 7 - LvUpMatTotalHave(diligence1, diligence2, diligence3)}</td>
-							<td>{LvUpMatTotalHave(diligence1, diligence2, diligence3) - LvUpMatTotalUsed(counterDiligence1, counterDiligence2, counterDiligence3)}</td>
-							<td>{LvUpMatTotalUsed(counterDiligence1, counterDiligence2, counterDiligence3)}</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td colSpan="6">Freedom Books</td>
-						</tr>
-						<tr>
-							<td>LV1: </td>
-							<td>LV1: </td>
-							<td>{5 * totalTalentLvUpPerChar1 - gold1}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={gold1 - counterGold1} onChange={(e) => setGold1(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterGold1}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterGold1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterGold1}>
-											+
-										</button>
-									</>
-								}
-							</td>
-							<td rowSpan={3}>Beidou, Xingqiu, Xinyan, Yanfei, Zhongli</td>
-						</tr>
-						<tr>
-							<td>LV2: </td>
-							<td>LV2: </td>
-							<td>{5 * totalTalentLvUpPerChar2 - gold2}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={gold2 - counterGold2} onChange={(e) => setGold2(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterGold2}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterGold2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterGold2}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr>
-							<td>LV3: </td>
-							<td>LV3: </td>
-							<td>{5 * totalTalentLvUpPerChar3 - gold3}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={gold3 - counterGold3} onChange={(e) => setGold3(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterGold3}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterGold3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterGold3}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr className="talent-books-total-row">
-							<td>TOTAL</td>
-							<td>{totalTalentLvUpPerChar1 + totalTalentLvUpPerChar2 + totalTalentLvUpPerChar3 * 5 - LvUpMatTotalHave(gold1, gold2, gold3)}</td>
-							<td>{LvUpMatTotalHave(gold1, gold2, gold3) - LvUpMatTotalUsed(counterGold1, counterGold2, counterGold3)}</td>
-							<td>{LvUpMatTotalUsed(counterGold1, counterGold2, counterGold3)}</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td colSpan="6">Freedom Books</td>
-						</tr>
-						<tr>
-							<td>LV1: </td>
-							<td>LV1: </td>
-							<td>{4 * totalTalentLvUpPerChar1 - transience1}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={transience1 - counterTransience1} onChange={(e) => setTransience1(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterTransience1}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterTransience1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterTransience1}>
-											+
-										</button>
-									</>
-								}
-							</td>
-							<td rowSpan={3}>Kokomi, Heizou, Thoma, Yoimiya</td>
-						</tr>
-						<tr>
-							<td>LV2: </td>
-							<td>LV2: </td>
-							<td>{4 * totalTalentLvUpPerChar2 - transience2}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={transience2 - counterTransience2} onChange={(e) => setTransience2(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterTransience2}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterTransience2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterTransience2}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr>
-							<td>LV3: </td>
-							<td>LV3: </td>
-							<td>{4 * totalTalentLvUpPerChar3 - transience3}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={transience3 - counterTransience3} onChange={(e) => setTransience3(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterTransience3}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterTransience3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterTransience3}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr className="talent-books-total-row">
-							<td>TOTAL</td>
-							<td>{totalTalentLvUpPerChar1 + totalTalentLvUpPerChar2 + totalTalentLvUpPerChar3 * 4 - LvUpMatTotalHave(transience1, transience2, transience3)}</td>
-							<td>{LvUpMatTotalHave(transience1, transience2, transience3) - LvUpMatTotalUsed(counterTransience1, counterTransience2, counterTransience3)}</td>
-							<td>{LvUpMatTotalUsed(counterTransience1, counterTransience2, counterTransience3)}</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td colSpan="6">Freedom Books</td>
-						</tr>
-						<tr>
-							<td>LV1: </td>
-							<td>LV1: </td>
-							<td>{5 * totalTalentLvUpPerChar1 - elegance1}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={elegance1 - counterElegance1} onChange={(e) => setElegance1(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterElegance1}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterElegance1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterElegance1}>
-											+
-										</button>
-									</>
-								}
-							</td>
-							<td rowSpan={3}>Itto, Ayaka, Ayato, Kujou Sara, Shinobu</td>
-						</tr>
-						<tr>
-							<td>LV2: </td>
-							<td>LV2: </td>
-							<td>{5 * totalTalentLvUpPerChar2 - elegance2}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={elegance2 - counterElegance2} onChange={(e) => setElegance2(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterElegance2}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterElegance2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterElegance2}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr>
-							<td>LV3: </td>
-							<td>LV3: </td>
-							<td>{5 * totalTalentLvUpPerChar3 - elegance3}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={elegance3 - counterElegance3} onChange={(e) => setElegance3(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterElegance3}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterElegance3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterElegance3}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr className="talent-books-total-row">
-							<td>TOTAL</td>
-							<td>{totalTalentLvUpPerChar1 + totalTalentLvUpPerChar2 + totalTalentLvUpPerChar3 * 5 - LvUpMatTotalHave(elegance1, elegance2, elegance3)}</td>
-							<td>{LvUpMatTotalHave(elegance1, elegance2, elegance3) - LvUpMatTotalUsed(counterElegance1, counterElegance2, counterElegance3)}</td>
-							<td>{LvUpMatTotalUsed(counterElegance1, counterElegance2, counterElegance3)}</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td colSpan="6">Freedom Books</td>
-						</tr>
-						<tr>
-							<td>LV1: </td>
-							<td>LV1: </td>
-							<td>{4 * totalTalentLvUpPerChar1 - light1}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={light1 - counterLight1} onChange={(e) => setLight1(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterLight1}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterLight1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterLight1}>
-											+
-										</button>
-									</>
-								}
-							</td>
-							<td rowSpan={3}>Gorou, Raiden, Sayu, Yae Miko</td>
-						</tr>
-						<tr>
-							<td>LV2: </td>
-							<td>LV2: </td>
-							<td>{4 * totalTalentLvUpPerChar2 - light2}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={light2 - counterLight2} onChange={(e) => setLight2(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterLight2}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterLight2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterLight2}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr>
-							<td>LV3: </td>
-							<td>LV3: </td>
-							<td>{4 * totalTalentLvUpPerChar3 - light3}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={light3 - counterLight3} onChange={(e) => setLight3(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterLight3}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterLight3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterLight3}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr className="talent-books-total-row">
-							<td>TOTAL</td>
-							<td>{totalTalentLvUpPerChar1 + totalTalentLvUpPerChar2 + totalTalentLvUpPerChar3 * 4 - LvUpMatTotalHave(light1, light2, light3)}</td>
-							<td>{LvUpMatTotalHave(light1, light2, light3) - LvUpMatTotalUsed(counterLight1, counterLight2, counterLight3)}</td>
-							<td>{LvUpMatTotalUsed(counterLight1, counterLight2, counterLight3)}</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td colSpan="6">Freedom Books</td>
-						</tr>
-						<tr>
-							<td>LV1: </td>
-							<td>LV1: </td>
-							<td>{4 * totalTalentLvUpPerChar1 - admonition1}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={admonition1 - counterAdmonition1} onChange={(e) => setAdmonition1(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterAdmonition1}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterAdmonition1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterAdmonition1}>
-											+
-										</button>
-									</>
-								}
-							</td>
-							<td rowSpan={3}>Candace, Cyno, Faruzan, Tighnari</td>
-						</tr>
-						<tr>
-							<td>LV2: </td>
-							<td>LV2: </td>
-							<td>{4 * totalTalentLvUpPerChar2 - admonition2}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={admonition2 - counterAdmonition2} onChange={(e) => setAdmonition2(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterAdmonition2}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterAdmonition2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterAdmonition2}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr>
-							<td>LV3: </td>
-							<td>LV3: </td>
-							<td>{4 * totalTalentLvUpPerChar3 - admonition3}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={admonition3 - counterAdmonition3} onChange={(e) => setAdmonition3(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterAdmonition3}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterAdmonition3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterAdmonition3}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr className="talent-books-total-row">
-							<td>TOTAL</td>
-							<td>{totalTalentLvUpPerChar1 + totalTalentLvUpPerChar2 + totalTalentLvUpPerChar3 * 4 - LvUpMatTotalHave(admonition1, admonition2, admonition3)}</td>
-							<td>{LvUpMatTotalHave(admonition1, admonition2, admonition3) - LvUpMatTotalUsed(counterAdmonition1, counterAdmonition2, counterAdmonition3)}</td>
-							<td>{LvUpMatTotalUsed(counterAdmonition1, counterAdmonition2, counterAdmonition3)}</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td colSpan="6">Freedom Books</td>
-						</tr>
-						<tr>
-							<td>LV1: </td>
-							<td>LV1: </td>
-							<td>{4 * totalTalentLvUpPerChar1 - ingenuity1}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={ingenuity1 - counterIngenuity1} onChange={(e) => setIngenuity1(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterIngenuity1}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterIngenuity1)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterIngenuity1}>
-											+
-										</button>
-									</>
-								}
-							</td>
-							<td rowSpan={3}>Alhaitham, Dori, Layla, Nahida</td>
-						</tr>
-						<tr>
-							<td>LV2: </td>
-							<td>LV2: </td>
-							<td>{4 * totalTalentLvUpPerChar2 - ingenuity2}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={ingenuity2 - counterIngenuity2} onChange={(e) => setIngenuity2(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterIngenuity2}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterIngenuity2)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterIngenuity2}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr>
-							<td>LV3: </td>
-							<td>LV3: </td>
-							<td>{4 * totalTalentLvUpPerChar3 - ingenuity3}</td>
-							<td>
-								<input type="number" className="talent-books-num-input" value={ingenuity3 - counterIngenuity3} onChange={(e) => setIngenuity3(e.target.value)} placeholder="0" min="0" />
-							</td>
-							<td>
-								{
-									<>
-										<button className="talent-books-arrow-down" onClick={decrementCounterIngenuity3}>
-											-
-										</button>
-										<span className="talent-books-arrow-mid-number">{parseInt(counterIngenuity3)}</span>
-										<button className="talent-books-arrow-up" onClick={incrementCounterIngenuity3}>
-											+
-										</button>
-									</>
-								}
-							</td>
-						</tr>
-						<tr className="talent-books-total-row">
-							<td>TOTAL</td>
-							<td>{totalTalentLvUpPerChar1 + totalTalentLvUpPerChar2 + totalTalentLvUpPerChar3 * 4 - LvUpMatTotalHave(ingenuity1, ingenuity2, ingenuity3)}</td>
-							<td>{LvUpMatTotalHave(ingenuity1, ingenuity2, ingenuity3) - LvUpMatTotalUsed(counterIngenuity1, counterIngenuity2, counterIngenuity3)}</td>
-							<td>{LvUpMatTotalUsed(counterIngenuity1, counterIngenuity2, counterIngenuity3)}</td>
+							<td>{LvUpMatTotalUsed(counterTalDeadLeyLineBranch, counterTalDeadLeyLineLeaves, counterTalLeyLineSprout)}</td>
 							<td></td>
 						</tr>
 
-						<tr className="talent-books-total-row">
-							<td>OVERALL</td>
+						<tr>
+							<td colSpan="9">Chaos Parts</td>
+						</tr>
+
+						<tr>
+							<td>Chaos Device</td>
+							<td>{7 * totalTalentLvUpPerChar_Char1 - charChaosDevice}</td>
 							<td>
-								LV1: : {totalTalentLvUpPerChar1 * 63 - OverallTotalHave(...inputsHave1)} <br />
-								LV2: : {totalTalentLvUpPerChar2 * 63 - OverallTotalHave(...inputsHave2)}
-								<br />
-								LV3: :{totalTalentLvUpPerChar3 * 63 - OverallTotalHave(...inputsHave3)}
-								<br />
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charChaosDevice - counterCharChaosDevice}
+									onChange={(e) => setCharChaosDevice(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
 							</td>
 							<td>
-								LV1: : {OverallTotalHave(...inputsHave1) - OverallTotalUsed(...inputsUsed1)}
-								<br />
-								LV2: : {OverallTotalHave(...inputsHave2) - OverallTotalUsed(...inputsUsed2)}
-								<br />
-								LV3: :{OverallTotalHave(...inputsHave3) - OverallTotalUsed(...inputsUsed3)}
-								<br />
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharChaosDevice}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharChaosDevice)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharChaosDevice}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Chaos Device</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal1 - talChaosDevice}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={talChaosDevice - counterTalChaosDevice} onChange={(e) => setTalChaosDevice(e.target.value)} placeholder="0" min="0" />
 							</td>
 							<td>
-								LV1: : {OverallTotalUsed(...inputsUsed1)}
-								<br />
-								LV2: : {OverallTotalUsed(...inputsUsed2)}
-								<br />
-								LV3: :{OverallTotalUsed(...inputsUsed3)}
-								<br />
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalChaosDevice}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalChaosDevice)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalChaosDevice}>
+											+
+										</button>
+									</>
+								}
 							</td>
+							<td rowSpan={3}>Aloy, Amber, Barbara, Diona, Klee, Sucrose, Tartaglia</td>
+						</tr>
+
+						<tr>
+							<td>Chaos Circuit</td>
+							<td>{7 * totalTalentLvUpPerChar_Char2 - charChaosCircuit}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charChaosCircuit - counterCharChaosCircuit}
+									onChange={(e) => setCharChaosCircuit(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharChaosCircuit}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharChaosCircuit)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharChaosCircuit}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Chaos Circuit</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal2 - talChaosCircuit}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talChaosCircuit - counterTalChaosCircuit}
+									onChange={(e) => setTalChaosCircuit(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalChaosCircuit}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalChaosCircuit)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalChaosCircuit}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Chaos Core</td>
+							<td>{7 * totalTalentLvUpPerChar_Char3 - charChaosCore}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={charChaosCore - counterCharChaosCore} onChange={(e) => setCharChaosCore(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharChaosCore}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharChaosCore)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharChaosCore}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Chaos Core</td>
+
+							<td>{7 * totalTalentLvUpPerChar_Tal3 - talChaosCore}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={talChaosCore - counterTalChaosCore} onChange={(e) => setTalChaosCore(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalChaosCore}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalChaosCore)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalChaosCore}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="general-asc-mat-total-row">
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Char1 + totalTalentLvUpPerChar_Char2 + totalTalentLvUpPerChar_Char3 * 7 - LvUpMatTotalHave(charChaosDevice, charChaosCircuit, charChaosCore)}</td>
+							<td>{LvUpMatTotalHave(charChaosDevice, charChaosCircuit, charChaosCore) - LvUpMatTotalUsed(counterCharChaosDevice, counterCharChaosCircuit, counterCharChaosCore)}</td>
+
+							<td>{LvUpMatTotalUsed(counterCharChaosDevice, counterCharChaosCircuit, counterCharChaosCore)}</td>
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Tal1 + totalTalentLvUpPerChar_Tal2 + totalTalentLvUpPerChar_Tal3 * 7 - LvUpMatTotalHave(talChaosDevice, talChaosCircuit, talChaosCore)}</td>
+							<td>{LvUpMatTotalHave(talChaosDevice, talChaosCircuit, talChaosCore) - LvUpMatTotalUsed(counterTalChaosDevice, counterTalChaosCircuit, counterTalChaosCore)}</td>
+							<td>{LvUpMatTotalUsed(counterTalChaosDevice, counterTalChaosCircuit, counterTalChaosCore)}</td>
 							<td></td>
+						</tr>
+
+						<tr>
+							<td colSpan="9">Mist Grasses</td>
+						</tr>
+
+						<tr>
+							<td>Mist Grass Pollen</td>
+							<td>{7 * totalTalentLvUpPerChar_Char1 - charMistGrassPollen}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charMistGrassPollen - counterCharMistGrassPollen}
+									onChange={(e) => setCharMistGrassPollen(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharMistGrassPollen}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharMistGrassPollen)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharMistGrassPollen}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Mist Grass Pollen</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal1 - talMistGrassPollen}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talMistGrassPollen - counterTalMistGrassPollen}
+									onChange={(e) => setTalMistGrassPollen(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalMistGrassPollen}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalMistGrassPollen)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalMistGrassPollen}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Aloy, Amber, Barbara, Diona, Klee, Sucrose, Tartaglia</td>
+						</tr>
+
+						<tr>
+							<td>Mist Grass</td>
+							<td>{7 * totalTalentLvUpPerChar_Char2 - charMistGrass}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={charMistGrass - counterCharMistGrass} onChange={(e) => setCharMistGrass(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharMistGrass}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharMistGrass)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharMistGrass}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Mist Grass</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal2 - talMistGrass}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={talMistGrass - counterTalMistGrass} onChange={(e) => setTalMistGrass(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalMistGrass}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalMistGrass)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalMistGrass}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Mist Grass Wick</td>
+							<td>{7 * totalTalentLvUpPerChar_Char3 - charMistGrassWick}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charMistGrassWick - counterCharMistGrassWick}
+									onChange={(e) => setCharMistGrassWick(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharMistGrassWick}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharMistGrassWick)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharMistGrassWick}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Mist Grass Wick</td>
+
+							<td>{7 * totalTalentLvUpPerChar_Tal3 - talMistGrassWick}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talMistGrassWick - counterTalMistGrassWick}
+									onChange={(e) => setTalMistGrassWick(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalMistGrassWick}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalMistGrassWick)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalMistGrassWick}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="general-asc-mat-total-row">
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Char1 + totalTalentLvUpPerChar_Char2 + totalTalentLvUpPerChar_Char3 * 7 - LvUpMatTotalHave(charMistGrassPollen, charMistGrass, charMistGrassWick)}</td>
+							<td>{LvUpMatTotalHave(charMistGrassPollen, charMistGrass, charMistGrassWick) - LvUpMatTotalUsed(counterCharMistGrassPollen, counterCharMistGrass, counterCharMistGrassWick)}</td>
+
+							<td>{LvUpMatTotalUsed(counterCharMistGrassPollen, counterCharMistGrass, counterCharMistGrassWick)}</td>
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Tal1 + totalTalentLvUpPerChar_Tal2 + totalTalentLvUpPerChar_Tal3 * 7 - LvUpMatTotalHave(talMistGrassPollen, talMistGrass, talMistGrassWick)}</td>
+							<td>{LvUpMatTotalHave(talMistGrassPollen, talMistGrass, talMistGrassWick) - LvUpMatTotalUsed(counterTalMistGrassPollen, counterTalMistGrass, counterTalMistGrassWick)}</td>
+							<td>{LvUpMatTotalUsed(counterTalMistGrassPollen, counterTalMistGrass, counterTalMistGrassWick)}</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td colSpan="9">Sacrificial Knives</td>
+						</tr>
+
+						<tr>
+							<td>Hunter's Sacrificial Knife</td>
+							<td>{7 * totalTalentLvUpPerChar_Char1 - charHunterSacrificialKnife}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charHunterSacrificialKnife - counterCharHunterSacrificialKnife}
+									onChange={(e) => setCharHunterSacrificialKnife(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharHunterSacrificialKnife}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharHunterSacrificialKnife)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharHunterSacrificialKnife}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Hunter's Sacrificial Knife</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal1 - talHunterSacrificialKnife}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talHunterSacrificialKnife - counterTalHunterSacrificialKnife}
+									onChange={(e) => setTalHunterSacrificialKnife(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalHunterSacrificialKnife}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalHunterSacrificialKnife)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalHunterSacrificialKnife}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Aloy, Amber, Barbara, Diona, Klee, Sucrose, Tartaglia</td>
+						</tr>
+
+						<tr>
+							<td>Agent's Sacrificial Knife</td>
+							<td>{7 * totalTalentLvUpPerChar_Char2 - charAgentSacrificialKnife}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charAgentSacrificialKnife - counterCharAgentSacrificialKnife}
+									onChange={(e) => setCharAgentSacrificialKnife(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharAgentSacrificialKnife}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharAgentSacrificialKnife)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharAgentSacrificialKnife}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Agent's Sacrificial Knife</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal2 - talAgentSacrificialKnife}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talAgentSacrificialKnife - counterTalAgentSacrificialKnife}
+									onChange={(e) => setTalAgentSacrificialKnife(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalAgentSacrificialKnife}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalAgentSacrificialKnife)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalAgentSacrificialKnife}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Inspector's Sacrificial Knife</td>
+							<td>{7 * totalTalentLvUpPerChar_Char3 - charInspectorSacrificialKnife}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charInspectorSacrificialKnife - counterCharInspectorSacrificialKnife}
+									onChange={(e) => setCharInspectorSacrificialKnife(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharInspectorSacrificialKnife}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharInspectorSacrificialKnife)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharInspectorSacrificialKnife}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Inspector's Sacrificial Knife</td>
+
+							<td>{7 * totalTalentLvUpPerChar_Tal3 - talInspectorSacrificialKnife}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talInspectorSacrificialKnife - counterTalInspectorSacrificialKnife}
+									onChange={(e) => setTalInspectorSacrificialKnife(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalInspectorSacrificialKnife}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalInspectorSacrificialKnife)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalInspectorSacrificialKnife}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="general-asc-mat-total-row">
+							<td>TOTAL</td>
+							<td>
+								{totalTalentLvUpPerChar_Char1 +
+									totalTalentLvUpPerChar_Char2 +
+									totalTalentLvUpPerChar_Char3 * 7 -
+									LvUpMatTotalHave(charHunterSacrificialKnife, charAgentSacrificialKnife, charInspectorSacrificialKnife)}
+							</td>
+							<td>
+								{LvUpMatTotalHave(charHunterSacrificialKnife, charAgentSacrificialKnife, charInspectorSacrificialKnife) -
+									LvUpMatTotalUsed(counterCharHunterSacrificialKnife, counterCharAgentSacrificialKnife, counterCharInspectorSacrificialKnife)}
+							</td>
+
+							<td>{LvUpMatTotalUsed(counterCharHunterSacrificialKnife, counterCharAgentSacrificialKnife, counterCharInspectorSacrificialKnife)}</td>
+							<td>TOTAL</td>
+							<td>
+								{totalTalentLvUpPerChar_Tal1 +
+									totalTalentLvUpPerChar_Tal2 +
+									totalTalentLvUpPerChar_Tal3 * 7 -
+									LvUpMatTotalHave(talHunterSacrificialKnife, talAgentSacrificialKnife, talInspectorSacrificialKnife)}
+							</td>
+							<td>
+								{LvUpMatTotalHave(talHunterSacrificialKnife, talAgentSacrificialKnife, talInspectorSacrificialKnife) -
+									LvUpMatTotalUsed(counterTalHunterSacrificialKnife, counterTalAgentSacrificialKnife, counterTalInspectorSacrificialKnife)}
+							</td>
+							<td>{LvUpMatTotalUsed(counterTalHunterSacrificialKnife, counterTalAgentSacrificialKnife, counterTalInspectorSacrificialKnife)}</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td colSpan="9">Bone Shards</td>
+						</tr>
+
+						<tr>
+							<td>Fragile Bone Shard</td>
+							<td>{7 * totalTalentLvUpPerChar_Char1 - charFragileBoneShard}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charFragileBoneShard - counterCharFragileBoneShard}
+									onChange={(e) => setCharFragileBoneShard(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharFragileBoneShard}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharFragileBoneShard)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharFragileBoneShard}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Fragile Bone Shard</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal1 - talFragileBoneShard}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talFragileBoneShard - counterTalFragileBoneShard}
+									onChange={(e) => setTalFragileBoneShard(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalFragileBoneShard}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalFragileBoneShard)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalFragileBoneShard}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Aloy, Amber, Barbara, Diona, Klee, Sucrose, Tartaglia</td>
+						</tr>
+
+						<tr>
+							<td>Sturdy Bone Shard</td>
+							<td>{7 * totalTalentLvUpPerChar_Char2 - charSturdyBoneShard}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charSturdyBoneShard - counterCharSturdyBoneShard}
+									onChange={(e) => setCharSturdyBoneShard(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharSturdyBoneShard}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharSturdyBoneShard)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharSturdyBoneShard}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Sturdy Bone Shard</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal2 - talSturdyBoneShard}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talSturdyBoneShard - counterTalSturdyBoneShard}
+									onChange={(e) => setTalSturdyBoneShard(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalSturdyBoneShard}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalSturdyBoneShard)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalSturdyBoneShard}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Fossilized Bone Shard</td>
+							<td>{7 * totalTalentLvUpPerChar_Char3 - charFossilizedBoneShard}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charFossilizedBoneShard - counterCharFossilizedBoneShard}
+									onChange={(e) => setCharFossilizedBoneShard(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharFossilizedBoneShard}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharFossilizedBoneShard)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharFossilizedBoneShard}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Fossilized Bone Shard</td>
+
+							<td>{7 * totalTalentLvUpPerChar_Tal3 - talFossilizedBoneShard}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talFossilizedBoneShard - counterTalFossilizedBoneShard}
+									onChange={(e) => setTalFossilizedBoneShard(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalFossilizedBoneShard}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalFossilizedBoneShard)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalFossilizedBoneShard}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="general-asc-mat-total-row">
+							<td>TOTAL</td>
+							<td>
+								{totalTalentLvUpPerChar_Char1 + totalTalentLvUpPerChar_Char2 + totalTalentLvUpPerChar_Char3 * 7 - LvUpMatTotalHave(charFragileBoneShard, charSturdyBoneShard, charFossilizedBoneShard)}
+							</td>
+							<td>
+								{LvUpMatTotalHave(charFragileBoneShard, charSturdyBoneShard, charFossilizedBoneShard) -
+									LvUpMatTotalUsed(counterCharFragileBoneShard, counterCharSturdyBoneShard, counterCharFossilizedBoneShard)}
+							</td>
+
+							<td>{LvUpMatTotalUsed(counterCharFragileBoneShard, counterCharSturdyBoneShard, counterCharFossilizedBoneShard)}</td>
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Tal1 + totalTalentLvUpPerChar_Tal2 + totalTalentLvUpPerChar_Tal3 * 7 - LvUpMatTotalHave(talFragileBoneShard, talSturdyBoneShard, talFossilizedBoneShard)}</td>
+							<td>
+								{LvUpMatTotalHave(talFragileBoneShard, talSturdyBoneShard, talFossilizedBoneShard) -
+									LvUpMatTotalUsed(counterTalFragileBoneShard, counterTalSturdyBoneShard, counterTalFossilizedBoneShard)}
+							</td>
+							<td>{LvUpMatTotalUsed(counterTalFragileBoneShard, counterTalSturdyBoneShard, counterTalFossilizedBoneShard)}</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td colSpan="9">Sentinel Chaos Parts</td>
+						</tr>
+
+						<tr>
+							<td>Chaos Gear</td>
+							<td>{7 * totalTalentLvUpPerChar_Char1 - charChaosGear}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={charChaosGear - counterCharChaosGear} onChange={(e) => setCharChaosGear(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharChaosGear}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharChaosGear)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharChaosGear}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Chaos Gear</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal1 - talChaosGear}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={talChaosGear - counterTalChaosGear} onChange={(e) => setTalChaosGear(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalChaosGear}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalChaosGear)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalChaosGear}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Aloy, Amber, Barbara, Diona, Klee, Sucrose, Tartaglia</td>
+						</tr>
+
+						<tr>
+							<td>Chaos Axis</td>
+							<td>{7 * totalTalentLvUpPerChar_Char2 - charChaosAxis}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={charChaosAxis - counterCharChaosAxis} onChange={(e) => setCharChaosAxis(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharChaosAxis}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharChaosAxis)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharChaosAxis}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Chaos Axis</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal2 - talChaosAxis}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={talChaosAxis - counterTalChaosAxis} onChange={(e) => setTalChaosAxis(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalChaosAxis}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalChaosAxis)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalChaosAxis}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Chaos Oculus</td>
+							<td>{7 * totalTalentLvUpPerChar_Char3 - charChaosOculus}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charChaosOculus - counterCharChaosOculus}
+									onChange={(e) => setCharChaosOculus(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharChaosOculus}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharChaosOculus)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharChaosOculus}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Chaos Oculus</td>
+
+							<td>{7 * totalTalentLvUpPerChar_Tal3 - talChaosOculus}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={talChaosOculus - counterTalChaosOculus} onChange={(e) => setTalChaosOculus(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalChaosOculus}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalChaosOculus)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalChaosOculus}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="general-asc-mat-total-row">
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Char1 + totalTalentLvUpPerChar_Char2 + totalTalentLvUpPerChar_Char3 * 7 - LvUpMatTotalHave(charChaosGear, charChaosAxis, charChaosOculus)}</td>
+							<td>{LvUpMatTotalHave(charChaosGear, charChaosAxis, charChaosOculus) - LvUpMatTotalUsed(counterCharChaosGear, counterCharChaosAxis, counterCharChaosOculus)}</td>
+
+							<td>{LvUpMatTotalUsed(counterCharChaosGear, counterCharChaosAxis, counterCharChaosOculus)}</td>
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Tal1 + totalTalentLvUpPerChar_Tal2 + totalTalentLvUpPerChar_Tal3 * 7 - LvUpMatTotalHave(talChaosGear, talChaosAxis, talChaosOculus)}</td>
+							<td>{LvUpMatTotalHave(talChaosGear, talChaosAxis, talChaosOculus) - LvUpMatTotalUsed(counterTalChaosGear, counterTalChaosAxis, counterTalChaosOculus)}</td>
+							<td>{LvUpMatTotalUsed(counterTalChaosGear, counterTalChaosAxis, counterTalChaosOculus)}</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td colSpan="9">Mirror Maiden Prisms</td>
+						</tr>
+
+						<tr>
+							<td>Dismal Prism</td>
+							<td>{7 * totalTalentLvUpPerChar_Char1 - charDismalPrism}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charDismalPrism - counterCharDismalPrism}
+									onChange={(e) => setCharDismalPrism(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharDismalPrism}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharDismalPrism)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharDismalPrism}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Dismal Prism</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal1 - talDismalPrism}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={talDismalPrism - counterTalDismalPrism} onChange={(e) => setTalDismalPrism(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalDismalPrism}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalDismalPrism)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalDismalPrism}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Aloy, Amber, Barbara, Diona, Klee, Sucrose, Tartaglia</td>
+						</tr>
+
+						<tr>
+							<td>Crystal Prism</td>
+							<td>{7 * totalTalentLvUpPerChar_Char2 - charCrystalPrism}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charCrystalPrism - counterCharCrystalPrism}
+									onChange={(e) => setCharCrystalPrism(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharCrystalPrism}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharCrystalPrism)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharCrystalPrism}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Crystal Prism</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal2 - talCrystalPrism}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talCrystalPrism - counterTalCrystalPrism}
+									onChange={(e) => setTalCrystalPrism(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalCrystalPrism}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalCrystalPrism)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalCrystalPrism}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Polarizing Prism</td>
+							<td>{7 * totalTalentLvUpPerChar_Char3 - charPolarizingPrism}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charPolarizingPrism - counterCharPolarizingPrism}
+									onChange={(e) => setCharPolarizingPrism(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharPolarizingPrism}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharPolarizingPrism)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharPolarizingPrism}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Polarizing Prism</td>
+
+							<td>{7 * totalTalentLvUpPerChar_Tal3 - talPolarizingPrism}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talPolarizingPrism - counterTalPolarizingPrism}
+									onChange={(e) => setTalPolarizingPrism(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalPolarizingPrism}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalPolarizingPrism)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalPolarizingPrism}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="general-asc-mat-total-row">
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Char1 + totalTalentLvUpPerChar_Char2 + totalTalentLvUpPerChar_Char3 * 7 - LvUpMatTotalHave(charDismalPrism, charCrystalPrism, charPolarizingPrism)}</td>
+							<td>{LvUpMatTotalHave(charDismalPrism, charCrystalPrism, charPolarizingPrism) - LvUpMatTotalUsed(counterCharDismalPrism, counterCharCrystalPrism, counterCharPolarizingPrism)}</td>
+
+							<td>{LvUpMatTotalUsed(counterCharDismalPrism, counterCharCrystalPrism, counterCharPolarizingPrism)}</td>
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Tal1 + totalTalentLvUpPerChar_Tal2 + totalTalentLvUpPerChar_Tal3 * 7 - LvUpMatTotalHave(talDismalPrism, talCrystalPrism, talPolarizingPrism)}</td>
+							<td>{LvUpMatTotalHave(talDismalPrism, talCrystalPrism, talPolarizingPrism) - LvUpMatTotalUsed(counterTalDismalPrism, counterTalCrystalPrism, counterTalPolarizingPrism)}</td>
+							<td>{LvUpMatTotalUsed(counterTalDismalPrism, counterTalCrystalPrism, counterTalPolarizingPrism)}</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td colSpan="9">Concealed Riftwolf Claws</td>
+						</tr>
+
+						<tr>
+							<td>Concealed Claw</td>
+							<td>{7 * totalTalentLvUpPerChar_Char1 - charConcealedClaw}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charConcealedClaw - counterCharConcealedClaw}
+									onChange={(e) => setCharConcealedClaw(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharConcealedClaw}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharConcealedClaw)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharConcealedClaw}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Concealed Claw</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal1 - talConcealedClaw}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talConcealedClaw - counterTalConcealedClaw}
+									onChange={(e) => setTalConcealedClaw(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalConcealedClaw}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalConcealedClaw)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalConcealedClaw}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Aloy, Amber, Barbara, Diona, Klee, Sucrose, Tartaglia</td>
+						</tr>
+
+						<tr>
+							<td>Concealed Unguis</td>
+							<td>{7 * totalTalentLvUpPerChar_Char2 - charConcealedUnguis}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charConcealedUnguis - counterCharConcealedUnguis}
+									onChange={(e) => setCharConcealedUnguis(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharConcealedUnguis}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharConcealedUnguis)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharConcealedUnguis}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Concealed Unguis</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal2 - talConcealedUnguis}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talConcealedUnguis - counterTalConcealedUnguis}
+									onChange={(e) => setTalConcealedUnguis(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalConcealedUnguis}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalConcealedUnguis)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalConcealedUnguis}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Concealed Talon</td>
+							<td>{7 * totalTalentLvUpPerChar_Char3 - charConcealedTalon}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charConcealedTalon - counterCharConcealedTalon}
+									onChange={(e) => setCharConcealedTalon(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharConcealedTalon}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharConcealedTalon)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharConcealedTalon}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Concealed Talon</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal3 - talConcealedTalon}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talConcealedTalon - counterTalConcealedTalon}
+									onChange={(e) => setTalConcealedTalon(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalConcealedTalon}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalConcealedTalon)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalConcealedTalon}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="general-asc-mat-total-row">
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Char1 + totalTalentLvUpPerChar_Char2 + totalTalentLvUpPerChar_Char3 * 7 - LvUpMatTotalHave(charConcealedClaw, charConcealedUnguis, charConcealedTalon)}</td>
+							<td>
+								{LvUpMatTotalHave(charConcealedClaw, charConcealedUnguis, charConcealedTalon) - LvUpMatTotalUsed(counterCharConcealedClaw, counterCharConcealedUnguis, counterCharConcealedTalon)}
+							</td>
+
+							<td>{LvUpMatTotalUsed(counterCharConcealedClaw, counterCharConcealedUnguis, counterCharConcealedTalon)}</td>
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Tal1 + totalTalentLvUpPerChar_Tal2 + totalTalentLvUpPerChar_Tal3 * 7 - LvUpMatTotalHave(talConcealedClaw, talConcealedUnguis, talConcealedTalon)}</td>
+							<td>{LvUpMatTotalHave(talConcealedClaw, talConcealedUnguis, talConcealedTalon) - LvUpMatTotalUsed(counterTalConcealedClaw, counterTalConcealedUnguis, counterTalConcealedTalon)}</td>
+							<td>{LvUpMatTotalUsed(counterTalConcealedClaw, counterTalConcealedUnguis, counterTalConcealedTalon)}</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colSpan="9">Statuettes</td>
+						</tr>
+
+						<tr>
+							<td>Gloomy Statuette</td>
+							<td>{7 * totalTalentLvUpPerChar_Char1 - charGloomyStatuette}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charGloomyStatuette - counterCharGloomyStatuette}
+									onChange={(e) => setCharGloomyStatuette(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharGloomyStatuette}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharGloomyStatuette)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharGloomyStatuette}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Gloomy Statuette</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal1 - talGloomyStatuette}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talGloomyStatuette - counterTalGloomyStatuette}
+									onChange={(e) => setTalGloomyStatuette(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalGloomyStatuette}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalGloomyStatuette)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalGloomyStatuette}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Aloy, Amber, Barbara, Diona, Klee, Sucrose, Tartaglia</td>
+						</tr>
+
+						<tr>
+							<td>Dark Statuette</td>
+							<td>{7 * totalTalentLvUpPerChar_Char2 - charDarkStatuette}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charDarkStatuette - counterCharDarkStatuette}
+									onChange={(e) => setCharDarkStatuette(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharDarkStatuette}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharDarkStatuette)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharDarkStatuette}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Dark Statuette</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal2 - talDarkStatuette}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talDarkStatuette - counterTalDarkStatuette}
+									onChange={(e) => setTalDarkStatuette(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalDarkStatuette}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalDarkStatuette)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalDarkStatuette}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Deathly Statuette</td>
+							<td>{7 * totalTalentLvUpPerChar_Char3 - charDeathlyStatuette}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charDeathlyStatuette - counterCharDeathlyStatuette}
+									onChange={(e) => setCharDeathlyStatuette(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharDeathlyStatuette}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharDeathlyStatuette)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharDeathlyStatuette}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Deathly Statuette</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal3 - talDeathlyStatuette}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talDeathlyStatuette - counterTalDeathlyStatuette}
+									onChange={(e) => setTalDeathlyStatuette(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalDeathlyStatuette}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalDeathlyStatuette)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalDeathlyStatuette}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="general-asc-mat-total-row">
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Char1 + totalTalentLvUpPerChar_Char2 + totalTalentLvUpPerChar_Char3 * 7 - LvUpMatTotalHave(charGloomyStatuette, charDarkStatuette, charDeathlyStatuette)}</td>
+							<td>
+								{LvUpMatTotalHave(charGloomyStatuette, charDarkStatuette, charDeathlyStatuette) - LvUpMatTotalUsed(counterCharGloomyStatuette, counterCharDarkStatuette, counterCharDeathlyStatuette)}
+							</td>
+
+							<td>{LvUpMatTotalUsed(counterCharGloomyStatuette, counterCharDarkStatuette, counterCharDeathlyStatuette)}</td>
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Tal1 + totalTalentLvUpPerChar_Tal2 + totalTalentLvUpPerChar_Tal3 * 7 - LvUpMatTotalHave(talGloomyStatuette, talDarkStatuette, talDeathlyStatuette)}</td>
+							<td>{LvUpMatTotalHave(talGloomyStatuette, talDarkStatuette, talDeathlyStatuette) - LvUpMatTotalUsed(counterTalGloomyStatuette, counterTalDarkStatuette, counterTalDeathlyStatuette)}</td>
+							<td>{LvUpMatTotalUsed(counterTalGloomyStatuette, counterTalDarkStatuette, counterTalDeathlyStatuette)}</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td colSpan="9">Fungal Nuclei</td>
+						</tr>
+
+						<tr>
+							<td>Inactivated Fungal Nucleus</td>
+							<td>{7 * totalTalentLvUpPerChar_Char1 - charInactivatedFungalNucleus}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charInactivatedFungalNucleus - counterCharInactivatedFungalNucleus}
+									onChange={(e) => setCharInactivatedFungalNucleus(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharInactivatedFungalNucleus}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharInactivatedFungalNucleus)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharInactivatedFungalNucleus}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Inactivated Fungal Nucleus</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal1 - talInactivatedFungalNucleus}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talInactivatedFungalNucleus - counterTalInactivatedFungalNucleus}
+									onChange={(e) => setTalInactivatedFungalNucleus(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalInactivatedFungalNucleus}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalInactivatedFungalNucleus)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalInactivatedFungalNucleus}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Aloy, Amber, Barbara, Diona, Klee, Sucrose, Tartaglia</td>
+						</tr>
+
+						<tr>
+							<td>Dormant Fungal Nucleus</td>
+							<td>{7 * totalTalentLvUpPerChar_Char2 - charDormantFungalNucleus}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charDormantFungalNucleus - counterCharDormantFungalNucleus}
+									onChange={(e) => setCharDormantFungalNucleus(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharDormantFungalNucleus}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharDormantFungalNucleus)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharDormantFungalNucleus}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Dormant Fungal Nucleus</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal2 - talDormantFungalNucleus}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talDormantFungalNucleus - counterTalDormantFungalNucleus}
+									onChange={(e) => setTalDormantFungalNucleus(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalDormantFungalNucleus}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalDormantFungalNucleus)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalDormantFungalNucleus}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Robust Fungal Nucleus</td>
+							<td>{7 * totalTalentLvUpPerChar_Char3 - charRobustFungalNucleus}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charRobustFungalNucleus - counterCharRobustFungalNucleus}
+									onChange={(e) => setCharRobustFungalNucleus(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharRobustFungalNucleus}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharRobustFungalNucleus)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharRobustFungalNucleus}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Robust Fungal Nucleus</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal3 - talRobustFungalNucleus}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talRobustFungalNucleus - counterTalRobustFungalNucleus}
+									onChange={(e) => setTalRobustFungalNucleus(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalRobustFungalNucleus}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalRobustFungalNucleus)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalRobustFungalNucleus}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="general-asc-mat-total-row">
+							<td>TOTAL</td>
+							<td>
+								{totalTalentLvUpPerChar_Char1 +
+									totalTalentLvUpPerChar_Char2 +
+									totalTalentLvUpPerChar_Char3 * 7 -
+									LvUpMatTotalHave(charInactivatedFungalNucleus, charDormantFungalNucleus, charRobustFungalNucleus)}
+							</td>
+							<td>
+								{LvUpMatTotalHave(charInactivatedFungalNucleus, charDormantFungalNucleus, charRobustFungalNucleus) -
+									LvUpMatTotalUsed(counterCharInactivatedFungalNucleus, counterCharDormantFungalNucleus, counterCharRobustFungalNucleus)}
+							</td>
+
+							<td>{LvUpMatTotalUsed(counterCharInactivatedFungalNucleus, counterCharDormantFungalNucleus, counterCharRobustFungalNucleus)}</td>
+							<td>TOTAL</td>
+							<td>
+								{totalTalentLvUpPerChar_Tal1 +
+									totalTalentLvUpPerChar_Tal2 +
+									totalTalentLvUpPerChar_Tal3 * 7 -
+									LvUpMatTotalHave(talInactivatedFungalNucleus, talDormantFungalNucleus, talRobustFungalNucleus)}
+							</td>
+							<td>
+								{LvUpMatTotalHave(talInactivatedFungalNucleus, talDormantFungalNucleus, talRobustFungalNucleus) -
+									LvUpMatTotalUsed(counterTalInactivatedFungalNucleus, counterTalDormantFungalNucleus, counterTalRobustFungalNucleus)}
+							</td>
+							<td>{LvUpMatTotalUsed(counterTalInactivatedFungalNucleus, counterTalDormantFungalNucleus, counterTalRobustFungalNucleus)}</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td colSpan="9">Drake Chaos Parts</td>
+						</tr>
+
+						<tr>
+							<td>Chaos Storage</td>
+							<td>{7 * totalTalentLvUpPerChar_Char1 - charChaosStorage}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charChaosStorage - counterCharChaosStorage}
+									onChange={(e) => setCharChaosStorage(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharChaosStorage}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharChaosStorage)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharChaosStorage}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Chaos Storage</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal1 - talChaosStorage}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talChaosStorage - counterTalChaosStorage}
+									onChange={(e) => setTalChaosStorage(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalChaosStorage}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalChaosStorage)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalChaosStorage}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Aloy, Amber, Barbara, Diona, Klee, Sucrose, Tartaglia</td>
+						</tr>
+
+						<tr>
+							<td>Chaos Module</td>
+							<td>{7 * totalTalentLvUpPerChar_Char2 - charChaosModule}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charChaosModule - counterCharChaosModule}
+									onChange={(e) => setCharChaosModule(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharChaosModule}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharChaosModule)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharChaosModule}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Chaos Module</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal2 - talChaosModule}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={talChaosModule - counterTalChaosModule} onChange={(e) => setTalChaosModule(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalChaosModule}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalChaosModule)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalChaosModule}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Chaos Bolt</td>
+							<td>{7 * totalTalentLvUpPerChar_Char3 - charChaosBolt}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={charChaosBolt - counterCharChaosBolt} onChange={(e) => setCharChaosBolt(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharChaosBolt}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharChaosBolt)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharChaosBolt}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Chaos Bolt</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal3 - talChaosBolt}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={talChaosBolt - counterTalChaosBolt} onChange={(e) => setTalChaosBolt(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalChaosBolt}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalChaosBolt)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalChaosBolt}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="general-asc-mat-total-row">
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Char1 + totalTalentLvUpPerChar_Char2 + totalTalentLvUpPerChar_Char3 * 7 - LvUpMatTotalHave(charChaosStorage, charChaosModule, charChaosBolt)}</td>
+							<td>{LvUpMatTotalHave(charChaosStorage, charChaosModule, charChaosBolt) - LvUpMatTotalUsed(counterCharChaosStorage, counterCharChaosModule, counterCharChaosBolt)}</td>
+
+							<td>{LvUpMatTotalUsed(counterCharChaosStorage, counterCharChaosModule, counterCharChaosBolt)}</td>
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Tal1 + totalTalentLvUpPerChar_Tal2 + totalTalentLvUpPerChar_Tal3 * 7 - LvUpMatTotalHave(talChaosStorage, talChaosModule, talChaosBolt)}</td>
+							<td>{LvUpMatTotalHave(talChaosStorage, talChaosModule, talChaosBolt) - LvUpMatTotalUsed(counterTalChaosStorage, counterTalChaosModule, counterTalChaosBolt)}</td>
+							<td>{LvUpMatTotalUsed(counterTalChaosStorage, counterTalChaosModule, counterTalChaosBolt)}</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td colSpan="9">Consecrated Beast Shells</td>
+						</tr>
+
+						<tr>
+							<td>Damaged Prism</td>
+							<td>{7 * totalTalentLvUpPerChar_Char1 - charDamagedPrism}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charDamagedPrism - counterCharDamagedPrism}
+									onChange={(e) => setCharDamagedPrism(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharDamagedPrism}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharDamagedPrism)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharDamagedPrism}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Damaged Prism</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal1 - talDamagedPrism}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talDamagedPrism - counterTalDamagedPrism}
+									onChange={(e) => setTalDamagedPrism(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalDamagedPrism}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalDamagedPrism)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalDamagedPrism}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Aloy, Amber, Barbara, Diona, Klee, Sucrose, Tartaglia</td>
+						</tr>
+
+						<tr>
+							<td>Turbid Prism</td>
+							<td>{7 * totalTalentLvUpPerChar_Char2 - charTurbidPrism}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charTurbidPrism - counterCharTurbidPrism}
+									onChange={(e) => setCharTurbidPrism(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharTurbidPrism}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharTurbidPrism)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharTurbidPrism}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Turbid Prism</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal2 - talTurbidPrism}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={talTurbidPrism - counterTalTurbidPrism} onChange={(e) => setTalTurbidPrism(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalTurbidPrism}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalTurbidPrism)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalTurbidPrism}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Radiant Prism</td>
+							<td>{7 * totalTalentLvUpPerChar_Char3 - charRadiantPrism}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charRadiantPrism - counterCharRadiantPrism}
+									onChange={(e) => setCharRadiantPrism(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharRadiantPrism}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharRadiantPrism)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharRadiantPrism}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Radiant Prism</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal3 - talRadiantPrism}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talRadiantPrism - counterTalRadiantPrism}
+									onChange={(e) => setTalRadiantPrism(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalRadiantPrism}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalRadiantPrism)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalRadiantPrism}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="general-asc-mat-total-row">
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Char1 + totalTalentLvUpPerChar_Char2 + totalTalentLvUpPerChar_Char3 * 7 - LvUpMatTotalHave(charDamagedPrism, charTurbidPrism, charRadiantPrism)}</td>
+							<td>{LvUpMatTotalHave(charDamagedPrism, charTurbidPrism, charRadiantPrism) - LvUpMatTotalUsed(counterCharDamagedPrism, counterCharTurbidPrism, counterCharRadiantPrism)}</td>
+
+							<td>{LvUpMatTotalUsed(counterCharDamagedPrism, counterCharTurbidPrism, counterCharRadiantPrism)}</td>
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Tal1 + totalTalentLvUpPerChar_Tal2 + totalTalentLvUpPerChar_Tal3 * 7 - LvUpMatTotalHave(talDamagedPrism, talTurbidPrism, talRadiantPrism)}</td>
+							<td>{LvUpMatTotalHave(talDamagedPrism, talTurbidPrism, talRadiantPrism) - LvUpMatTotalUsed(counterTalDamagedPrism, counterTalTurbidPrism, counterTalRadiantPrism)}</td>
+							<td>{LvUpMatTotalUsed(counterTalDamagedPrism, counterTalTurbidPrism, counterTalRadiantPrism)}</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td colSpan="9">Consecrated Beast Shells</td>
+						</tr>
+
+						<tr>
+							<td>Desiccated Shell</td>
+							<td>{7 * totalTalentLvUpPerChar_Char1 - charDesiccatedShell}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charDesiccatedShell - counterCharDesiccatedShell}
+									onChange={(e) => setCharDesiccatedShell(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharDesiccatedShell}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharDesiccatedShell)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharDesiccatedShell}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Desiccated Shell</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal1 - talDesiccatedShell}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={talDesiccatedShell - counterTalDesiccatedShell}
+									onChange={(e) => setTalDesiccatedShell(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalDesiccatedShell}>
+											-
+										</button>
+
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalDesiccatedShell)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalDesiccatedShell}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td rowSpan={3}>Aloy, Amber, Barbara, Diona, Klee, Sucrose, Tartaglia</td>
+						</tr>
+
+						<tr>
+							<td>Sturdy Shell</td>
+							<td>{7 * totalTalentLvUpPerChar_Char2 - charSturdyShell}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charSturdyShell - counterCharSturdyShell}
+									onChange={(e) => setCharSturdyShell(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharSturdyShell}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharSturdyShell)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharSturdyShell}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Sturdy Shell</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal2 - talSturdyShell}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={talSturdyShell - counterTalSturdyShell} onChange={(e) => setTalSturdyShell(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalSturdyShell}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalSturdyShell)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalSturdyShell}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr>
+							<td>Marked Shell</td>
+							<td>{7 * totalTalentLvUpPerChar_Char3 - charMarkedShell}</td>
+							<td>
+								<input
+									type="number"
+									className="general-asc-mat-num-input"
+									value={charMarkedShell - counterCharMarkedShell}
+									onChange={(e) => setCharMarkedShell(e.target.value)}
+									placeholder="0"
+									min="0"
+								/>
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterCharMarkedShell}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterCharMarkedShell)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterCharMarkedShell}>
+											+
+										</button>
+									</>
+								}
+							</td>
+							<td>Marked Shell</td>
+							<td>{7 * totalTalentLvUpPerChar_Tal3 - talMarkedShell}</td>
+							<td>
+								<input type="number" className="general-asc-mat-num-input" value={talMarkedShell - counterTalMarkedShell} onChange={(e) => setTalMarkedShell(e.target.value)} placeholder="0" min="0" />
+							</td>
+							<td>
+								{
+									<>
+										<button className="general-asc-mat-arrow-down" onClick={decrementCounterTalMarkedShell}>
+											-
+										</button>
+										<span className="general-asc-mat-arrow-mid-number">{parseInt(counterTalMarkedShell)}</span>
+										<button className="general-asc-mat-arrow-up" onClick={incrementCounterTalMarkedShell}>
+											+
+										</button>
+									</>
+								}
+							</td>
+						</tr>
+						<tr className="general-asc-mat-total-row">
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Char1 + totalTalentLvUpPerChar_Char2 + totalTalentLvUpPerChar_Char3 * 7 - LvUpMatTotalHave(charDesiccatedShell, charSturdyShell, charMarkedShell)}</td>
+							<td>{LvUpMatTotalHave(charDesiccatedShell, charSturdyShell, charMarkedShell) - LvUpMatTotalUsed(counterCharDesiccatedShell, counterCharSturdyShell, counterCharMarkedShell)}</td>
+
+							<td>{LvUpMatTotalUsed(counterCharDesiccatedShell, counterCharSturdyShell, counterCharMarkedShell)}</td>
+							<td>TOTAL</td>
+							<td>{totalTalentLvUpPerChar_Tal1 + totalTalentLvUpPerChar_Tal2 + totalTalentLvUpPerChar_Tal3 * 7 - LvUpMatTotalHave(talDesiccatedShell, talSturdyShell, talMarkedShell)}</td>
+							<td>{LvUpMatTotalHave(talDesiccatedShell, talSturdyShell, talMarkedShell) - LvUpMatTotalUsed(counterTalDesiccatedShell, counterTalSturdyShell, counterTalMarkedShell)}</td>
+							<td>{LvUpMatTotalUsed(counterTalDesiccatedShell, counterTalSturdyShell, counterTalMarkedShell)}</td>
+							<td></td>
+						</tr>
+						<tr className="general-asc-mat-overall-row">
+							<td>CHARACTER OVERALL</td>
+							<td>
+								LV1: {totalTalentLvUpPerChar_Char1 * 63 - OverallTotalHave(...inputsCharHave1)} <br />
+								LV2: {totalTalentLvUpPerChar_Char2 * 63 - OverallTotalHave(...inputsCharHave2)}
+								<br />
+								LV3: {totalTalentLvUpPerChar_Char3 * 63 - OverallTotalHave(...inputsCharHave3)}
+								<br />
+							</td>
+							<td>
+								LV1: {OverallTotalHave(...inputsCharHave1) - OverallTotalUsed(...inputsCharUsed1)}
+								<br />
+								LV2: {OverallTotalHave(...inputsCharHave2) - OverallTotalUsed(...inputsCharUsed2)}
+								<br />
+								LV3: {OverallTotalHave(...inputsCharHave3) - OverallTotalUsed(...inputsCharUsed3)}
+								<br />
+							</td>
+							<td>
+								LV1: {OverallTotalUsed(...inputsCharUsed1)}
+								<br />
+								LV2: {OverallTotalUsed(...inputsCharUsed2)}
+								<br />
+								LV3: {OverallTotalUsed(...inputsCharUsed3)}
+								<br />
+							</td>
+							<td>TALENT BOOKS OVERALL</td>
+							<td>
+								LV1: {totalTalentLvUpPerChar_Tal1 * 63 - OverallTotalHave(...inputsTalHave1)} <br />
+								LV2: {totalTalentLvUpPerChar_Tal2 * 63 - OverallTotalHave(...inputsTalHave2)}
+								<br />
+								LV3: {totalTalentLvUpPerChar_Tal3 * 63 - OverallTotalHave(...inputsTalHave3)}
+								<br />
+							</td>
+							<td>
+								LV1: {OverallTotalHave(...inputsTalHave1) - OverallTotalUsed(...inputsTalUsed1)}
+								<br />
+								LV2: {OverallTotalHave(...inputsTalHave2) - OverallTotalUsed(...inputsTalUsed2)}
+								<br />
+								LV3:{OverallTotalHave(...inputsTalHave3) - OverallTotalUsed(...inputsTalUsed3)}
+								<br />
+							</td>
+							<td>
+								LV1: {OverallTotalUsed(...inputsTalUsed1)}
+								<br />
+								LV2: {OverallTotalUsed(...inputsTalUsed2)}
+								<br />
+								LV3: {OverallTotalUsed(...inputsTalUsed3)}
+								<br />
+							</td>
+							<td>63</td>
 						</tr>
 					</tbody>
 				</table>

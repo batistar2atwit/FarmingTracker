@@ -4,7 +4,7 @@ const { getAllUsers, getUser, createUser, deleteUser, updateUser } = require('..
 
 const router = express.Router();
 
-// GET all workouts8
+// GET all workouts
 router.get('/', getAllUsers);
 
 // GET a single workout

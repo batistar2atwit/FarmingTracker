@@ -161,11 +161,12 @@ const GenericEXPBook = () => {
 	const estBookFarm3 = 4.5 * 20000;
 	const avgBookExperience = estBookFarm2 + estBookFarm3;
 	const avgExpFarmed = totalExpBook1 * 1000 + totalExpBook2 * 5000 + totalExpBook3 * 20000;
-	const totalExpAvg = Math.round((avgExpFarmed / avgBookExperience) * 100) / 100;
+	//Math.trunc()
+	const totalExpAvg = Math.round(avgExpFarmed / avgBookExperience);
 
 	// MORA: Calculate total runs needed to fully complete the EXP farm
 	const estMoraFarm = 60000;
-	const totalMoraAvg = Math.round((totalMoraCost / estMoraFarm) * 100) / 100;
+	const totalMoraAvg = Math.round(totalMoraCost / estMoraFarm);
 
 	// Farming cost
 	const normalFarmCost = 20;
@@ -178,7 +179,7 @@ const GenericEXPBook = () => {
 					<thead>
 						<tr>
 							<th>Level Range</th>
-							<th>Asc #</th>
+							<th>#</th>
 							<th>Items Required</th>
 							<th>EXP Needed </th>
 							<th>EXP Wasted</th>
